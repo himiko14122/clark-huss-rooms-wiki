@@ -2020,5 +2020,21 @@
   "category_cards_general_0_f1_value": "Jugadores nuevos",
   "category_cards_general_0_f2_label": "Prioridad",
   "category_cards_general_0_f2_value": "Empieza aquí",
-  "category_cards_general_nav": "Resumen General"
+  "category_cards_general_nav": "Resumen General",
+  "entity_audioTracking_behavior": "Clark passively tracks sprint footsteps through audio cues, slowing down to analyze corridor acoustics and triangulate player positions within 30 meters. Each loud event layers onto his awareness until he locks onto your corridor segment.",
+  "entity_audioTracking_counter": "Walk instead of sprint, avoid wall collisions, and keep voice chat on low volume during exploration phases. Standing still for several seconds decays his tracking stacks back toward zero.",
+  "entity_audioTracking_tell": "Distinctive distorted breathing audible from 3-4 corridors away — direction can be triangulated with headphones and used to predict Clark's approach vector before he accelerates.",
+  "entity_flashlightSpotted_behavior": "Clark reads sustained flashlight beams as a stationary target marker, locking his patrol path toward the illuminated corridor. He treats held light as a louder signal than sprint footsteps and converges faster.",
+  "entity_flashlightSpotted_counter": "Brief-click the flashlight instead of holding it, only illuminate when turning corners, and extinguish the beam entirely during retreat phases to deny position data.",
+  "entity_flashlightSpotted_tell": "A subtle audio shift — Clark's breathing pattern gains a faint static hiss as he picks up light signature, audible just before his pursuit speed escalates.",
+  "entity_lineOfSight_behavior": "When Clark simultaneously sees and hears a target, his movement speed escalates into a sprint-tier pursuit. He cuts corners aggressively and skips his usual investigate pause, prioritizing direct interception.",
+  "entity_lineOfSight_counter": "Break line of sight by rounding corners, ducking behind doors, or sliding into side corridors. Never sprint in open rooms where Clark can chain visual and audio detection.",
+  "entity_lineOfSight_tell": "Clark's breathing accelerates sharply into a panting rhythm when he gains line of sight — distinct from his investigative cadence and a reliable signal to break visual immediately.",
+  "entity_breathingCadence_behavior": "Clark's breathing rhythm modulates continuously with distance — slow and distant when patrolling, accelerating as he closes in, and turning into a rapid heartbeat once he has fully locked your position.",
+  "entity_breathingCadence_counter": "Use the cadence as a passive rangefinder: slow rhythm means retreat is safe, fast rhythm means prepare to hide. Pause movement entirely during heartbeat phases to let detection decay.",
+  "entity_breathingCadence_tell": "A four-stage audio scale — dormant heartbeat, slow breathing cadence, heavy footsteps, close breathing — each stage compresses the available reaction window by roughly half.",
+  "entity_serverLocked_behavior": "Once the first interior door opens, the lobby closes to new joiners and the run becomes a closed-environment commitment. The squad composition is fixed for the remainder of the session.",
+  "entity_serverLocked_counter": "Coordinate the full squad before opening any door, distribute batteries and roles in the lobby, and avoid premature door triggers that lock the server before everyone is ready.",
+  "entity_serverLocked_tell": "A low server-tone hum plays once the first door opens, accompanied by an on-screen 'Server Locked' badge — late joiners will see a rejected-connection message for the rest of the run.",
+  "home_about_cta": "Browse All Guides"
 }
