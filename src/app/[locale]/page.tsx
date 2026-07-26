@@ -5,15 +5,14 @@ import { Link } from '@/i18n/navigation';
 import { routing, type Locale } from '@/i18n/routing';
 import { getBaseMetadata, websiteJsonLd, itemListJsonLd } from '@/lib/seo';
 import {
-  heroes,
+  entities,
   statusAilments,
   familiars,
   strategyTiers,
   tierColor,
   ailmentColor,
-  HERO_ICONS,
   STRATEGY_ICONS,
-  type Hero,
+  type Entity,
   type StatusAilment,
   type Familiar,
   type StrategyTier,
@@ -58,7 +57,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const dynCtx: Record<string, string> = {
     '__firstGuide': firstGuidePath,
     '__guideCount': String(allGuides.length),
-    '__heroCount': String(heroes.length),
+    '__heroCount': String(entities.length),
     '__ailmentCount': String(statusAilments.length),
     '__familiarCount': String(familiars.length),
     '__strategyCount': String(strategyTiers.length),
@@ -103,7 +102,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     <div>
       <JsonLd data={websiteJsonLd()} />
       <JsonLd data={itemListJsonLd(
-        heroes.map((hero: Hero) => ({ name: translate(t, hero.nameKey) || hero.id, path: '/entities' })),
+        entities.map((entity: Entity) => ({ name: translate(t, entity.nameKey) || entity.id, path: '/entities' })),
         validLocale
       )} />
 
@@ -331,19 +330,19 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <span>{t('entity_ailment_stalker')}</span>
             <span>{t('entity_faction_backrooms')}</span>
           </div>
-          {heroes.map((hero: Hero, idx) => {
-            const tc = tierColor(hero.tier);
-            const Icon = HERO_ICONS[hero.id] || Skull;
+          {entities.map((entity: Entity, idx) => {
+            const tc = tierColor(entity.tier);
+            const Icon = entity.icon || Skull;
             return (
-              <Link key={hero.id} href="/entities" className="grid grid-cols-[2rem_1fr_1fr_1fr_1fr] sm:grid-cols-[2.5rem_1.5fr_5rem_1fr_1fr] items-center gap-x-4 px-4 py-3 border-b border-white/[0.04] last:border-b-0 hover:bg-[var(--color-accent)]/5 transition-colors group">
+              <Link key={entity.id} href="/entities" className="grid grid-cols-[2rem_1fr_1fr_1fr_1fr] sm:grid-cols-[2.5rem_1.5fr_5rem_1fr_1fr] items-center gap-x-4 px-4 py-3 border-b border-white/[0.04] last:border-b-0 hover:bg-[var(--color-accent)]/5 transition-colors group">
                 <span className="text-xs font-mono text-[var(--color-text-muted)]">{idx + 1}</span>
                 <span className="flex items-center gap-2 min-w-0">
                   <Icon className="w-4 h-4 text-[var(--color-accent)] shrink-0" />
-                  <span className="font-semibold text-sm group-hover:text-[var(--color-accent)] transition-colors truncate">{translate(t, hero.nameKey) || hero.id}</span>
+                  <span className="font-semibold text-sm group-hover:text-[var(--color-accent)] transition-colors truncate">{translate(t, entity.nameKey) || entity.id}</span>
                 </span>
-                <span><span className="text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ color: tc, background: `${tc}15` }}>{hero.tier}</span></span>
-                <span className="text-xs text-[var(--color-text-secondary)]">{translate(t, hero.ailmentKey)}</span>
-                <span className="text-xs text-[var(--color-text-secondary)]">{translate(t, hero.factionKey)}</span>
+                <span><span className="text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ color: tc, background: `${tc}15` }}>{entity.tier}</span></span>
+                <span className="text-xs text-[var(--color-text-secondary)]">{translate(t, entity.behaviorKey)}</span>
+                <span className="text-xs text-[var(--color-text-secondary)]">{translate(t, entity.counterKey)}</span>
               </Link>
             );
           })}
