@@ -1,0 +1,260 @@
+export const metadata = {
+  id: "audio-cues-detailed",
+  slug: "audio-cues-detailed",
+  order: 10,
+  difficulty: "advanced",
+  title: "Clark (EARLY ACCESS) - Huss Rooms Audio Cues Detailed: Complete Sound Reference",
+  description: "Complete Clark Huss rooms audio cues reference — breathing cadence, heartbeat patterns, footstep variations, whisper fragments, and environmental sound mapping.",
+  keywords: ["Clark Huss rooms audio cues", "Clark Huss rooms audio tells", "Clark Huss rooms sound design", "Clark Huss rooms breathing cadence", "Clark Huss rooms heartbeat"],
+  image: "/images/guides/audio-cues-detailed.webp",
+  video: "LnqTBjulm00",
+  category: "guides",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+Audio cues in Clark Huss rooms are not just sound effects. They are the primary information channel that the game uses to communicate Clark's position, alertness state, and behavioral pattern. Every veteran player you see clearing runs is interpreting these cues in real time without conscious effort. New players hear the same sounds but cannot translate them into actionable information, which is the gap that keeps them dying early.
+
+This guide provides a complete reference for every audio cue in the game, the exact conditions that trigger each one, and the actionable response for each cue. You will also learn how to distinguish Clark audio from environmental audio and how audio cues change as the run progresses.
+
+## The Audio Cue Taxonomy
+
+Clark Huss rooms uses roughly twenty distinct audio cues that fall into four categories. Understanding the categories helps you prioritize listening attention.
+
+### **Audio cue categories:**
+
+| Category | Cue Count | Priority |
+|----------|-----------|----------|
+| Clark entity audio | 6 | Highest |
+| Environmental audio | 7 | Medium |
+| Player-generated audio | 5 | Lowest |
+| Server state audio | 2 | Special |
+
+Player-generated audio is your own footsteps, flashlight clicks, and collisions. You should hear your own audio at low volume because it helps you maintain discipline. Server state audio includes the lobby ambient and the match timer.
+
+## Clark Entity Audio Cues
+
+Clark produces six distinct audio cues that communicate his position, alertness, and behavioral state. Each cue has a specific trigger condition and actionable response.
+
+### **The six Clark audio cues:**
+
+| Cue | Trigger Condition | Sound Characteristics | Distance Indicator | Response |
+|-----|-------------------|----------------------|---------------------|----------|
+| Heartbeat | Clark is 2+ corridors away, unaware | Low pulse, regular rhythm | Volume scales with proximity | Continue current pace |
+| Breathing | Clark is 1 corridor away, aware | Rhythmic exhale, deeper pitch than player breathing | Medium volume | Pause, assess direction |
+| Footstep thuds | Clark is in adjacent room | Heavy, slow, distinct from player footsteps | Loud | Move to escape route |
+| Whisper fragments | Clark has high alertness | Soft, distorted words, intermittent | Variable | Prepare for chase |
+| Sprint burst | Clark is in active chase | Loud rapid footsteps, sudden onset | Very loud | Full sprint, flashlight off |
+| Vocalization | Clark is in detection range | Single-word mutter, rare | Close | Immediate evasion |
+
+The six cues form a progression from distant (heartbeat) to immediate (vocalization). Veterans learn to identify the cue within one second of hearing it.
+
+## Heartbeat Cue Analysis
+
+The heartbeat is Clark's most common cue because it plays continuously when he is in the server. The heartbeat's rhythm and volume communicate his alertness state.
+
+### **Heartbeat variations:**
+
+| Variation | BPM Range | Meaning |
+|-----------|-----------|---------|
+| Slow heartbeat | 50 — 60 BPM | Clark patrolling, unaware |
+| Normal heartbeat | 60 — 80 BPM | Clark investigating, mildly alert |
+| Fast heartbeat | 80 — 100 BPM | Clark tracking, alert |
+| Racing heartbeat | 100+ BPM | Clark in pursuit, highly alert |
+
+The BPM is audible to the trained ear, but you can also estimate it by counting beats during a ten-second window and multiplying by six. Veterans count automatically without thinking about it.
+
+## Breathing Cadence Analysis
+
+Clark's breathing is the second most common cue and the most informative. The breathing cadence (rhythm pattern) tells you his alertness state, and the volume tells you distance.
+
+### **Breathing cadence patterns:**
+
+| Pattern | Cadence | Alertness State |
+|---------|---------|-----------------|
+| Slow exhale | One breath per 4 seconds | Calm patrol |
+| Normal exhale | One breath per 2 seconds | Mildly alert |
+| Rapid exhale | One breath per second | Active tracking |
+| Irregular exhale | Variable | High alertness, possible chase |
+
+The breathing cadence also has a directional component. Because Clark's breathing comes from his position, you can determine his direction by listening for stereo separation in your headphones. Left-channel dominant means Clark is to the left. Right-channel dominant means Clark is to the right.
+
+## Footstep Thud Analysis
+
+Clark's footsteps are distinct from player footsteps in three ways: they are louder, slower, and have a heavier impact sound. The footstep thuds are the primary cue when Clark is in an adjacent room.
+
+**Footstep variations:**
+
+| Variation | Sound | Distance |
+|-----------|-------|----------|
+| Slow thuds | Two per second | Adjacent room |
+| Normal thuds | Three per second | Same corridor, distant |
+| Rapid thuds | Four per second | Active chase |
+| Sprint thuds | Six per second | Direct pursuit |
+
+The thud pattern changes when Clark's behavioral state changes. A sudden shift from slow thuds to rapid thuds indicates he has detected you and is moving to engage.
+
+## Whisper Fragment Analysis
+
+Whisper fragments are the most distinctive Clark cue because they include actual vocalized words, though distorted. The fragments indicate elevated alertness and are a warning before chase.
+
+**Whisper fragment variations:**
+
+| Fragment Type | Sound | Trigger |
+|---------------|-------|---------|
+| Single word | "Here..." | Clark has audio confirmation of your position |
+| Repeated fragment | "Here... here..." | Clark is tracking your movement |
+| Whispered phrase | "Where are you" | Clark is searching based on residual audio |
+| Multiple fragments | Rapid succession | Clark has line of sight, chase imminent |
+
+Whisper fragments are rare because they only trigger when Clark is highly alert. New players often miss them because they are soft, but veterans listen specifically for whispers as the prelude to chase.
+
+## Environmental Audio Cues
+
+Environmental audio is not Clark but provides information about the corridor layout, locked doors, and safe zones. Environmental cues are lower priority than Clark cues but still important.
+
+**Environmental audio cues:**
+
+| Cue | Sound | Meaning |
+|-----|-------|---------|
+| Fluorescent buzz | Constant hum | Standard corridor ambient |
+| Door lock click | Sharp click | Locked door nearby |
+| Air vent hum | Low rumble | Open room ahead |
+| Echo chamber | Long reverb | Large room nearby |
+| Dripping water | Intermittent drops | Decoration only |
+| Paper rustle | Soft crinkle | Hidden item location |
+| Mechanical whir | Sustained mechanical sound | Special event zone |
+
+Environmental audio provides navigation information. New players ignore it, but veterans use it to build their corridor map.
+
+## Player-Generated Audio Cues
+
+Your own player produces audio that Clark can detect. Understanding your own audio footprint helps you minimize Clark's detection chance.
+
+**Player audio cues:**
+
+| Cue | Sound | Clark Detection |
+|-----|-------|-----------------|
+| Walking footsteps | Soft, regular | Low detection (5 meters) |
+| Sprinting footsteps | Loud, rapid | High detection (12 meters) |
+| Flashlight click | Brief click | Medium detection (6 meters) |
+| Collision | Sudden loud thud | Very high detection (15 meters) |
+| Voice chat | Variable volume | Detection scales with volume |
+
+The audio detection ranges are not displayed in-game, but community testing has measured them approximately. Sprinting is the loudest player action and should be reserved for chases only.
+
+## Server State Audio Cues
+
+Server state audio includes the lobby ambient sounds and the match timer. These cues provide information about run duration and lobby state.
+
+**Server state cues:**
+
+| Cue | Sound | Meaning |
+|-----|-------|---------|
+| Lobby ambient | Soft yellow hum | Pre-server-lock state |
+| Match timer tick | Regular click | Server lock active, time tracking |
+| Server shutdown warning | Ascending tone | Match ending soon |
+| Match start chime | Single bell | New match beginning |
+| Match end chime | Three bells | Match complete |
+
+Server state cues are the lowest priority but useful for tracking run duration and planning escape timing.
+
+## Directional Audio Localization
+
+Directional audio localization is the skill of identifying which direction a sound comes from. The skill requires stereo headphones and training.
+
+**Localization training sequence:**
+
+1. **Stage One — Stereo Identification:** play a sound and identify whether it is left or right dominant
+2. **Stage Two — Front-Back Identification:** play a sound and identify whether it is in front or behind
+3. **Stage Three — Distance Estimation:** play a sound and estimate distance in corridor counts
+4. **Stage Four — Movement Tracking:** play a moving sound and track its trajectory
+5. **Stage Five — Mixed Environment:** play multiple sounds simultaneously and localize each one
+
+Each stage takes about fifteen minutes of focused practice. The full sequence builds localization skills that transfer to gameplay automatically.
+
+## Audio Cue Response Decision Tree
+
+When you hear an audio cue, you have roughly two seconds to respond before the situation changes. The decision tree below maps every common cue to the correct response.
+
+**Decision tree:**
+
+| Cue | Response |
+|-----|----------|
+| Heartbeat (slow) | Continue walking, normal flashlight use |
+| Heartbeat (normal) | Reduce flashlight to click-only |
+| Heartbeat (fast) | Switch to audio-only navigation |
+| Breathing (slow) | Pause one second, identify direction |
+| Breathing (rapid) | Move to escape route, no flashlight |
+| Footstep thuds | Identify adjacent room, prepare escape |
+| Sprint burst | Full sprint, flashlight off, corner break |
+| Whisper fragments | Immediate evasion, lose audio trail |
+| Voice chat (squad) | Factual callout only |
+| Collision | Pause, reassess, may indicate Clark proximity |
+
+The decision tree becomes automatic after ten hours of practice. Veterans execute it without conscious thought.
+
+## Audio Cue Evolution Across Runs
+
+The audio cues evolve as the run progresses because Clark's behavioral patterns shift. Understanding the evolution helps you prepare for each phase.
+
+**Run phase audio evolution:**
+
+| Phase | Duration | Clark Audio Behavior |
+|-------|----------|----------------------|
+| Lobby | 0 — 90 sec | Heartbeat only, distant |
+| Early game | 90 sec — 3 min | Heartbeat with occasional breathing |
+| Mid game | 3 — 6 min | Mixed cues, increased frequency |
+| Late game | 6+ min | Continuous cues, frequent whispers |
+| Endgame | 9+ min | Chase-heavy, sprint burst common |
+
+The evolution is not strict because Clark's behavior has procedural variation, but the general pattern holds. Veterans adjust their flashlight usage and movement pace based on the phase.
+
+## Frequently Asked Questions
+
+**What is the most important audio cue to learn first?**
+
+The breathing cadence. It carries distance, direction, and alertness state in a single cue. Master breathing detection before any other cue.
+
+**Can I learn audio cues without playing the game?**
+
+Yes. Community audio training tools isolate cues for practice. You can learn the basic recognition in twenty minutes of tool-based training.
+
+**Do audio cues change between patches?**
+
+Sometimes. During Early Access, the developer may tweak cue volumes or add new variants. Check the patch tracker regularly for audio-related changes.
+
+**What if my headphones have poor stereo separation?**
+
+Even budget stereo headphones provide usable directional audio. If your current setup is mono (single speaker), you cannot play effectively.
+
+**How do I distinguish my own breathing from Clark's?**
+
+Your breathing is a soft inhale-exhale from your own position, heard equally in both ears. Clark's breathing is deeper pitched and comes from a directional source. The volume test is reliable: if you hear it equally in both ears, it is your own breathing.
+
+For more on the directional audio setup that maximizes cue clarity, see our [audio navigation guide](/en/guides/audio-navigation/). To learn the flashlight discipline that pairs with audio monitoring, read [flashlight mechanics](/en/guides/flashlight-mechanics/).
+
+
+**How do I share my tools and discoveries with the community?**
+
+The community Wiki and Discord are the main channels for sharing tools. Wiki contributions follow editorial standards, while Discord allows informal sharing with less structure. Most successful tools originate from individual contributors who identify gaps in available resources, then collaborate with the community to refine their approach. If you create a useful tool, document it clearly with input/output specifications and usage examples so others can adopt it without confusion.
+
+**What should I do if a tool I depend on stops working?**
+
+Report the issue immediately through the tool's documented feedback channel. For Wiki-based tools, use the discussion page. For Discord-shared tools, contact the creator directly. Most community tool maintainers are responsive to bug reports and appreciate the heads up. While waiting for a fix, switch to alternative tools or manual methods. Document your workaround so other affected users can benefit from your temporary solution.
+
+**Can I trust third-party tools with my account information?**
+
+Never share account credentials with any tool. Legitimate tools operate through the game's public interface and do not require login. If a tool asks for your Roblox password, it is not legitimate regardless of its claimed purpose. For personalized features like statistics tracking, the tool should ask only for your in-game username (which is public), not your password.
+
+**How long does it take to learn a new tool?**
+
+Most community tools have intuitive interfaces that allow basic use within minutes. Mastery typically takes 1 — 2 weeks of regular use, depending on the tool's complexity. Audio analyzers require more time because the training methodology has multiple stages. Battery calculators and patch trackers are simpler and easier to learn. Community Discord channels often have veteran users willing to help newcomers through the learning curve.
+
+**Should I use multiple tools simultaneously?**
+
+Yes, complementary tools enhance each other. For example, using an audio analyzer alongside a battery calculator provides both audio skill development and resource management planning. The key is ensuring the tools do not conflict with each other or overwhelm you with information. Start with one or two essential tools, then add more as you become comfortable.
+
+**How do I know if a tool is high quality?**
+
+Quality indicators include active maintenance, community discussion, clear documentation, regular updates, and positive veteran endorsements. Tools that have not been updated in months may be abandoned. Tools with active Discord channels and responsive maintainers tend to be more reliable. Community reputation is a strong quality indicator.

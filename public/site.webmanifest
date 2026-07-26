@@ -1,0 +1,13 @@
+{
+  "name": "Clark (EARLY ACCESS) - Huss rooms Wiki",
+  "short_name": "Huss Rooms Wiki",
+  "description": "Complete wiki for Clark (EARLY ACCESS) - Huss rooms on Roblox — survival guides, Clark entity analysis, strategy tier list, flashlight discipline, multiplayer coordination, and update tracking.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1117",
+  "theme_color": "#e94560",
+  "icons": [
+    { "src": "/favicon-96x96.png", "sizes": "96x96", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

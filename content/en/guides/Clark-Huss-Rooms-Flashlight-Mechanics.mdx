@@ -1,0 +1,203 @@
+export const metadata = {
+  id: "flashlight-mechanics",
+  slug: "flashlight-mechanics",
+  order: 3,
+  difficulty: "intermediate",
+  title: "Clark (EARLY ACCESS) - Huss Rooms Flashlight Mechanics: Battery Discipline Guide",
+  description: "Complete Clark Huss rooms flashlight mechanics guide — click vs hold, battery conservation, light exposure risk to Clark, and tactical flashlight usage patterns.",
+  keywords: ["Clark Huss rooms flashlight mechanics", "Clark Huss rooms flashlight battery", "Clark Huss rooms light discipline", "Clark Huss rooms flashlight click", "Clark Huss rooms battery conservation"],
+  image: "/images/guides/flashlight-mechanics.webp",
+  video: "0HU7nDM4PvU",
+  category: "guides",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+The flashlight in Clark Huss rooms is the only tool you carry, and it is also the primary way Clark finds you. This dual nature makes flashlight management the highest-skill mechanic in the game, because every click trades information for exposure. New players hold the flashlight on continuously for comfort and die with battery still showing fifty percent. Veterans use single clicks that last half a second and survive twice as long with the same starting battery.
+
+This guide explains the exact battery costs of every flashlight action, the math behind Clark's light-detection mechanic, and the discipline framework that separates flashlight spamming from flashlight mastery. You will also learn how to coordinate flashlight use in a squad and the common patterns that waste battery without providing information.
+
+## Flashlight Battery Cost Reference
+
+The battery cost per flashlight action is not displayed anywhere in the game, which is why new players underestimate how fast their battery drains. The cost structure is consistent across runs, so veterans have measured it through community testing.
+
+| Flashlight Action | Duration | Battery Cost | Information Gained |
+|-------------------|----------|--------------|---------------------|
+| Single click (toggle on/off) | 0.3 sec | 1% | Wall texture, corner outline |
+| Double click rapid | 0.6 sec | 3% | Full corridor scan, entity silhouette |
+| Hold (continuous) | 1 sec | 5% | Deep room reveal, item visibility |
+| Hold (continuous) | 3 sec | 12% | Maximum visibility, maximum Clark alert |
+| Toggle on permanently | Constant drain | Drains in 40 sec | Maximum information, minimum survival time |
+
+The full battery starts at 100% and the indicator updates every five seconds. When the bar reaches red, you have roughly fifteen seconds of click-style flashlight left and zero seconds of sustained beam. Plan your remaining clicks accordingly.
+
+## The Light Exposure Mechanic: How Clark Detects You
+
+Clark does not see your flashlight beam the way a human sees light. He detects it through a combination of audio signature and a unique detection radius tied to your flashlight state.
+
+### **Detection radius by flashlight state:**
+
+| State | Clark Detection Radius | Notes |
+|-------|------------------------|-------|
+| Flashlight off, walking | 5 meters | Standard audio footprint only |
+| Flashlight off, sprinting | 12 meters | Sprint audio is loud |
+| Flashlight single click | 6 meters | Brief visual signal, audio unchanged |
+| Flashlight sustained | 18 meters | Light penetrates one wall, strong signal |
+| Flashlight flicker (rapid clicks) | 9 meters | Intermediate signal, confusing to read |
+
+The key mechanic is wall penetration. When you hold the flashlight on, the light source penetrates through one additional wall layer, which means Clark can detect you even when you are around a corner or in an adjacent room. This is why a sustained beam in a wrong corridor is essentially a beacon to Clark.
+
+**Practical implication:** the most dangerous flashlight moment is when you enter a new room and instinctively hold the beam on while scanning. Clark can detect you from two rooms away during that scan. Click instead.
+
+## Click Patterns That Work
+
+The click pattern you use determines how much information you get per battery percent. Here are the patterns veterans actually use, with measured effectiveness.
+
+**Pattern 1: The Corner Check** — approach a corner, click once for 0.3 seconds, listen for one second, then click again if you need a second look. Battery cost: 2%. Information: full corner geometry plus any Clark audio tells.
+
+**Pattern 2: The Room Scan** — enter a doorway, click three times in rapid succession covering left, center, right, then walk in. Battery cost: 9%. Information: room layout, items, exit indicators, Clark silhouette if present.
+
+**Pattern 3: The Threat Confirm** — you heard Clark audio tells, click once in the suspected direction to confirm his position. Battery cost: 1%. Information: Clark silhouette visible, his movement direction confirmed.
+
+**Pattern 4: The Squeeze** — flashlight off entirely, navigate using only audio for an entire corridor section. Battery cost: 0%. Information: pure audio tells, maximum stealth.
+
+**Pattern 5: The Squad Sync** — light manager clicks once, squad moves during the 0.3-second window, then everyone freezes during the next audio monitoring window. Battery cost: minimal per player. Information: coordinated safe movement.
+
+## Battery Conservation Framework
+
+Battery conservation is not about using less light. It is about using light at moments that return the most information per cost. Here is the framework veterans use.
+
+**The 50% Threshold Rule:** once your battery drops below 50%, switch to click-only mode. No sustained beams below the threshold. This reserves enough battery for emergency situations in the late game.
+
+**The Information Per Click Test:** before every click, ask whether the click will give you information you cannot get from audio alone. If the answer is no, do not click.
+
+**The Clark Proximity Modifier:** if you have heard Clark's breathing within the last thirty seconds, multiply your click frequency by 0.5. Every click during a Clark audio event is double exposure.
+
+**The Squad Battery Average:** in multiplayer, the squad battery is the average of all players. When one player hits 20%, the squad should switch to that player's pace regardless of others' remaining battery.
+
+| Battery Range | Recommended Mode | Reasoning |
+|---------------|------------------|-----------|
+| 100% — 70% | Standard click pattern | Plenty of battery, use it confidently |
+| 70% — 50% | Conservative clicks | Save for late-game emergencies |
+| 50% — 25% | Click only, no double-clicks | Reserve for Clark confirmations |
+| 25% — 10% | One click per major decision | Final reserves, do not waste |
+| 10% — 0% | Flashlight off entirely | Audio-only navigation |
+
+## Light Discipline Mistakes
+
+These mistakes waste battery and increase Clark exposure. New players fall into all of them.
+
+**Mistake 1: The Comfort Hold** — holding the flashlight on continuously because the dark feels uncomfortable. Battery drains forty seconds, and Clark detects you from twice the normal range.
+
+**Mistake 2: The Panic Click** — clicking rapidly when Clark audio tells spike. Each click increases your exposure without adding information.
+
+**Mistake 3: The Click-Walk-Click Pattern** — clicking, walking five steps, clicking again. The walking audio footprint is louder than the click, and you learn nothing from a click while already walking.
+
+**Mistake 4: The Shared Light Assumption** — assuming your squad member's flashlight protects you. Each flashlight is a separate exposure source. Clark detects the closest one.
+
+**Mistake 5: The Pre-Click** — clicking before you reach a corner "just in case." The click reveals nothing because you have not yet reached the geometry that matters.
+
+## Squad Flashlight Coordination
+
+Multiplayer flashlight coordination multiplies effectiveness because the squad shares visual coverage while keeping individual battery consumption low. The system requires discipline.
+
+**The Light Manager Role:** one player controls flashlight timing for the entire squad. Their clicks are timed to give the squad one second of visual confirmation, then everyone walks in the dark during the next window.
+
+**The Three-Click Sync:** at major decision points (junctions, doors, open rooms), the light manager clicks three times. Each click covers a different direction. Squad members use the brief windows to confirm their own path.
+
+**The Battery Rotation:** in a four-player squad, each player takes a turn as light manager for one minute. This distributes battery cost evenly and prevents any single player from depleting early.
+
+**The Emergency Callout:** if a squad member is at 10% battery, they call "battery critical" and the squad switches to audio-only for the next thirty seconds. This buys the low-battery player recovery time.
+
+## The Clark Cooldown Window
+
+When Clark retreats after a failed detection, there is a thirty-second window where his audio sensitivity drops by roughly fifty percent. This is the window where flashlight use is least penalized.
+
+### **Cooldown window timing:**
+
+| Event | Cooldown Window | Safe Flashlight Behavior |
+|-------|-----------------|--------------------------|
+| Clark retreats after missed detection | 30 sec | Click freely, he is not actively listening |
+| Clark enters new corridor zone | 20 sec | Moderate clicks, he is orienting |
+| Clark in active chase | 0 sec | Flashlight off, sprint only |
+| Silence (no Clark audio) | Variable | Click conservatively, listen first |
+
+Veterans learn to count to thirty silently after Clark retreats, and they use those thirty seconds for the bulk of their flashlight exploration. This single technique can double your effective battery life.
+
+## Battery Indicator Reading
+
+The flashlight battery UI indicator is a horizontal bar with three color states. Many players misinterpret the colors, leading to premature depletion or false confidence.
+
+### **Color state reference:**
+
+| Color | Battery Range | Visual Cue |
+|-------|---------------|------------|
+| Green | 100% — 50% | Full bar, no warning needed |
+| Yellow | 50% — 20% | Half bar, switch to click-only mode |
+| Red | 20% — 0% | Short bar, audio-only navigation |
+| Flashing red | 5% — 0% | Flashlight turns off automatically soon |
+
+The indicator updates every five seconds, so the color lag can mislead you. If you see yellow, assume you have less time than the bar shows. If you see red, assume you have ten seconds, not fifteen.
+
+## When to Use Sustained Light
+
+Sustained light is justified only in specific situations. Outside these moments, click discipline is always superior.
+
+### **Justified sustained light moments:**
+
+1. Entering a room you have never seen — three-second scan reveals layout, items, exit hints
+2. Confirming a Clark sighting — hold beam on his silhouette to confirm location before retreating
+3. Rescuing a downed squad member — sustained light to navigate while carrying them
+4. Final room before extraction — maximum visibility to spot the exit door indicator
+5. Item pickup verification — items have small hitboxes, sustained beam confirms contact
+
+Outside these five situations, sustained light is a habit to break. If you catch yourself holding the beam on for more than two seconds, click it off and reset.
+
+## Frequently Asked Questions
+
+**Does turning off the flashlight completely hide me from Clark?**
+
+No. Clark can still hear your footsteps, collisions, and voice chat. The flashlight is one of three detection sources. Audio footprint and movement speed matter equally.
+
+**Is there a flashlight upgrade in the game?**
+
+No. The flashlight is a fixed tool with fixed battery capacity. The only variable is how you use it.
+
+**Can I recharge the battery during a run?**
+
+No. There is no battery recharge mechanic. Once depleted, the flashlight is off for the rest of the run.
+
+**Does sprinting drain flashlight battery?**
+
+No, but sprinting combined with sustained flashlight is the worst-case scenario because it combines audio footprint and light exposure. Avoid sprinting with the flashlight on.
+
+**Why does my flashlight click sometimes not register?**
+
+Network latency can cause click inputs to delay by 100 to 200 milliseconds. If you click and the flashlight does not respond, wait a full second before clicking again to avoid double-clicks.
+
+For more on the audio mechanics that pair with flashlight discipline, see our [audio navigation guide](/en/guides/audio-navigation/). To understand Clark's specific detection behavior, read [Clark entity anatomy](/en/entities/clark-entity-anatomy/).
+
+
+**How do I share my tools and discoveries with the community?**
+
+The community Wiki and Discord are the main channels for sharing tools. Wiki contributions follow editorial standards, while Discord allows informal sharing with less structure. Most successful tools originate from individual contributors who identify gaps in available resources, then collaborate with the community to refine their approach. If you create a useful tool, document it clearly with input/output specifications and usage examples so others can adopt it without confusion.
+
+**What should I do if a tool I depend on stops working?**
+
+Report the issue immediately through the tool's documented feedback channel. For Wiki-based tools, use the discussion page. For Discord-shared tools, contact the creator directly. Most community tool maintainers are responsive to bug reports and appreciate the heads up. While waiting for a fix, switch to alternative tools or manual methods. Document your workaround so other affected users can benefit from your temporary solution.
+
+**Can I trust third-party tools with my account information?**
+
+Never share account credentials with any tool. Legitimate tools operate through the game's public interface and do not require login. If a tool asks for your Roblox password, it is not legitimate regardless of its claimed purpose. For personalized features like statistics tracking, the tool should ask only for your in-game username (which is public), not your password.
+
+**How long does it take to learn a new tool?**
+
+Most community tools have intuitive interfaces that allow basic use within minutes. Mastery typically takes 1 — 2 weeks of regular use, depending on the tool's complexity. Audio analyzers require more time because the training methodology has multiple stages. Battery calculators and patch trackers are simpler and easier to learn. Community Discord channels often have veteran users willing to help newcomers through the learning curve.
+
+**Should I use multiple tools simultaneously?**
+
+Yes, complementary tools enhance each other. For example, using an audio analyzer alongside a battery calculator provides both audio skill development and resource management planning. The key is ensuring the tools do not conflict with each other or overwhelm you with information. Start with one or two essential tools, then add more as you become comfortable.
+
+**How do I know if a tool is high quality?**
+
+Quality indicators include active maintenance, community discussion, clear documentation, regular updates, and positive veteran endorsements. Tools that have not been updated in months may be abandoned. Tools with active Discord channels and responsive maintainers tend to be more reliable. Community reputation is a strong quality indicator.

@@ -1,0 +1,220 @@
+export const metadata = {
+  id: "escaping-clark",
+  slug: "escaping-clark",
+  order: 5,
+  difficulty: "advanced",
+  title: "Clark (EARLY ACCESS) - Huss Rooms Escaping Clark: Retreat Tactics and Routes",
+  description: "Learn Clark Huss rooms escape tactics — retreat decision tree, line-of-sight breaking, escape route planning, and last-second evasion techniques.",
+  keywords: ["Clark Huss rooms escaping Clark", "Clark Huss rooms retreat", "Clark Huss rooms escape route", "Clark Huss rooms how to survive Clark", "Clark Huss rooms evade"],
+  image: "/images/guides/escaping-clark.webp",
+  video: "V25QtaPsTGg",
+  category: "guides",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+Escaping Clark in Huss rooms is not about running faster than him, because he is faster than your sprint speed in most scenarios. Escape is about breaking his audio tracking, using line of sight to your advantage, and choosing retreat paths that exploit his behavioral cooldown windows. New players panic and sprint in the wrong direction, which guarantees the run ends. Veterans execute a calculated retreat that buys enough time for Clark to disengage.
+
+This guide covers the retreat decision tree, the geometry of escape routes, and the line-of-sight mechanics that determine whether Clark can follow you. You will also learn the timing windows when Clark disengages, the mistakes that guarantee a failed escape, and the squad escape patterns that work in multiplayer.
+
+## The Escape Decision Tree
+
+When you confirm Clark is aware of your position (through breathing cadence or heartbeat proximity), you have roughly five seconds to choose your response. The decision tree below maps every scenario to the correct action.
+
+### **Decision tree by Clark proximity:**
+
+| Clark Audio Tell | Distance Estimate | Recommended Action |
+|------------------|-------------------|--------------------|
+| Heartbeat only | 2+ corridors | Continue current path, do not change behavior |
+| Breathing cadence | 1 corridor | Stop, click flashlight once, confirm direction |
+| Footstep thuds | Adjacent room | Move to escape route immediately |
+| Whisper fragments | Same corridor | Sprint to line-of-sight break |
+| Sprint burst | Active chase | Full sprint, no flashlight, prioritize distance |
+
+The key insight is that each audio tell corresponds to a different escape response. New players treat all Clark audio as the same threat, which causes them to overreact to distant heartbeats and underreact to close whispers.
+
+## Line of Sight Mechanics
+
+Clark tracks players through a combination of audio and visual signals. Line of sight is the visual component: if Clark can see your character model, he can pathfind directly to you. If line of sight is broken, he must rely on audio tracking, which is much easier to confuse.
+
+### **Line of sight states:**
+
+| State | Clark Tracking Quality | Counter-Strategy |
+|-------|------------------------|-------------------|
+| Direct line of sight | High accuracy, fast pursuit | Break line of sight immediately |
+| Wall between (one layer) | Reduced accuracy, slower pursuit | Continue moving, create distance |
+| Wall between (two layers) | Audio tracking only | Use audio to mislead him |
+| Multiple turns between | Loses target unless audio sustains | Confuse with deliberate footsteps |
+
+Line of sight breaks when you turn a corner and Clark's visual detection fails to re-acquire you. This gives you a three-second window where he relies on audio, which is the window where you can break his tracking.
+
+## Escape Route Geometry
+
+The geometry of escape routes determines whether Clark can predict your path. Predictable escape routes fail because Clark learns from audio patterns. Variable routes succeed.
+
+### **The four escape route types:**
+
+1. **The Straight Sprint:** run directly away from Clark's last known position. Works only if you have enough stamina and he is at distant heartbeat. Fails if he is in active chase.
+
+2. **The Corner Break:** sprint to the nearest corner, turn sharply, then turn again. Each corner breaks line of sight and resets his visual tracking. Most reliable escape.
+
+3. **The Door Hop:** sprint through a doorway, close it behind you if possible. Doors block Clark's audio tracking temporarily because he pauses to interact with them.
+
+4. **The Dead End Feint:** sprint toward a dead end, then turn around and double back. Clark commits to following the audio trail, which means he overshoots your position. Risky but effective.
+
+The corner break is the most reliable escape route because it compounds line-of-sight breaks. Every corner adds three seconds of audio-only tracking for Clark, and he often loses the trail after two consecutive corners.
+
+## Clark's Disengage Windows
+
+Clark does not chase indefinitely. After a sustained chase, he enters a cooldown window where his audio sensitivity drops and he patrols instead of pursuing. Understanding this window is critical to escape timing.
+
+### **Disengage window timing:**
+
+| Event | Disengage Window | Safe Behavior |
+|-------|------------------|---------------|
+| Clark enters chase | 0 sec | Sprint, no flashlight |
+| Clark loses audio trail | 15 — 30 sec | Move cautiously, clicks allowed |
+| Clark enters new corridor zone | 20 — 45 sec | Resume audio-first navigation |
+| Clark patrols away from your area | 30 — 60 sec | Rebuild stamina, click flashlight once |
+
+The fifteen-second window after Clark loses the audio trail is the danger period because he may re-acquire through residual sound. The thirty-second mark is the safe period where his attention has shifted.
+
+## Last-Second Evasion Techniques
+
+When Clark is actively chasing and you have less than three seconds before contact, specific evasion techniques can save the run. These are emergency moves that cost stamina but buy distance.
+
+**Technique 1: The Sprint-Cancel Sprint.** Sprint for two seconds, release sprint, then immediately sprint again. The release creates a brief audio gap that confuses Clark's tracking. Effective if you have full stamina.
+
+**Technique 2: The Collision Sprint.** Sprint directly into a wall. The collision sound is loud but brief, and Clark will pathfind to the collision point rather than your current position. Use this when you are about to be cornered.
+
+**Technique 3: The Flashlight Decoy.** Click flashlight rapidly in one direction, then sprint in the opposite direction. Clark's audio detection temporarily focuses on the flashlight clicks. Works only if Clark is using visual tracking.
+
+**Technique 4: The Crouch Slide.** If the controls allow crouching, crouch and slide under Clark's audio detection cone. The reduced movement speed makes you a quieter target. Last resort because it sacrifices sprint speed.
+
+**Technique 5: The Squad Sacrifice.** In multiplayer, one player sprints loudly in one direction while the squad sprints silently in another. Clark follows the loud audio trail. High-cost tactic because the sacrificed player usually dies.
+
+## Squad Escape Patterns
+
+Multiplayer escape requires coordinated movement because Clark targets isolated players. The squad patterns below are proven to work in high-pressure situations.
+
+**The Wedge Formation:** squad moves in a wedge shape with the lead at the front, rear guard at the back, and light manager in the center. When Clark approaches, the wedge pivots so the rear guard becomes the lead temporarily. Maintains formation integrity during retreat.
+
+**The Buddy System:** each player is paired with one squadmate. When Clark approaches, each buddy pair moves together, maintaining visual contact. Clark cannot isolate players who are always in pairs.
+
+**The Relay Flash:** the squad passes the light manager role during retreat. Player A clicks flashlight, squad moves during the click window. Player B clicks next, squad continues moving. This keeps flashlight coverage without any single player depleting battery.
+
+**The Stack Retreat:** the squad moves in a single-file line with the lead navigating and the rear guard monitoring Clark audio tells. When Clark approaches, the line accelerates together, and the rear guard calls out retreat directions.
+
+## Common Escape Mistakes
+
+These mistakes guarantee a failed escape. New players fall into them because panic overrides rational decision-making.
+
+**Mistake 1: Sprinting in a Straight Line.** Clark is faster than your sprint. Straight-line sprinting ends with him catching you within ten seconds.
+
+**Mistake 2: Sprinting Toward Clark.** "Fight or flight" instinct is wrong here. There is no fight option. Sprint away from his last known direction.
+
+**Mistake 3: Holding Flashlight During Chase.** Flashlight reveals your position through walls. During an active chase, the flashlight must be off.
+
+**Mistake 4: Splitting the Squad.** Isolation is Clark's primary targeting mechanism. Splitting the squad gives him multiple easy targets.
+
+**Mistake 5: Stopping to Reorient.** Once you commit to an escape route, do not stop. Stopping allows Clark to re-acquire through audio tracking.
+
+**Mistake 6: Opening Doors During Chase.** Opening doors slows you down and creates a tracking anchor for Clark. Only open doors if the route requires it.
+
+## Retreat Versus Stand-Ground Analysis
+
+Some scenarios favor retreat, others favor standing ground and letting Clark pass. The decision depends on stamina, flashlight battery, and squad position.
+
+**Favor retreat when:**
+
+- Stamina is above 50%
+- You have a clear escape route with two corner breaks available
+- Your squad is grouped and can move together
+- Clark is in active chase state
+
+**Favor stand-ground when:**
+
+- Stamina is below 30% and you cannot sprint effectively
+- You are in a room with only one entrance Clark must use
+- Your flashlight battery is critical and you cannot afford to waste it on movement
+- Clark has lost your audio trail and may pass by
+
+The stand-ground strategy works in specific corridor types (long straight hallway with one entry point) but fails in open rooms with multiple access points.
+
+## The Recovery Position
+
+After a successful escape, you enter a recovery window where you must rebuild stamina and re-establish your audio map. Skipping this window leads to repeated chases.
+
+**Recovery sequence:**
+
+1. **First Ten Seconds:** stop moving entirely, let stamina regenerate, click flashlight once to confirm no Clark nearby.
+2. **Next Twenty Seconds:** resume audio-first navigation, listen for any heartbeat or breathing tells.
+3. **Next Thirty Seconds:** rebuild your mental map of the area, note where Clark retreated to.
+4. **Beyond One Minute:** normal operation, but be aware that Clark's next patrol may bring him back.
+
+The recovery position is not optional. Skipping it and continuing at full speed guarantees the next chase starts before you have rebuilt stamina reserves.
+
+## Building Escape Routes Pre-emptively
+
+The best escape strategy is to identify escape routes before you need them. As you explore a new corridor section, always note the nearest corner break and door hop option.
+
+**Pre-emptive escape route mapping:**
+
+| Corridor Feature | Escape Route Use |
+|------------------|------------------|
+| T-junction | Corner break available in two directions |
+| Long straight hall | Sprint-cancel sprint technique |
+| Open room | Door hop if room has entry/exit door |
+| Curved corridor | Continuous corner break |
+| Dead end | Reverse direction, never sprint into dead end |
+
+Veterans build a mental escape map of every corridor they enter, and they update it whenever Clark's audio tells indicate his patrol direction. The investment of mental energy pays off when a chase starts and you already know where to go.
+
+## Frequently Asked Questions
+
+**Can I outrun Clark if I have full stamina?**
+
+No. Clark's sprint speed is roughly 1.3x your sprint speed. Sprinting in a straight line is always a losing strategy. You must break line of sight and confuse his audio tracking.
+
+**Does Clark give up if I hide in a room?**
+
+Sometimes. Clark loses interest if you stay silent for thirty seconds. However, if he has visual confirmation of your room entry, he will wait outside for longer. The room must have a second exit or he will eventually enter.
+
+**What is the best escape direction?**
+
+Away from his last confirmed direction, ideally with two corners between you. The corners break line of sight and reset his audio tracking.
+
+**Should I escape alone or with my squad?**
+
+With your squad, always. Clark targets isolated players because they are easier to track. A grouped squad has overlapping audio signals that confuse him.
+
+**What if Clark catches me mid-escape?**
+
+You die. There is no second chance within the same run. Focus on escape decisions that prevent contact, not on what happens if he catches you.
+
+For more on Clark's specific tracking behavior, see our [Clark entity anatomy guide](/en/entities/clark-entity-anatomy/). To learn squad formations that prevent isolation, read [multiplayer coordination](/en/multiplayer/co-op-survival-guide/).
+
+
+**How do I share my tools and discoveries with the community?**
+
+The community Wiki and Discord are the main channels for sharing tools. Wiki contributions follow editorial standards, while Discord allows informal sharing with less structure. Most successful tools originate from individual contributors who identify gaps in available resources, then collaborate with the community to refine their approach. If you create a useful tool, document it clearly with input/output specifications and usage examples so others can adopt it without confusion.
+
+**What should I do if a tool I depend on stops working?**
+
+Report the issue immediately through the tool's documented feedback channel. For Wiki-based tools, use the discussion page. For Discord-shared tools, contact the creator directly. Most community tool maintainers are responsive to bug reports and appreciate the heads up. While waiting for a fix, switch to alternative tools or manual methods. Document your workaround so other affected users can benefit from your temporary solution.
+
+**Can I trust third-party tools with my account information?**
+
+Never share account credentials with any tool. Legitimate tools operate through the game's public interface and do not require login. If a tool asks for your Roblox password, it is not legitimate regardless of its claimed purpose. For personalized features like statistics tracking, the tool should ask only for your in-game username (which is public), not your password.
+
+**How long does it take to learn a new tool?**
+
+Most community tools have intuitive interfaces that allow basic use within minutes. Mastery typically takes 1 — 2 weeks of regular use, depending on the tool's complexity. Audio analyzers require more time because the training methodology has multiple stages. Battery calculators and patch trackers are simpler and easier to learn. Community Discord channels often have veteran users willing to help newcomers through the learning curve.
+
+**Should I use multiple tools simultaneously?**
+
+Yes, complementary tools enhance each other. For example, using an audio analyzer alongside a battery calculator provides both audio skill development and resource management planning. The key is ensuring the tools do not conflict with each other or overwhelm you with information. Start with one or two essential tools, then add more as you become comfortable.
+
+**How do I know if a tool is high quality?**
+
+Quality indicators include active maintenance, community discussion, clear documentation, regular updates, and positive veteran endorsements. Tools that have not been updated in months may be abandoned. Tools with active Discord channels and responsive maintainers tend to be more reliable. Community reputation is a strong quality indicator.

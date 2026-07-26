@@ -1,0 +1,285 @@
+export const metadata = {
+  id: "audio-tracking-explained",
+  slug: "audio-tracking-explained",
+  order: 2,
+  difficulty: "advanced",
+  title: "Clark (EARLY ACCESS) - Huss Rooms Audio Tracking Explained: How Clark Listens",
+  description: "Clark Huss rooms audio tracking explained — how Clark detects players, sensitivity mechanics, audio masking, and counter-detection strategies.",
+  keywords: ["Clark Huss rooms audio tracking", "Clark Huss rooms how Clark listens", "Clark Huss rooms audio detection", "Clark Huss rooms tracking mechanic", "Clark Huss rooms audio masking"],
+  image: "/images/entities/audio-tracking-explained.webp",
+  video: "8n7B9BBiI3U",
+  category: "entities",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+Clark's audio tracking is the central mechanic that defines Clark Huss rooms gameplay. Unlike visual tracking in most horror games, Clark relies heavily on what he hears. Understanding exactly how Clark tracks players through audio, what sounds he notices most, and how to mask your audio footprint is essential for survival.
+
+This guide explains the audio tracking mechanics in detail, the detection range modifiers, the audio masking strategies that work against Clark, and the counter-detection techniques veterans use. You will also learn about Clark's audio attention allocation and how to exploit his priority system.
+
+## How Clark's Audio Tracking Works
+
+Clark's audio tracking is a layered system that combines distance, sound type, and player behavior to determine detection. The system runs continuously during a run.
+
+### **Audio tracking pipeline:**
+
+| Stage | Process | Output |
+|-------|---------|--------|
+| 1 | Capture audio sources | Raw sound data |
+| 2 | Classify sound types | Sprint/click/voice/etc. |
+| 3 | Calculate distance | Volume-distance curve |
+| 4 | Apply modifiers | Sensitivity boosts |
+| 5 | Determine state transition | Escalation decision |
+| 6 | Update tracking | Path to target |
+
+The pipeline runs every frame, meaning Clark's detection is real-time. There is no delay between sound and detection.
+
+## Detection Range By Sound Type
+
+Each sound type has a specific detection range. The ranges below are measured approximately based on community testing.
+
+### **Detection range by sound:**
+
+| Sound Type | Detection Range | Notes |
+|------------|-----------------|-------|
+| Walking footsteps | 5 meters | Standard movement |
+| Sprinting footsteps | 12 meters | Loud burst |
+| Flashlight click | 6 meters | Brief signal |
+| Flashlight sustained | 18 meters | Wall-penetrating |
+| Collision with wall | 15 meters | Loud event |
+| Voice chat | Variable | Volume-dependent |
+| Player breathing | 3 meters | Close range only |
+
+The detection ranges are not displayed in-game but are approximated by community observation.
+
+## Sensitivity Modifiers
+
+Clark's audio sensitivity changes based on game state. The modifiers below affect all detection ranges.
+
+### **Sensitivity modifiers:**
+
+| Modifier | Effect | Trigger |
+|----------|--------|----------|
+| Server lock boost | +15% detection | First door opened |
+| Clark state escalation | +25% per state | Track, Pursue, Chase |
+| Audio anomaly | +30% brief boost | Unusual sounds |
+| Squad proximity | +10% per player | Other players nearby |
+| Server population | +5% per 10 players | Crowded servers |
+
+The modifiers compound, making late-game full lobbies the most detection-heavy environment.
+
+## Audio Footprint Concept
+
+Your audio footprint is the total sound you produce during a run. Minimizing this footprint is the primary survival strategy.
+
+### **Audio footprint components:**
+
+| Component | Contribution | Control Level |
+|-----------|--------------|---------------|
+| Movement | 40 — 60% | High (walk vs sprint) |
+| Flashlight | 20 — 40% | High (click vs hold) |
+| Voice chat | 10 — 30% | High (mute, PTT) |
+| Collisions | 5 — 15% | Medium (path choice) |
+| Breathing | 1 — 5% | Low (involuntary) |
+
+Veterans minimize each component through deliberate practice. The cumulative effect is dramatically reduced Clark encounters.
+
+## Audio Masking Strategies
+
+Audio masking is the practice of using one sound to hide another. In Clark Huss rooms, masking can help confuse Clark's tracking.
+
+**Audio masking techniques:**
+
+| Technique | Description |
+|-----------|-------------|
+| Squad movement timing | Multiple players move together, sounds overlap |
+| Ambient sound use | Move during environmental audio peaks |
+| Counter-noise | Intentional sounds to mislead Clark |
+| Footstep cadence | Match environmental rhythms |
+| Voice chat timing | Speak during audio windows |
+
+These techniques are advanced and require coordination. They work best in coordinated squads.
+
+## Counter-Detection Techniques
+
+Counter-detection is the practice of breaking Clark's tracking after he has detected you. The techniques below help.
+
+**Counter-detection techniques:**
+
+| Technique | Description |
+|-----------|-------------|
+| Corner break | Sharp turn to break line of sight |
+| Sustained silence | Stop all audio for 10+ seconds |
+| Audio masking | Use another sound to obscure yours |
+| Distance creation | Sprint away to escape detection range |
+| Cooldown waiting | Stop moving, let Clark disengage |
+
+Each technique works in specific situations. Veterans use the right technique at the right time.
+
+## Clark's Audio Attention Allocation
+
+Clark cannot attend to all sounds simultaneously. His attention allocation follows priority rules that veterans exploit.
+
+**Attention priority order:**
+
+| Priority | Sound Type |
+|----------|------------|
+| 1 | Sprinting footsteps |
+| 2 | Voice chat |
+| 3 | Collisions |
+| 4 | Flashlight clicks |
+| 5 | Walking footsteps |
+| 6 | Breathing |
+
+The order means that if Clark is focused on sprinting, he may miss quieter sounds. Veterans exploit this by sprinting in one direction while sneaking in another (squad play).
+
+## Audio Masking In Squad Play
+
+Audio masking is particularly effective in squad play because multiple audio sources create confusion for Clark.
+
+**Squad masking patterns:**
+
+| Pattern | Description |
+|---------|-------------|
+| Buddy movement | Pairs move together, sounds overlap |
+| Relay movement | Squad moves in waves, masking individual sounds |
+| Distraction sprint | One player sprints to draw attention |
+| Whisper discipline | Voice chat at minimum volume |
+| Formation movement | Tight groups reduce individual signatures |
+
+The patterns require coordination but dramatically reduce detection probability.
+
+## Counter-Detection Timing
+
+Counter-detection techniques work within specific time windows. The timing windows below help you execute effectively.
+
+**Timing windows:**
+
+| Technique | Optimal Window | Duration |
+|-----------|----------------|----------|
+| Corner break | Within 3 seconds of detection | Quick |
+| Sustained silence | 10 — 15 seconds | Medium |
+| Audio masking | During environmental peaks | Variable |
+| Distance creation | Within 5 seconds of detection | Quick |
+| Cooldown waiting | 30+ seconds | Long |
+
+Veterans execute techniques within the windows automatically.
+
+## Clark's Audio Disengagement
+
+When Clark disengages after losing your trail, his audio sensitivity drops temporarily. The disengagement pattern is consistent.
+
+**Disengagement pattern:**
+
+| Phase | Duration | Sensitivity |
+|-------|----------|-------------|
+| Initial pause | 5 seconds | 50% reduction |
+| Search mode | 15 seconds | 70% reduction |
+| Return to patrol | 10 seconds | 90% reduction |
+| Full patrol | Ongoing | Normal |
+
+The 30-second window after disengagement is the safest time for flashlight use and regrouping.
+
+## Audio Footprint Optimization
+
+Optimizing your audio footprint involves deliberate choices about movement, flashlight, and voice chat. The optimization matrix below helps.
+
+**Optimization techniques:**
+
+| Technique | Impact |
+|-----------|--------|
+| Walk instead of sprint | 60% reduction in movement audio |
+| Click instead of hold | 70% reduction in flashlight audio |
+| Mute voice chat | 100% reduction in voice audio |
+| Avoid walls | 80% reduction in collision audio |
+| Breathe quietly | 30% reduction in breathing audio |
+
+Combined optimization reduces your total footprint by 70 — 80%.
+
+## Audio Tracking Failure Modes
+
+Clark's audio tracking has specific failure modes that players can exploit. Understanding the failures helps you trigger them.
+
+**Tracking failure modes:**
+
+| Failure Mode | Trigger | Duration |
+|--------------|---------|----------|
+| Audio overlap confusion | Multiple sources | 5 — 10 seconds |
+| Sustained silence | No output for 10+ seconds | Until next sound |
+| Rapid direction change | Corner breaks | Until re-detection |
+| Cooldown after chase | Sustained chase without contact | 30+ seconds |
+
+Veterans learn to trigger these failures intentionally when needed.
+
+
+**Quick Detection Reference:**
+
+- Heartbeat indicates distant Clark patrolling without immediate threat
+- Breathing cadence reveals proximity and alertness level
+- Footstep thuds suggest Clark is in adjacent room
+- Whisper fragments indicate elevated alertness and imminent escalation
+- Sprint burst signals active chase requiring full retreat
+- Vocalization means Clark is close and detecting your position
+
+**Counter-Strategy Basics:**
+
+- Walking quietly reduces your audio footprint significantly
+- Click discipline on flashlight extends battery while preserving detection range
+- Corner breaks disrupt visual tracking when pursuit begins
+- Sustained silence for 10+ seconds loses Clark's audio trail
+- Squad movement synchronization confuses single-target tracking
+- Battery threshold discipline prevents emergency depletion situations
+
+
+## Frequently Asked Questions
+
+**How accurate is Clark's audio tracking?**
+
+Clark's tracking is very accurate for sounds within detection range. Outside detection range, sounds are ignored. The accuracy makes sound discipline critical.
+
+**Can Clark hear through walls?**
+
+Partially. Sound can penetrate walls at reduced volume. Clark's detection range accounts for this penetration.
+
+**What is the quietest sound Clark detects?**
+
+Walking footsteps are the quietest meaningful sound. Breathing is quieter but shorter range.
+
+**How do I know if Clark is tracking me?**
+
+Heartbeat acceleration, breathing cadence, and whisper fragments all indicate increasing tracking. If you hear these, Clark is aware of your position.
+
+**Can I confuse Clark with multiple sounds?**
+
+Yes, in squad play. Solo players have limited ability to confuse Clark because they have only one audio source.
+
+For more on the audio cues that indicate tracking state, see our [audio cues detailed guide](/en/guides/audio-cues-detailed/). To learn specific escape tactics, read [escaping Clark](/en/guides/escaping-clark/).
+
+
+**Will Clark receive significant changes in future updates?**
+
+Clark will likely receive balance adjustments throughout Early Access. The developer monitors community feedback and adjusts Clark's behavior to maintain appropriate difficulty. Major changes are announced through patch notes. Veterans should be prepared for periodic adjustments to Clark's mechanics.
+
+**How do I practice Clark encounter scenarios?**
+
+Community audio tools provide isolated Clark audio tells for practice. In-game practice in low-pressure scenarios builds skills. Solo runs allow focused Clark interaction without coordination complexity. Veteran players practice specific scenarios repeatedly to build automatic responses.
+
+**What is the difference between Clark's various states?**
+
+Clark transitions through Patrol, Investigate, Track, Pursue, Chase, and Cooldown states. Each state has distinct audio cues, detection ranges, and behavioral patterns. Understanding state transitions helps predict Clark's next action. Veterans track state changes through audio monitoring.
+
+**Can I confuse Clark's targeting in squads?**
+
+Yes, squad play can confuse Clark's targeting through coordinated audio masking. Multiple players moving together create overlapping audio signatures. Designated distractors can draw Clark's attention away from vulnerable squadmates. Squad coordination provides more confusion opportunities than solo play.
+
+**How does flashlight use affect Clark's detection?**
+
+Sustained flashlight use significantly increases Clark's detection range. Click discipline minimizes this effect while still providing visual information. Audio-only navigation removes flashlight-related detection entirely. Choose flashlight strategy based on battery state and Clark proximity.
+
+**What are Clark's weaknesses?**
+
+Clark's main weaknesses include audio silence, corner break escapes, and squad confusion. Players who minimize audio output are harder to track. Sharp corner breaks disrupt visual tracking. Squads create multiple audio signatures that confuse single-target tracking. Exploit these weaknesses consistently.
+
+**How does Clark compare to other horror game monsters?**
+
+Clark differs from typical horror game monsters through his patient stalker-listener design. He is less immediately aggressive but more persistent than many horror game monsters. His audio-focused tracking rewards disciplined play rather than hiding mechanics. The design creates unique tension.

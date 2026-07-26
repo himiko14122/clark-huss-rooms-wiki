@@ -1,0 +1,295 @@
+export const metadata = {
+  id: "line-of-sight-rules",
+  slug: "line-of-sight-rules",
+  order: 3,
+  difficulty: "advanced",
+  title: "Clark (EARLY ACCESS) - Huss Rooms Line of Sight Rules: Geometry of Survival",
+  description: "Clark Huss rooms line of sight rules — geometry of detection, wall thickness mechanics, visual tracking, and tactical corner usage for escapes.",
+  keywords: ["Clark Huss rooms line of sight", "Clark Huss rooms wall mechanics", "Clark Huss rooms corner strategy", "Clark Huss rooms visual tracking", "Clark Huss rooms geometry"],
+  image: "/images/entities/line-of-sight-rules.webp",
+  video: "8n7B9BBiI3U",
+  category: "entities",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+Line of sight is the visual component of Clark's tracking system. While audio is the primary detection method, line of sight provides Clark with accurate targeting once established. Understanding the geometry of line of sight, the rules around wall thickness, and the corner strategies that break visual tracking is essential for survival.
+
+This guide covers the line of sight mechanics in detail, the wall thickness rules that affect detection, the geometry of escape routes, and the corner strategies that disrupt Clark's tracking. You will also learn about visual tracking accuracy and the flashlight effects on line of sight.
+
+## What Line Of Sight Means In Clark Huss rooms
+
+Line of sight (LOS) refers to Clark's ability to see your character model through the procedurally generated corridor geometry. When LOS is established, Clark's tracking accuracy increases dramatically.
+
+### **Line of sight states:**
+
+| State | Clark Tracking | Counter-Measure |
+|-------|----------------|-----------------|
+| Direct LOS | High accuracy | Break LOS immediately |
+| LOS through thin wall | Reduced accuracy | Move to break |
+| LOS through thick wall | Audio only | Audio masking |
+| LOS broken | Audio only | Audio masking |
+| No LOS possible | Audio only | Standard navigation |
+
+The state changes dynamically as you and Clark move through the corridors.
+
+## Wall Thickness Mechanics
+
+Wall thickness affects how light and possibly sounds penetrate. Clark's visual detection respects wall thickness rules.
+
+### **Wall thickness effects:**
+
+| Thickness | Light Penetration | Visual LOS |
+|-----------|-------------------|------------|
+| 0 (corridor) | Full | Yes |
+| 1 layer | Reduced | Yes (dim) |
+| 2 layers | None | No |
+| 3+ layers | None | No |
+
+The lighting rules are why flashlight use can reveal your position through thin walls but not thick ones.
+
+## Corner Strategy Fundamentals
+
+Corner strategy is the most reliable way to break line of sight in Clark Huss rooms. The strategy exploits the geometry of corridor turns.
+
+### **Corner strategy principles:**
+
+| Principle | Description |
+|-----------|-------------|
+| Each corner breaks LOS | Sharp turn disrupts tracking |
+| Consecutive corners compound | Multiple corners add reliability |
+| Right angles work best | 90-degree turns are most effective |
+| Wide corners less effective | Gentle curves are weaker |
+| Dead ends are bad | Cannot continue breaking |
+
+Veterans use multiple consecutive corners in escape routes because each corner adds tracking disruption time.
+
+## Visual Detection Range
+
+Clark's visual detection range is shorter than audio range. Visual detection is most useful at close distances.
+
+### **Visual detection range:**
+
+| Obstacle | Range |
+|----------|-------|
+| Direct line | 10 — 15 meters |
+| Around corner | 0 — 3 meters |
+| Through thin wall | 2 — 5 meters |
+| Through thick wall | 0 meters |
+
+The visual range is much shorter than audio range, which is why audio is the primary detection method.
+
+## Flashlight Effects On Line Of Sight
+
+Flashlight use affects line of sight in specific ways. Understanding the effects helps you use flashlight strategically.
+
+**Flashlight effects:**
+
+| Flashlight State | Line of Sight Effect |
+|------------------|------------------------|
+| Off | Normal Clark detection |
+| Single click | Brief illumination, minimal effect |
+| Sustained | Clark can see you through thin walls |
+| Flickered | Confusion effect, possible detection break |
+
+Sustained flashlight use is the worst case for line of sight because it gives Clark visual confirmation through barriers.
+
+## Escape Geometry
+
+The geometry of corridors determines whether escapes are possible. Optimal escape geometry includes multiple corners and limited dead ends.
+
+**Escape geometry components:**
+
+| Component | Importance |
+|-----------|------------|
+| Corner density | High (more corners = better) |
+| T-junctions | High (multiple options) |
+| Open rooms | Low (exposed) |
+| Long straight halls | Low (predictable) |
+| Dead ends | Very low (avoid) |
+
+Veterans choose escape routes that maximize corner density and minimize exposure.
+
+## Corner Break Technique
+
+The corner break technique is the most reliable way to escape Clark's line of sight. The technique exploits geometry and timing.
+
+**Corner break execution:**
+
+| Step | Action |
+|------|--------|
+| 1 | Identify escape corner ahead |
+| 2 | Sprint toward corner |
+| 3 | At corner, turn sharply |
+| 4 | Continue for 3 — 5 seconds |
+| 5 | Assess if LOS is broken |
+| 6 | Continue to next corner |
+
+Each corner break takes 5 — 10 seconds to execute. Multiple consecutive breaks add reliability.
+
+## Stacked Corner Strategy
+
+Stacked corners are multiple consecutive 90-degree turns that compound line of sight breaks. The strategy is highly reliable.
+
+**Stacked corner benefits:**
+
+| Benefit | Description |
+|---------|-------------|
+| Compounding LOS breaks | Each corner adds 3 seconds of disruption |
+| Audio trail confusion | Direction shifts mess up audio tracking |
+| Multiple escape options | Each corner offers a new direction |
+| Higher survival probability | 80%+ success rate with two corners |
+
+Veterans use stacked corners for reliable escapes when Clark is in active pursuit.
+
+## Wall Phenomena In Corridors
+
+Wall phenomena include visual and audio effects specific to corridor geometries. The phenomena affect detection and navigation.
+
+**Wall phenomena:**
+
+| Phenomenon | Effect |
+|------------|--------|
+| Thin wall flashlight | Clark sees you through wall |
+| Echo reflection | Audio bounces, changing perception |
+| Door preview | Door indicators visible through frame |
+| Decoration walls | Visually distinct, no functional effect |
+| Reinforced walls | No penetration, gameplay effect |
+
+The phenomena are why some corridors feel more dangerous than others.
+
+## Visual Tracking Accuracy
+
+Visual tracking accuracy varies based on distance, lighting, and player movement. The accuracy affects how reliably Clark can follow you.
+
+**Visual tracking accuracy:**
+
+| Condition | Accuracy |
+|-----------|----------|
+| Direct LOS, close | Very high |
+| Direct LOS, medium | High |
+| Direct LOS, far | Medium |
+| Through thin wall | Low |
+| Through thick wall | None |
+
+The accuracy determines how confidently Clark can pursue once he sees you.
+
+## LoS Break Techniques
+
+Beyond corner breaks, other techniques can break line of sight. The techniques below work in specific situations.
+
+**LoS break techniques:**
+
+| Technique | Description |
+|-----------|-------------|
+| Door entry | Entering a room breaks corridor LOS |
+| Crouch behind obstacle | Lower profile may hide you |
+| Hug walls | Reduces cross-section visible to Clark |
+| Luminance matching | Stay in dim areas |
+| Wall hugging | Stay close to wall geometry |
+
+These techniques are situational and less reliable than corner breaks.
+
+## LoS And Server Lock
+
+The server lock affects line of sight by increasing Clark's detection. The relationship between lock state and LoS is subtle.
+
+**Server lock LoS effects:**
+
+| State | LoS Effect |
+|-------|------------|
+| Pre-lock | Standard LoS rules |
+| Post-lock immediate | Slightly increased LoS range |
+| Mid-game | Increased sustained detection |
+| Late game | Clark more aggressive in LoS pursuit |
+
+The effects stack with audio sensitivity boosts, creating a more dangerous late-game environment.
+
+## Common LoS Mistakes
+
+Players make specific mistakes related to line of sight. Identifying the mistakes helps prevent them.
+
+**Common mistakes:**
+
+| Mistake | Impact |
+|---------|--------|
+| Long straight escape path | Predictable, easy to track |
+| Single corner escape | Insufficient for active chase |
+| Open room escape | Maximum exposure |
+| Holding flashlight during chase | Maximum visibility to Clark |
+| Stopping at corner | Allows re-acquisition |
+
+Avoiding these mistakes significantly improves escape success rate.
+
+
+**Quick Detection Reference:**
+
+- Heartbeat indicates distant Clark patrolling without immediate threat
+- Breathing cadence reveals proximity and alertness level
+- Footstep thuds suggest Clark is in adjacent room
+- Whisper fragments indicate elevated alertness and imminent escalation
+- Sprint burst signals active chase requiring full retreat
+- Vocalization means Clark is close and detecting your position
+
+**Counter-Strategy Basics:**
+
+- Walking quietly reduces your audio footprint significantly
+- Click discipline on flashlight extends battery while preserving detection range
+- Corner breaks disrupt visual tracking when pursuit begins
+- Sustained silence for 10+ seconds loses Clark's audio trail
+- Squad movement synchronization confuses single-target tracking
+- Battery threshold discipline prevents emergency depletion situations
+
+
+## Frequently Asked Questions
+
+**How effective is corner break against active chase?**
+
+Single corner break has roughly 50% success rate. Two consecutive breaks have 80%+ success rate. Three breaks are near-certain.
+
+**Can Clark see through multiple walls?**
+
+No. Clark's visual detection stops at two wall layers. Audio continues but visual is blocked.
+
+**Does my own flashlight affect my LoS visibility?**
+
+Yes. Your flashlight illuminates walls and can reveal your silhouette through thin walls. Click discipline reduces this effect.
+
+**What is the best room geometry for escape?**
+
+L-shaped corridors with multiple turns are best. Open rooms are worst because they provide full 360-degree visibility.
+
+**Does hiding behind decoration break LoS?**
+
+Yes, decoration objects block LoS. However, Clark may path around them to re-establish visual contact.
+
+For more on the audio tracking that often determines detection, see our [audio tracking explained guide](/en/entities/audio-tracking-explained/). To learn escape tactics in detail, read [escaping Clark](/en/guides/escaping-clark/).
+
+
+**Will Clark receive significant changes in future updates?**
+
+Clark will likely receive balance adjustments throughout Early Access. The developer monitors community feedback and adjusts Clark's behavior to maintain appropriate difficulty. Major changes are announced through patch notes. Veterans should be prepared for periodic adjustments to Clark's mechanics.
+
+**How do I practice Clark encounter scenarios?**
+
+Community audio tools provide isolated Clark audio tells for practice. In-game practice in low-pressure scenarios builds skills. Solo runs allow focused Clark interaction without coordination complexity. Veteran players practice specific scenarios repeatedly to build automatic responses.
+
+**What is the difference between Clark's various states?**
+
+Clark transitions through Patrol, Investigate, Track, Pursue, Chase, and Cooldown states. Each state has distinct audio cues, detection ranges, and behavioral patterns. Understanding state transitions helps predict Clark's next action. Veterans track state changes through audio monitoring.
+
+**Can I confuse Clark's targeting in squads?**
+
+Yes, squad play can confuse Clark's targeting through coordinated audio masking. Multiple players moving together create overlapping audio signatures. Designated distractors can draw Clark's attention away from vulnerable squadmates. Squad coordination provides more confusion opportunities than solo play.
+
+**How does flashlight use affect Clark's detection?**
+
+Sustained flashlight use significantly increases Clark's detection range. Click discipline minimizes this effect while still providing visual information. Audio-only navigation removes flashlight-related detection entirely. Choose flashlight strategy based on battery state and Clark proximity.
+
+**What are Clark's weaknesses?**
+
+Clark's main weaknesses include audio silence, corner break escapes, and squad confusion. Players who minimize audio output are harder to track. Sharp corner breaks disrupt visual tracking. Squads create multiple audio signatures that confuse single-target tracking. Exploit these weaknesses consistently.
+
+**How does Clark compare to other horror game monsters?**
+
+Clark differs from typical horror game monsters through his patient stalker-listener design. He is less immediately aggressive but more persistent than many horror game monsters. His audio-focused tracking rewards disciplined play rather than hiding mechanics. The design creates unique tension.

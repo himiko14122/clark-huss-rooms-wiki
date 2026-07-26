@@ -1,0 +1,1226 @@
+{
+  "contentPaths": [
+    {
+      "locale": "en",
+      "contentType": "guides",
+      "slug": "audio-cues-detailed",
+      "segments": [
+        "audio-cues-detailed"
+      ],
+      "importPath": "Clark-Huss-Rooms-Audio-Cues-Detailed",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Audio Cues Detailed: Complete Sound Reference"
+    },
+    {
+      "locale": "en",
+      "contentType": "tier-list",
+      "slug": "audio-cues-rank",
+      "segments": [
+        "audio-cues-rank"
+      ],
+      "importPath": "Clark-Huss-Rooms-Audio-Cues-Rank",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Audio Cues Rank: Importance and Detection Priority"
+    },
+    {
+      "locale": "en",
+      "contentType": "guides",
+      "slug": "audio-navigation",
+      "segments": [
+        "audio-navigation"
+      ],
+      "importPath": "Clark-Huss-Rooms-Audio-Navigation",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Audio Navigation: Directional Sound Mastery"
+    },
+    {
+      "locale": "en",
+      "contentType": "guides",
+      "slug": "beginner-guide",
+      "segments": [
+        "beginner-guide"
+      ],
+      "importPath": "Clark-Huss-Rooms-Beginner-Guide",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Beginner Guide: Your First Run Survival Kit"
+    },
+    {
+      "locale": "en",
+      "contentType": "tier-list",
+      "slug": "clark-entity-threat",
+      "segments": [
+        "clark-entity-threat"
+      ],
+      "importPath": "Clark-Huss-Rooms-Clark-Entity-Threat",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Clark Entity Threat Tier: Threat Level Analysis"
+    },
+    {
+      "locale": "en",
+      "contentType": "guides",
+      "slug": "community-tools",
+      "segments": [
+        "community-tools"
+      ],
+      "importPath": "Clark-Huss-Rooms-Community-Tools",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Community Tools: Audio Trainers and Trackers"
+    },
+    {
+      "locale": "en",
+      "contentType": "updates",
+      "slug": "developer-q2-2026",
+      "segments": [
+        "developer-q2-2026"
+      ],
+      "importPath": "Clark-Huss-Rooms-Developer-Q2-2026",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Developer Q2 2026: mothem_XD Communication"
+    },
+    {
+      "locale": "en",
+      "contentType": "updates",
+      "slug": "early-access-roadmap",
+      "segments": [
+        "early-access-roadmap"
+      ],
+      "importPath": "Clark-Huss-Rooms-Early-Access-Roadmap",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Roadmap: Quarter Plans and Timeline"
+    },
+    {
+      "locale": "en",
+      "contentType": "guides",
+      "slug": "escaping-clark",
+      "segments": [
+        "escaping-clark"
+      ],
+      "importPath": "Clark-Huss-Rooms-Escaping-Clark",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Escaping Clark: Retreat Tactics and Routes"
+    },
+    {
+      "locale": "en",
+      "contentType": "guides",
+      "slug": "flashlight-mechanics",
+      "segments": [
+        "flashlight-mechanics"
+      ],
+      "importPath": "Clark-Huss-Rooms-Flashlight-Mechanics",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Flashlight Mechanics: Battery Discipline Guide"
+    },
+    {
+      "locale": "en",
+      "contentType": "updates",
+      "slug": "future-content-preview",
+      "segments": [
+        "future-content-preview"
+      ],
+      "importPath": "Clark-Huss-Rooms-Future-Content-Preview",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Upcoming Additions: Speculation and Likelihood"
+    },
+    {
+      "locale": "en",
+      "contentType": "updates",
+      "slug": "july-2026-update",
+      "segments": [
+        "july-2026-update"
+      ],
+      "importPath": "Clark-Huss-Rooms-July-2026-Update",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms July 2026 Patch: Balance Analysis"
+    },
+    {
+      "locale": "en",
+      "contentType": "guides",
+      "slug": "multiplayer-coordination",
+      "segments": [
+        "multiplayer-coordination"
+      ],
+      "importPath": "Clark-Huss-Rooms-Multiplayer-Coordination",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Multiplayer Coordination: Squad Roles and Callouts"
+    },
+    {
+      "locale": "en",
+      "contentType": "guides",
+      "slug": "panic-survival",
+      "segments": [
+        "panic-survival"
+      ],
+      "importPath": "Clark-Huss-Rooms-Panic-Survival",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Panic Survival: Stress Decision Framework"
+    },
+    {
+      "locale": "en",
+      "contentType": "updates",
+      "slug": "patch-notes-history",
+      "segments": [
+        "patch-notes-history"
+      ],
+      "importPath": "Clark-Huss-Rooms-Patch-Notes-History",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Patch Notes Archive: Chronological Log"
+    },
+    {
+      "locale": "en",
+      "contentType": "tier-list",
+      "slug": "room-types-tier",
+      "segments": [
+        "room-types-tier"
+      ],
+      "importPath": "Clark-Huss-Rooms-Room-Types-Tier",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Room Types Tier: Navigation and Safety Ranking"
+    },
+    {
+      "locale": "en",
+      "contentType": "tier-list",
+      "slug": "server-difficulty-rank",
+      "segments": [
+        "server-difficulty-rank"
+      ],
+      "importPath": "Clark-Huss-Rooms-Server-Difficulty-Rank",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Server Difficulty Rank: Lobby Type Comparison"
+    },
+    {
+      "locale": "en",
+      "contentType": "guides",
+      "slug": "server-lock-strategy",
+      "segments": [
+        "server-lock-strategy"
+      ],
+      "importPath": "Clark-Huss-Rooms-Server-Lock-Strategy",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Server Lock Strategy: Commitment Timing Tactics"
+    },
+    {
+      "locale": "en",
+      "contentType": "guides",
+      "slug": "signal-flares",
+      "segments": [
+        "signal-flares"
+      ],
+      "importPath": "Clark-Huss-Rooms-Signal-Flares",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Signal Flares: Communication Marker System"
+    },
+    {
+      "locale": "en",
+      "contentType": "tier-list",
+      "slug": "strategies-tier",
+      "segments": [
+        "strategies-tier"
+      ],
+      "importPath": "Clark-Huss-Rooms-Strategies-Tier",
+      "title": "Clark (EARLY ACCESS) - Huss Rooms Strategies Tier List: Best Survival Approaches"
+    }
+  ],
+  "tocMap": {
+    "tier-list:en:audio-cues-rank": [
+      {
+        "id": "audio-cue-importance-framework",
+        "text": "Audio Cue Importance Framework"
+      },
+      {
+        "id": "tier-s-critical-survival-cues",
+        "text": "Tier S: Critical Survival Cues"
+      },
+      {
+        "id": "tier-a-high-value-navigation-cues",
+        "text": "Tier A: High-Value Navigation Cues"
+      },
+      {
+        "id": "tier-b-spatial-mapping-cues",
+        "text": "Tier B: Spatial Mapping Cues"
+      },
+      {
+        "id": "tier-c-secondary-audio-cues",
+        "text": "Tier C: Secondary Audio Cues"
+      },
+      {
+        "id": "tier-d-decorative-cues",
+        "text": "Tier D: Decorative Cues"
+      },
+      {
+        "id": "cue-learning-order",
+        "text": "Cue Learning Order"
+      },
+      {
+        "id": "cue-importance-by-run-phase",
+        "text": "Cue Importance by Run Phase"
+      },
+      {
+        "id": "squad-size-cue-importance",
+        "text": "Squad Size Cue Importance"
+      },
+      {
+        "id": "detection-priority-conflicts",
+        "text": "Detection Priority Conflicts"
+      },
+      {
+        "id": "cue-reliability-notes",
+        "text": "Cue Reliability Notes"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "tier-list:en:clark-entity-threat": [
+      {
+        "id": "threat-tier-framework",
+        "text": "Threat Tier Framework"
+      },
+      {
+        "id": "tier-s-imminent-threat",
+        "text": "Tier S: Imminent Threat"
+      },
+      {
+        "id": "tier-a-high-threat",
+        "text": "Tier A: High Threat"
+      },
+      {
+        "id": "tier-b-medium-threat",
+        "text": "Tier B: Medium Threat"
+      },
+      {
+        "id": "tier-c-low-threat",
+        "text": "Tier C: Low Threat"
+      },
+      {
+        "id": "tier-d-distant-threat",
+        "text": "Tier D: Distant Threat"
+      },
+      {
+        "id": "tier-f-inert-state",
+        "text": "Tier F: Inert State"
+      },
+      {
+        "id": "tier-transitions",
+        "text": "Tier Transitions"
+      },
+      {
+        "id": "counter-strategy-tier-ranking",
+        "text": "Counter-Strategy Tier Ranking"
+      },
+      {
+        "id": "threat-tier-modifiers",
+        "text": "Threat Tier Modifiers"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "tier-list:en:room-types-tier": [
+      {
+        "id": "room-type-tier-framework",
+        "text": "Room Type Tier Framework"
+      },
+      {
+        "id": "tier-s-strategic-open-rooms",
+        "text": "Tier S: Strategic Open Rooms"
+      },
+      {
+        "id": "tier-a-long-corridor-junctions",
+        "text": "Tier A: Long Corridor Junctions"
+      },
+      {
+        "id": "tier-b-standard-yellow-halls",
+        "text": "Tier B: Standard Yellow Halls"
+      },
+      {
+        "id": "tier-c-ambiguous-spaces",
+        "text": "Tier C: Ambiguous Spaces"
+      },
+      {
+        "id": "tier-d-risky-passageways",
+        "text": "Tier D: Risky Passageways"
+      },
+      {
+        "id": "tier-f-avoidance-zones",
+        "text": "Tier F: Avoidance Zones"
+      },
+      {
+        "id": "audio-identification-of-room-types",
+        "text": "Audio Identification of Room Types"
+      },
+      {
+        "id": "room-type-frequency",
+        "text": "Room Type Frequency"
+      },
+      {
+        "id": "run-phase-room-preferences",
+        "text": "Run Phase Room Preferences"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "tier-list:en:server-difficulty-rank": [
+      {
+        "id": "server-configuration-tier-framework",
+        "text": "Server Configuration Tier Framework"
+      },
+      {
+        "id": "tier-s-coordinated-trio-server",
+        "text": "Tier S: Coordinated Trio Server"
+      },
+      {
+        "id": "tier-a-coordinated-quatro-server",
+        "text": "Tier A: Coordinated Quatro Server"
+      },
+      {
+        "id": "tier-b-coordinated-duo-server",
+        "text": "Tier B: Coordinated Duo Server"
+      },
+      {
+        "id": "tier-b-solo-in-partial-server",
+        "text": "Tier B: Solo in Partial Server"
+      },
+      {
+        "id": "tier-c-full-lobby-50-players",
+        "text": "Tier C: Full Lobby (50 Players)"
+      },
+      {
+        "id": "tier-c-solo-in-full-lobby",
+        "text": "Tier C: Solo in Full Lobby"
+      },
+      {
+        "id": "tier-d-public-lobby-with-strangers",
+        "text": "Tier D: Public Lobby With Strangers"
+      },
+      {
+        "id": "player-skill-distribution-effect",
+        "text": "Player Skill Distribution Effect"
+      },
+      {
+        "id": "optimal-server-selection-strategy",
+        "text": "Optimal Server Selection Strategy"
+      },
+      {
+        "id": "server-refresh-timing",
+        "text": "Server Refresh Timing"
+      },
+      {
+        "id": "server-browser-tools",
+        "text": "Server Browser Tools"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "tier-list:en:strategies-tier": [
+      {
+        "id": "strategy-tier-framework",
+        "text": "Strategy Tier Framework"
+      },
+      {
+        "id": "tier-s-controlled-retreat-strategy",
+        "text": "Tier S: Controlled Retreat Strategy"
+      },
+      {
+        "id": "tier-a-audio-first-movement-strategy",
+        "text": "Tier A: Audio-First Movement Strategy"
+      },
+      {
+        "id": "tier-b-silent-run-strategy",
+        "text": "Tier B: Silent Run Strategy"
+      },
+      {
+        "id": "tier-b-squad-coordination-strategy",
+        "text": "Tier B: Squad Coordination Strategy"
+      },
+      {
+        "id": "tier-c-panic-sprint-strategy",
+        "text": "Tier C: Panic Sprint Strategy"
+      },
+      {
+        "id": "platform-specific-strategy-effectiveness",
+        "text": "Platform-Specific Strategy Effectiveness"
+      },
+      {
+        "id": "squad-size-strategy-effectiveness",
+        "text": "Squad Size Strategy Effectiveness"
+      },
+      {
+        "id": "strategy-tradeoffs",
+        "text": "Strategy Tradeoffs"
+      },
+      {
+        "id": "meta-evolution-tracking",
+        "text": "Meta Evolution Tracking"
+      },
+      {
+        "id": "strategy-selection-decision-tree",
+        "text": "Strategy Selection Decision Tree"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "guides:en:audio-cues-detailed": [
+      {
+        "id": "the-audio-cue-taxonomy",
+        "text": "The Audio Cue Taxonomy"
+      },
+      {
+        "id": "clark-entity-audio-cues",
+        "text": "Clark Entity Audio Cues"
+      },
+      {
+        "id": "heartbeat-cue-analysis",
+        "text": "Heartbeat Cue Analysis"
+      },
+      {
+        "id": "breathing-cadence-analysis",
+        "text": "Breathing Cadence Analysis"
+      },
+      {
+        "id": "footstep-thud-analysis",
+        "text": "Footstep Thud Analysis"
+      },
+      {
+        "id": "whisper-fragment-analysis",
+        "text": "Whisper Fragment Analysis"
+      },
+      {
+        "id": "environmental-audio-cues",
+        "text": "Environmental Audio Cues"
+      },
+      {
+        "id": "player-generated-audio-cues",
+        "text": "Player-Generated Audio Cues"
+      },
+      {
+        "id": "server-state-audio-cues",
+        "text": "Server State Audio Cues"
+      },
+      {
+        "id": "directional-audio-localization",
+        "text": "Directional Audio Localization"
+      },
+      {
+        "id": "audio-cue-response-decision-tree",
+        "text": "Audio Cue Response Decision Tree"
+      },
+      {
+        "id": "audio-cue-evolution-across-runs",
+        "text": "Audio Cue Evolution Across Runs"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "guides:en:audio-navigation": [
+      {
+        "id": "headphone-setup-for-directional-audio",
+        "text": "Headphone Setup for Directional Audio"
+      },
+      {
+        "id": "audio-tell-taxonomy",
+        "text": "Audio Tell Taxonomy"
+      },
+      {
+        "id": "spatial-memory-training",
+        "text": "Spatial Memory Training"
+      },
+      {
+        "id": "common-audio-failures-and-fixes",
+        "text": "Common Audio Failures and Fixes"
+      },
+      {
+        "id": "building-a-personal-audio-map",
+        "text": "Building a Personal Audio Map"
+      },
+      {
+        "id": "training-exercises-for-beginners",
+        "text": "Training Exercises for Beginners"
+      },
+      {
+        "id": "multiplayer-audio-coordination",
+        "text": "Multiplayer Audio Coordination"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "guides:en:beginner-guide": [
+      {
+        "id": "pre-match-lobby-checklist",
+        "text": "Pre-Match Lobby Checklist"
+      },
+      {
+        "id": "audio-first-navigation-the-core-mindset",
+        "text": "Audio-First Navigation: The Core Mindset"
+      },
+      {
+        "id": "flashlight-battery-discipline",
+        "text": "Flashlight Battery Discipline"
+      },
+      {
+        "id": "the-first-door-when-to-commit",
+        "text": "The First Door: When to Commit"
+      },
+      {
+        "id": "sprint-vs-walk-decision-tree",
+        "text": "Sprint vs Walk Decision Tree"
+      },
+      {
+        "id": "dead-end-recognition-and-corridor-patterns",
+        "text": "Dead-End Recognition and Corridor Patterns"
+      },
+      {
+        "id": "mid-run-priorities-after-the-first-three-minutes",
+        "text": "Mid-Run Priorities: After the First Three Minutes"
+      },
+      {
+        "id": "server-lock-stress-management",
+        "text": "Server-Lock Stress Management"
+      },
+      {
+        "id": "common-first-run-mistakes-to-avoid",
+        "text": "Common First-Run Mistakes to Avoid"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "guides:en:community-tools": [
+      {
+        "id": "audio-training-tools",
+        "text": "Audio Training Tools"
+      },
+      {
+        "id": "flashlight-battery-calculators",
+        "text": "Flashlight Battery Calculators"
+      },
+      {
+        "id": "server-status-trackers",
+        "text": "Server Status Trackers"
+      },
+      {
+        "id": "patch-note-trackers",
+        "text": "Patch Note Trackers"
+      },
+      {
+        "id": "developer-response-channels",
+        "text": "Developer Response Channels"
+      },
+      {
+        "id": "audio-training-methodology",
+        "text": "Audio Training Methodology"
+      },
+      {
+        "id": "mapping-and-navigation-tools",
+        "text": "Mapping and Navigation Tools"
+      },
+      {
+        "id": "speedrun-and-training-simulators",
+        "text": "Speedrun and Training Simulators"
+      },
+      {
+        "id": "community-wiki-resources",
+        "text": "Community Wiki Resources"
+      },
+      {
+        "id": "integrating-tools-into-your-routine",
+        "text": "Integrating Tools Into Your Routine"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "guides:en:escaping-clark": [
+      {
+        "id": "the-escape-decision-tree",
+        "text": "The Escape Decision Tree"
+      },
+      {
+        "id": "line-of-sight-mechanics",
+        "text": "Line of Sight Mechanics"
+      },
+      {
+        "id": "escape-route-geometry",
+        "text": "Escape Route Geometry"
+      },
+      {
+        "id": "clarks-disengage-windows",
+        "text": "Clark's Disengage Windows"
+      },
+      {
+        "id": "last-second-evasion-techniques",
+        "text": "Last-Second Evasion Techniques"
+      },
+      {
+        "id": "squad-escape-patterns",
+        "text": "Squad Escape Patterns"
+      },
+      {
+        "id": "common-escape-mistakes",
+        "text": "Common Escape Mistakes"
+      },
+      {
+        "id": "retreat-versus-stand-ground-analysis",
+        "text": "Retreat Versus Stand-Ground Analysis"
+      },
+      {
+        "id": "the-recovery-position",
+        "text": "The Recovery Position"
+      },
+      {
+        "id": "building-escape-routes-pre-emptively",
+        "text": "Building Escape Routes Pre-emptively"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "guides:en:flashlight-mechanics": [
+      {
+        "id": "flashlight-battery-cost-reference",
+        "text": "Flashlight Battery Cost Reference"
+      },
+      {
+        "id": "the-light-exposure-mechanic-how-clark-detects-you",
+        "text": "The Light Exposure Mechanic: How Clark Detects You"
+      },
+      {
+        "id": "click-patterns-that-work",
+        "text": "Click Patterns That Work"
+      },
+      {
+        "id": "battery-conservation-framework",
+        "text": "Battery Conservation Framework"
+      },
+      {
+        "id": "light-discipline-mistakes",
+        "text": "Light Discipline Mistakes"
+      },
+      {
+        "id": "squad-flashlight-coordination",
+        "text": "Squad Flashlight Coordination"
+      },
+      {
+        "id": "the-clark-cooldown-window",
+        "text": "The Clark Cooldown Window"
+      },
+      {
+        "id": "battery-indicator-reading",
+        "text": "Battery Indicator Reading"
+      },
+      {
+        "id": "when-to-use-sustained-light",
+        "text": "When to Use Sustained Light"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "guides:en:multiplayer-coordination": [
+      {
+        "id": "the-three-core-squad-roles",
+        "text": "The Three Core Squad Roles"
+      },
+      {
+        "id": "lead-role-deep-dive",
+        "text": "Lead Role Deep Dive"
+      },
+      {
+        "id": "rear-guard-role-deep-dive",
+        "text": "Rear Guard Role Deep Dive"
+      },
+      {
+        "id": "light-manager-role-deep-dive",
+        "text": "Light Manager Role Deep Dive"
+      },
+      {
+        "id": "callout-vocabulary",
+        "text": "Callout Vocabulary"
+      },
+      {
+        "id": "voice-chat-discipline",
+        "text": "Voice Chat Discipline"
+      },
+      {
+        "id": "squad-movement-patterns",
+        "text": "Squad Movement Patterns"
+      },
+      {
+        "id": "server-lock-synchronization",
+        "text": "Server Lock Synchronization"
+      },
+      {
+        "id": "chase-protocols",
+        "text": "Chase Protocols"
+      },
+      {
+        "id": "role-rotation-system",
+        "text": "Role Rotation System"
+      },
+      {
+        "id": "pre-run-briefing",
+        "text": "Pre-Run Briefing"
+      },
+      {
+        "id": "common-coordination-failures",
+        "text": "Common Coordination Failures"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "guides:en:panic-survival": [
+      {
+        "id": "the-panic-spiral",
+        "text": "The Panic Spiral"
+      },
+      {
+        "id": "stress-recognition-signals",
+        "text": "Stress Recognition Signals"
+      },
+      {
+        "id": "grounding-techniques-that-work",
+        "text": "Grounding Techniques That Work"
+      },
+      {
+        "id": "decision-quality-under-pressure",
+        "text": "Decision Quality Under Pressure"
+      },
+      {
+        "id": "the-panic-sprint-problem",
+        "text": "The Panic Sprint Problem"
+      },
+      {
+        "id": "converting-panic-to-controlled-retreat",
+        "text": "Converting Panic to Controlled Retreat"
+      },
+      {
+        "id": "squad-communication-and-panic",
+        "text": "Squad Communication and Panic"
+      },
+      {
+        "id": "common-panic-triggers",
+        "text": "Common Panic Triggers"
+      },
+      {
+        "id": "the-calm-voice-role",
+        "text": "The Calm Voice Role"
+      },
+      {
+        "id": "building-panic-resistance",
+        "text": "Building Panic Resistance"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "guides:en:server-lock-strategy": [
+      {
+        "id": "what-the-server-lock-does",
+        "text": "What the Server Lock Does"
+      },
+      {
+        "id": "first-door-timing-decision-tree",
+        "text": "First Door Timing Decision Tree"
+      },
+      {
+        "id": "the-synchronization-protocol",
+        "text": "The Synchronization Protocol"
+      },
+      {
+        "id": "why-premature-locks-fail-runs",
+        "text": "Why Premature Locks Fail Runs"
+      },
+      {
+        "id": "recovery-after-accidental-lock",
+        "text": "Recovery After Accidental Lock"
+      },
+      {
+        "id": "the-intentional-early-lock-strategy",
+        "text": "The Intentional Early Lock Strategy"
+      },
+      {
+        "id": "clarks-behavior-after-server-lock",
+        "text": "Clark's Behavior After Server Lock"
+      },
+      {
+        "id": "squad-size-and-server-lock-timing",
+        "text": "Squad Size and Server Lock Timing"
+      },
+      {
+        "id": "psychological-pressure-management",
+        "text": "Psychological Pressure Management"
+      },
+      {
+        "id": "common-server-lock-mistakes",
+        "text": "Common Server Lock Mistakes"
+      },
+      {
+        "id": "the-reverse-psychology-play",
+        "text": "The Reverse Psychology Play"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "guides:en:signal-flares": [
+      {
+        "id": "what-signal-flares-are",
+        "text": "What Signal Flares Are"
+      },
+      {
+        "id": "flashlight-pattern-signals",
+        "text": "Flashlight Pattern Signals"
+      },
+      {
+        "id": "audio-callout-signals",
+        "text": "Audio Callout Signals"
+      },
+      {
+        "id": "action-signals",
+        "text": "Action Signals"
+      },
+      {
+        "id": "emergency-protocols",
+        "text": "Emergency Protocols"
+      },
+      {
+        "id": "battery-state-signals",
+        "text": "Battery State Signals"
+      },
+      {
+        "id": "building-a-squad-signal-system",
+        "text": "Building a Squad Signal System"
+      },
+      {
+        "id": "signal-discipline-under-pressure",
+        "text": "Signal Discipline Under Pressure"
+      },
+      {
+        "id": "common-signal-failures",
+        "text": "Common Signal Failures"
+      },
+      {
+        "id": "training-signal-execution",
+        "text": "Training Signal Execution"
+      },
+      {
+        "id": "signal-flares-in-solo-play",
+        "text": "Signal Flares in Solo Play"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "updates:en:developer-q2-2026": [
+      {
+        "id": "who-is-mothem_xd",
+        "text": "Who Is mothem_XD"
+      },
+      {
+        "id": "developer-communication-channels",
+        "text": "Developer Communication Channels"
+      },
+      {
+        "id": "q2-2026-communication-summary",
+        "text": "Q2 2026 Communication Summary"
+      },
+      {
+        "id": "development-philosophy",
+        "text": "Development Philosophy"
+      },
+      {
+        "id": "response-patterns",
+        "text": "Response Patterns"
+      },
+      {
+        "id": "community-engagement-style",
+        "text": "Community Engagement Style"
+      },
+      {
+        "id": "developer-action-interpretation",
+        "text": "Developer Action Interpretation"
+      },
+      {
+        "id": "community-feedback-channels",
+        "text": "Community Feedback Channels"
+      },
+      {
+        "id": "developer-communication-limitations",
+        "text": "Developer Communication Limitations"
+      },
+      {
+        "id": "signals-from-q2-2026",
+        "text": "Signals From Q2 2026"
+      },
+      {
+        "id": "developer-response-time",
+        "text": "Developer Response Time"
+      },
+      {
+        "id": "how-to-engage-effectively",
+        "text": "How To Engage Effectively"
+      },
+      {
+        "id": "developer-priorities",
+        "text": "Developer Priorities"
+      },
+      {
+        "id": "trust-and-patience",
+        "text": "Trust And Patience"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "updates:en:early-access-roadmap": [
+      {
+        "id": "early-access-status-overview",
+        "text": "Early Access Status Overview"
+      },
+      {
+        "id": "development-philosophy",
+        "text": "Development Philosophy"
+      },
+      {
+        "id": "expected-update-frequency",
+        "text": "Expected Update Frequency"
+      },
+      {
+        "id": "planned-feature-categories",
+        "text": "Planned Feature Categories"
+      },
+      {
+        "id": "new-entity-possibilities",
+        "text": "New Entity Possibilities"
+      },
+      {
+        "id": "corridor-variety-plans",
+        "text": "Corridor Variety Plans"
+      },
+      {
+        "id": "audio-enhancement-plans",
+        "text": "Audio Enhancement Plans"
+      },
+      {
+        "id": "quality-of-life-improvements",
+        "text": "Quality Of Life Improvements"
+      },
+      {
+        "id": "performance-optimization",
+        "text": "Performance Optimization"
+      },
+      {
+        "id": "community-feedback-integration",
+        "text": "Community Feedback Integration"
+      },
+      {
+        "id": "expected-timeline-by-quarter",
+        "text": "Expected Timeline By Quarter"
+      },
+      {
+        "id": "major-release-considerations",
+        "text": "Major Release Considerations"
+      },
+      {
+        "id": "player-engagement-recommendations",
+        "text": "Player Engagement Recommendations"
+      },
+      {
+        "id": "potential-risks-and-challenges",
+        "text": "Potential Risks And Challenges"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "updates:en:future-content-preview": [
+      {
+        "id": "anticipated-feature-categories",
+        "text": "Anticipated Feature Categories"
+      },
+      {
+        "id": "new-entity-possibilities",
+        "text": "New Entity Possibilities"
+      },
+      {
+        "id": "corridor-variety-anticipation",
+        "text": "Corridor Variety Anticipation"
+      },
+      {
+        "id": "audio-enhancement-possibilities",
+        "text": "Audio Enhancement Possibilities"
+      },
+      {
+        "id": "quality-of-life-anticipation",
+        "text": "Quality Of Life Anticipation"
+      },
+      {
+        "id": "performance-optimization-expectations",
+        "text": "Performance Optimization Expectations"
+      },
+      {
+        "id": "player-expectations-and-hopes",
+        "text": "Player Expectations And Hopes"
+      },
+      {
+        "id": "developer-hint-analysis",
+        "text": "Developer Hint Analysis"
+      },
+      {
+        "id": "speculation-methodology",
+        "text": "Speculation Methodology"
+      },
+      {
+        "id": "content-addition-timeline",
+        "text": "Content Addition Timeline"
+      },
+      {
+        "id": "feature-speculation-examples",
+        "text": "Feature Speculation Examples"
+      },
+      {
+        "id": "preparing-for-future-updates",
+        "text": "Preparing For Future Updates"
+      },
+      {
+        "id": "major-update-indicators",
+        "text": "Major Update Indicators"
+      },
+      {
+        "id": "balancing-expectations",
+        "text": "Balancing Expectations"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "updates:en:july-2026-update": [
+      {
+        "id": "july-2026-update-overview",
+        "text": "July 2026 Update Overview"
+      },
+      {
+        "id": "clark-balance-changes",
+        "text": "Clark Balance Changes"
+      },
+      {
+        "id": "audio-adjustments",
+        "text": "Audio Adjustments"
+      },
+      {
+        "id": "corridor-variety-improvements",
+        "text": "Corridor Variety Improvements"
+      },
+      {
+        "id": "bug-fixes",
+        "text": "Bug Fixes"
+      },
+      {
+        "id": "strategy-impact-assessment",
+        "text": "Strategy Impact Assessment"
+      },
+      {
+        "id": "community-response",
+        "text": "Community Response"
+      },
+      {
+        "id": "adaptation-techniques",
+        "text": "Adaptation Techniques"
+      },
+      {
+        "id": "pre-update-vs-post-update-comparison",
+        "text": "Pre-Update Vs Post-Update Comparison"
+      },
+      {
+        "id": "specific-clark-behavioral-changes",
+        "text": "Specific Clark Behavioral Changes"
+      },
+      {
+        "id": "run-duration-impact",
+        "text": "Run Duration Impact"
+      },
+      {
+        "id": "best-strategies-post-update",
+        "text": "Best Strategies Post-Update"
+      },
+      {
+        "id": "common-mistakes-post-update",
+        "text": "Common Mistakes Post-Update"
+      },
+      {
+        "id": "future-update-expectations",
+        "text": "Future Update Expectations"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ],
+    "updates:en:patch-notes-history": [
+      {
+        "id": "patch-history-overview",
+        "text": "Patch History Overview"
+      },
+      {
+        "id": "july-2026-patch-list",
+        "text": "July 2026 Patch List"
+      },
+      {
+        "id": "patch-theme-patterns",
+        "text": "Patch Theme Patterns"
+      },
+      {
+        "id": "cumulative-changes-since-launch",
+        "text": "Cumulative Changes Since Launch"
+      },
+      {
+        "id": "clark-evolution-timeline",
+        "text": "Clark Evolution Timeline"
+      },
+      {
+        "id": "audio-system-evolution",
+        "text": "Audio System Evolution"
+      },
+      {
+        "id": "corridor-system-evolution",
+        "text": "Corridor System Evolution"
+      },
+      {
+        "id": "performance-evolution",
+        "text": "Performance Evolution"
+      },
+      {
+        "id": "bug-fix-evolution",
+        "text": "Bug Fix Evolution"
+      },
+      {
+        "id": "update-cadence-analysis",
+        "text": "Update Cadence Analysis"
+      },
+      {
+        "id": "strategy-evolution-tracking",
+        "text": "Strategy Evolution Tracking"
+      },
+      {
+        "id": "community-patch-discussions",
+        "text": "Community Patch Discussions"
+      },
+      {
+        "id": "using-patch-history-for-planning",
+        "text": "Using Patch History For Planning"
+      },
+      {
+        "id": "patch-archive-access",
+        "text": "Patch Archive Access"
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently Asked Questions"
+      }
+    ]
+  }
+}

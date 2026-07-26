@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="corridorFloor" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#d4c83a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <radialGradient id="darknessCenter" cx="50%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.85"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer black background frame -->
+  <rect width="64" height="64" fill="#0a0a0a"/>
+
+  <!-- Yellow corridor floor and ceiling receding in perspective -->
+  <polygon points="8,56 56,56 40,24 24,24" fill="#f5e942"/>
+  <polygon points="8,8 56,8 40,24 24,24" fill="#f5e942" opacity="0.6"/>
+
+  <!-- Corridor side walls -->
+  <polygon points="8,56 8,8 24,24" fill="#c4b832" opacity="0.85"/>
+  <polygon points="56,56 56,8 40,24" fill="#c4b832" opacity="0.85"/>
+
+  <!-- Floor lines receding to horizon -->
+  <line x1="16" y1="56" x2="28" y2="24" stroke="#9a9228" stroke-width="0.5" opacity="0.6"/>
+  <line x1="32" y1="56" x2="32" y2="24" stroke="#9a9228" stroke-width="0.5" opacity="0.6"/>
+  <line x1="48" y1="56" x2="36" y2="24" stroke="#9a9228" stroke-width="0.5" opacity="0.6"/>
+  <line x1="24" y1="56" x2="32" y2="24" stroke="#9a9228" stroke-width="0.5" opacity="0.6"/>
+  <line x1="40" y1="56" x2="32" y2="24" stroke="#9a9228" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Dark doorway at end of corridor -->
+  <polygon points="26,24 38,24 34,18 30,18" fill="#0a0a0a"/>
+
+  <!-- Clark entity silhouette in doorway -->
+  <polygon points="30,24 34,24 33,19 31,19" fill="#1a1a1a"/>
+  <!-- Clark's eyes (glowing) -->
+  <circle cx="31.5" cy="20.5" r="0.4" fill="#ff3333"/>
+  <circle cx="32.5" cy="20.5" r="0.4" fill="#ff3333"/>
+
+  <!-- Flashlight beam from bottom-left -->
+  <polygon points="10,52 22,52 32,28 32,32" fill="#3a4a1a" opacity="0.35"/>
+  <polygon points="10,52 18,52 32,30 32,32" fill="#5a6a2a" opacity="0.4"/>
+
+  <!-- Vignette darkness overlay -->
+  <rect width="64" height="64" fill="url(#darknessCenter)"/>
+
+  <!-- Border frame -->
+  <rect x="1" y="1" width="62" height="62" fill="none" stroke="#3a3a3a" stroke-width="1"/>
+</svg>
