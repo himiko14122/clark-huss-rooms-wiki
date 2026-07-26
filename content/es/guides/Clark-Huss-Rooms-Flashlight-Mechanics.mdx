@@ -1,0 +1,203 @@
+export const metadata = {
+  id: "flashlight-mechanics",
+  slug: "flashlight-mechanics",
+  order: 3,
+  difficulty: "intermediate",
+  title: "Clark (EARLY ACCESS) - Mecánicas de la Linterna de Huss Rooms: Guía de Disciplina de Batería",
+  description: "Guía completa de las mecánicas de la linterna de Clark Huss rooms: clic vs mantener, conservación de batería, riesgo de exposición a la luz para Clark y patrones tácticos de uso de la linterna.",
+  keywords: ["Clark Huss rooms mecánicas de la linterna", "Clark Huss rooms batería de la linterna", "Clark Huss rooms disciplina de luz", "Clark Huss rooms clic de linterna", "Clark Huss rooms conservación de batería"],
+  image: "/images/guides/flashlight-mechanics.webp",
+  video: "0HU7nDM4PvU",
+  category: "guides",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+La linterna en Clark Huss rooms es la única herramienta que llevas, y también es la forma principal en que Clark te encuentra. Esta doble naturaleza convierte la gestión de la linterna en la mecánica de mayor habilidad del juego, porque cada clic intercambia información por exposición. Los jugadores nuevos mantienen la linterna encendida continuamente para mayor comodidad y mueren con la batería aún al cincuenta por ciento. Los veteranos usan clics individuales que duran medio segundo y sobreviven el doble de tiempo con la misma batería inicial.
+
+Esta guía explica los costes exactos de batería de cada acción de la linterna, las matemáticas detrás de la mecánica de detección de luz de Clark y el marco de disciplina que separa el spamming de linterna del dominio de la linterna. También aprenderás cómo coordinar el uso de la linterna en una escuadra y los patrones comunes que desperdician batería sin proporcionar información.
+
+## Referencia de Coste de Batería de la Linterna
+
+El coste de batería por acción de la linterna no se muestra en ningún lugar del juego, por eso los jugadores nuevos subestiman lo rápido que se agota su batería. La estructura de costes es consistente entre partidas, así que los veteranos la han medido mediante pruebas de la comunidad.
+
+| Acción de la Linterna | Duración | Coste de Batería | Información Obtenida |
+|-----------------------|----------|------------------|----------------------|
+| Clic individual (encender/apagar) | 0.3 seg | 1% | Textura de pared, contorno de esquina |
+| Doble clic rápido | 0.6 seg | 3% | Escaneo completo de corredor, silueta de entidad |
+| Mantener (continuo) | 1 seg | 5% | Revelación profunda de la habitación, visibilidad de objetos |
+| Mantener (continuo) | 3 seg | 12% | Visibilidad máxima, alerta máxima de Clark |
+| Encender permanentemente | Drenaje constante | Se agota en 40 seg | Información máxima, tiempo de supervivencia mínimo |
+
+La batería completa comienza al 100% y el indicador se actualiza cada cinco segundos. Cuando la barra llega a rojo, te quedan aproximadamente quince segundos de linterna estilo clic y cero segundos de haz sostenido. Planifica tus clics restantes en consecuencia.
+
+## La Mecánica de Exposición a la Luz: Cómo te Detecta Clark
+
+Clark no ve el haz de tu linterna como un humano ve la luz. Lo detecta mediante una combinación de firma de audio y un radio de detección único ligado al estado de tu linterna.
+
+### **Radio de detección por estado de la linterna:**
+
+| Estado | Radio de Detección de Clark | Notas |
+|--------|------------------------------|-------|
+| Linterna apagada, caminando | 5 metros | Solo huella de audio estándar |
+| Linterna apagada, corriendo | 12 metros | El audio de carrera es fuerte |
+| Clic individual de linterna | 6 metros | Señal visual breve, audio sin cambios |
+| Linterna sostenida | 18 metros | La luz penetra una pared, señal fuerte |
+| Parpadeo de linterna (clics rápidos) | 9 metros | Señal intermedia, confusa de leer |
+
+La mecánica clave es la penetración de paredes. Cuando mantienes la linterna encendida, la fuente de luz penetra a través de una capa adicional de pared, lo que significa que Clark puede detectarte incluso cuando estás alrededor de una esquina o en una habitación adyacente. Por eso un haz sostenido en un corredor equivocado es esencialmente un faro para Clark.
+
+**Implicación práctica:** el momento más peligroso de la linterna es cuando entras en una habitación nueva e instintivamente mantienes el haz encendido mientras escaneas. Clark puede detectarte desde dos habitaciones de distancia durante ese escaneo. Usa clic en su lugar.
+
+## Patrones de Clic que Funcionan
+
+El patrón de clic que uses determina cuánta información obtienes por porcentaje de batería. Aquí están los patrones que los veteranos realmente usan, con efectividad medida.
+
+**Patrón 1: La Comprobación de Esquina** — acércate a una esquina, haz clic una vez durante 0.3 segundos, escucha durante un segundo, luego haz clic otra vez si necesitas una segunda mirada. Coste de batería: 2%. Información: geometría completa de la esquina más cualquier indicio de audio de Clark.
+
+**Patrón 2: El Escaneo de Habitación** — entra en una puerta, haz clic tres veces en sucesión rápida cubriendo izquierda, centro, derecha, luego camina dentro. Coste de batería: 9%. Información: distribución de la habitación, objetos, indicadores de salida, silueta de Clark si está presente.
+
+**Patrón 3: La Confirmación de Amenaza** — escuchaste indicios de audio de Clark, haz clic una vez en la dirección sospechada para confirmar su posición. Coste de batería: 1%. Información: silueta de Clark visible, su dirección de movimiento confirmada.
+
+**Patrón 4: El Apriete** — linterna completamente apagada, navega usando solo audio durante una sección completa de corredor. Coste de batería: 0%. Información: indicios puramente de audio, sigilo máximo.
+
+**Patrón 5: La Sincronización de Escuadra** — el gestor de luz hace clic una vez, la escuadra se mueve durante la ventana de 0.3 segundos, luego todos se quedan quietos durante la siguiente ventana de monitoreo de audio. Coste de batería: mínimo por jugador. Información: movimiento seguro coordinado.
+
+## Marco de Conservación de Batería
+
+La conservación de batería no se trata de usar menos luz. Se trata de usar luz en momentos que devuelven la mayor cantidad de información por coste. Aquí está el marco que los veteranos usan.
+
+**La Regla del Umbral del 50%:** una vez que tu batería cae por debajo del 50%, cambia al modo solo clic. No hay haces sostenidos por debajo del umbral. Esto reserva suficiente batería para situaciones de emergencia en la fase final.
+
+**La Prueba de Información por Clic:** antes de cada clic, pregunta si el clic te dará información que no puedes obtener solo del audio. Si la respuesta es no, no hagas clic.
+
+**El Modificador de Proximidad de Clark:** si has escuchado la respiración de Clark en los últimos treinta segundos, multiplica tu frecuencia de clics por 0.5. Cada clic durante un evento de audio de Clark es doble exposición.
+
+**El Promedio de Batería de la Escuadra:** en multijugador, la batería de la escuadra es el promedio de todos los jugadores. Cuando un jugador llega al 20%, la escuadra debería cambiar al ritmo de ese jugador independientemente de la batería restante de los demás.
+
+| Rango de Batería | Modo Recomendado | Razonamiento |
+|------------------|------------------|--------------|
+| 100% — 70% | Patrón de clic estándar | Mucha batería, úsala con confianza |
+| 70% — 50% | Clics conservativos | Guarda para emergencias de la fase final |
+| 50% — 25% | Solo clic, sin dobles clics | Reserva para confirmaciones de Clark |
+| 25% — 10% | Un clic por decisión mayor | Reservas finales, no desperdicies |
+| 10% — 0% | Linterna completamente apagada | Navegación solo por audio |
+
+## Errores de Disciplina de Luz
+
+Estos errores desperdician batería y aumentan la exposición a Clark. Los jugadores nuevos caen en todos ellos.
+
+**Error 1: El Mantenimiento por Comodidad** — mantener la linterna encendida continuamente porque la oscuridad se siente incómoda. La batería se agota en cuarenta segundos, y Clark te detecta desde el doble del rango normal.
+
+**Error 2: El Clic de Pánico** — hacer clic rápidamente cuando los indicios de audio de Clark se disparan. Cada clic aumenta tu exposición sin añadir información.
+
+**Error 3: El Patrón Clic-Caminar-Clic** — hacer clic, caminar cinco pasos, hacer clic otra vez. La huella de audio al caminar es más fuerte que el clic, y no aprendes nada de un clic mientras ya estás caminando.
+
+**Error 4: La Asunción de Luz Compartida** — asumir que la linterna de tu compañero de escuadra te protege. Cada linterna es una fuente de exposición separada. Clark detecta la más cercana.
+
+**Error 5: El Pre-Clic** — hacer clic antes de llegar a una esquina "por si acaso". El clic no revela nada porque aún no has llegado a la geometría que importa.
+
+## Coordinación de Linterna de Escuadra
+
+La coordinación de linterna en multijugador multiplica la efectividad porque la escuadra comparte cobertura visual mientras mantiene bajo el consumo individual de batería. El sistema requiere disciplina.
+
+**El Rol de Gestor de Luz:** un jugador controla el tiempo de la linterna para toda la escuadra. Sus clics se programan para dar a la escuadra un segundo de confirmación visual, luego todos caminan en la oscuridad durante la siguiente ventana.
+
+**La Sincronización de Tres Clics:** en puntos de decisión importantes (intersecciones, puertas, habitaciones abiertas), el gestor de luz hace clic tres veces. Cada clic cubre una dirección diferente. Los miembros de la escuadra usan las breves ventanas para confirmar su propio camino.
+
+**La Rotación de Batería:** en una escuadra de cuatro jugadores, cada jugador toma un turno como gestor de luz durante un minuto. Esto distribuye el coste de batería uniformemente y evita que un solo jugador se agote antes.
+
+**El Aviso de Emergencia:** si un miembro de la escuadra está al 10% de batería, llama "batería crítica" y la escuadra cambia a solo audio durante los siguientes treinta segundos. Esto le compra al jugador con batería baja tiempo de recuperación.
+
+## La Ventana de Enfriamiento de Clark
+
+Cuando Clark se retira tras una detección fallida, hay una ventana de treinta segundos donde su sensibilidad de audio cae aproximadamente un cincuenta por ciento. Esta es la ventana donde el uso de la linterna es menos penalizado.
+
+### **Tiempos de la ventana de enfriamiento:**
+
+| Evento | Ventana de Enfriamiento | Comportamiento Seguro de Linterna |
+|--------|--------------------------|-----------------------------------|
+| Clark se retira tras detección fallida | 30 seg | Clic libremente, no está escuchando activamente |
+| Clark entra en nueva zona de corredor | 20 seg | Clics moderados, se está orientando |
+| Clark en persecución activa | 0 seg | Linterna apagada, solo carrera |
+| Silencio (sin audio de Clark) | Variable | Clic conservador, escucha primero |
+
+Los veteranos aprenden a contar hasta treinta en silencio después de que Clark se retire, y usan esos treinta segundos para la mayor parte de su exploración con linterna. Esta técnica por sí sola puede duplicar tu vida efectiva de batería.
+
+## Lectura del Indicador de Batería
+
+El indicador de batería de la linterna es una barra horizontal con tres estados de color. Muchos jugadores interpretan mal los colores, lo que lleva a un agotamiento prematuro o a una confianza falsa.
+
+### **Referencia de estados de color:**
+
+| Color | Rango de Batería | Señal Visual |
+|-------|------------------|--------------|
+| Verde | 100% — 50% | Barra completa, no se necesita advertencia |
+| Amarillo | 50% — 20% | Media barra, cambia al modo solo clic |
+| Rojo | 20% — 0% | Barra corta, navegación solo por audio |
+| Rojo parpadeante | 5% — 0% | La linterna se apaga automáticamente pronto |
+
+El indicador se actualiza cada cinco segundos, por lo que el retraso del color puede engañarte. Si ves amarillo, asume que tienes menos tiempo del que muestra la barra. Si ves rojo, asume que tienes diez segundos, no quince.
+
+## Cuándo Usar Luz Sostenida
+
+La luz sostenida solo se justifica en situaciones específicas. Fuera de estos momentos, la disciplina de clic siempre es superior.
+
+### **Momentos justificados de luz sostenida:**
+
+1. Entrar en una habitación que nunca has visto — un escaneo de tres segundos revela la distribución, los objetos, las pistas de salida
+2. Confirmar una aparición de Clark — mantén el haz sobre su silueta para confirmar la ubicación antes de retirarte
+3. Rescatar a un miembro de la escuadra caído — luz sostenida para navegar mientras lo cargas
+4. Habitación final antes de la extracción — máxima visibilidad para ubicar el indicador de la puerta de salida
+5. Verificación de recogida de objetos — los objetos tienen hitboxes pequeños, el haz sostenido confirma el contacto
+
+Fuera de estas cinco situaciones, la luz sostenida es un hábito que debes romper. Si te atrapas manteniendo el haz encendido por más de dos segundos, apágalo con clic y reinicia.
+
+## Preguntas Frecuentes
+
+**¿Apagar la linterna por completo me oculta de Clark?**
+
+No. Clark aún puede escuchar tus pasos, colisiones y chat de voz. La linterna es una de tres fuentes de detección. La huella de audio y la velocidad de movimiento importan igualmente.
+
+**¿Hay alguna mejora de linterna en el juego?**
+
+No. La linterna es una herramienta fija con capacidad de batería fija. La única variable es cómo la usas.
+
+**¿Puedo recargar la batería durante una partida?**
+
+No. No hay mecánica de recarga de batería. Una vez agotada, la linterna está apagada por el resto de la partida.
+
+**¿Correr agota la batería de la linterna?**
+
+No, pero correr combinado con linterna sostenida es el peor escenario porque combina huella de audio y exposición a la luz. Evita correr con la linterna encendida.
+
+**¿Por qué mi clic de linterna a veces no se registra?**
+
+La latencia de red puede causar que las entradas de clic se retrasen entre 100 y 200 milisegundos. Si haces clic y la linterna no responde, espera un segundo completo antes de hacer clic otra vez para evitar dobles clics.
+
+Para más información sobre las mecánicas de audio que se combinan con la disciplina de la linterna, consulta nuestra [guía de navegación por audio](/en/guides/audio-navigation/). Para entender el comportamiento específico de detección de Clark, lee [anatomía de la entidad Clark](/en/entities/clark-entity-anatomy/).
+
+
+**¿Cómo comparto mis herramientas y descubrimientos con la comunidad?**
+
+La Wiki de la comunidad y Discord son los principales canales para compartir herramientas. Las contribuciones a la Wiki siguen estándares editoriales, mientras que Discord permite compartir de forma informal con menos estructura. La mayoría de las herramientas exitosas provienen de contribuidores individuales que identifican brechas en los recursos disponibles, luego colaboran con la comunidad para refinar su enfoque. Si creas una herramienta útil, documéntala claramente con especificaciones de entrada/salida y ejemplos de uso para que otros puedan adoptarla sin confusión.
+
+**¿Qué debo hacer si una herramienta de la que dependo deja de funcionar?**
+
+Reporta el problema inmediatamente a través del canal de retroalimentación documentado de la herramienta. Para herramientas basadas en Wiki, usa la página de discusión. Para herramientas compartidas en Discord, contacta al creador directamente. La mayoría de los maintainers de herramientas de la comunidad son receptivos a los reportes de errores y agradecen el aviso. Mientras esperas una solución, cambia a herramientas alternativas o métodos manuales. Documenta tu solución temporal para que otros usuarios afectados puedan beneficiarse de tu solución provisional.
+
+**¿Puedo confiar en herramientas de terceros con la información de mi cuenta?**
+
+Nunca compartas credenciales de cuenta con ninguna herramienta. Las herramientas legítimas operan a través de la interfaz pública del juego y no requieren inicio de sesión. Si una herramienta te pide tu contraseña de Roblox, no es legítima independientemente de su propósito declarado. Para funciones personalizadas como seguimiento de estadísticas, la herramienta solo debería pedir tu nombre de usuario en el juego (que es público), no tu contraseña.
+
+**¿Cuánto tiempo se tarda en aprender una nueva herramienta?**
+
+La mayoría de las herramientas de la comunidad tienen interfaces intuitivas que permiten un uso básico en minutos. El dominio suele tomar de 1 a 2 semanas de uso regular, dependiendo de la complejidad de la herramienta. Los analizadores de audio requieren más tiempo porque la metodología de entrenamiento tiene múltiples etapas. Las calculadoras de batería y los rastreadores de parches son más simples y fáciles de aprender. Los canales de Discord de la comunidad a menudo tienen usuarios veteranos dispuestos a ayudar a los recién llegados durante la curva de aprendizaje.
+
+**¿Debería usar múltiples herramientas simultáneamente?**
+
+Sí, las herramientas complementarias se mejoran entre sí. Por ejemplo, usar un analizador de audio junto con una calculadora de batería proporciona tanto desarrollo de habilidad de audio como planificación de gestión de recursos. La clave es asegurarse de que las herramientas no entren en conflicto entre sí o te abrumen con información. Comienza con una o dos herramientas esenciales, luego añade más a medida que te sientas cómodo.
+
+**¿Cómo sé si una herramienta es de alta calidad?**
+
+Los indicadores de calidad incluyen mantenimiento activo, discusión de la comunidad, documentación clara, actualizaciones regulares y respaldos positivos de veteranos. Las herramientas que no se han actualizado en meses pueden estar abandonadas. Las herramientas con canales de Discord activos y maintainers receptivos tienden a ser más confiables. La reputación de la comunidad es un fuerte indicador de calidad.

@@ -1,0 +1,283 @@
+export const metadata = {
+  id: "clark-entity-anatomy",
+  slug: "clark-entity-anatomy",
+  order: 1,
+  difficulty: "advanced",
+  title: "Clark (ACCESO ANTICIPADO) - Anatomía de la Entidad Clark de Huss Rooms: Comportamiento y Diseño",
+  description: "Anatomía de la entidad Clark de Huss rooms — patrones de comportamiento, señales de audio, mecánicas de amenaza, reglas de escalada y marcos de contraestrategia.",
+  keywords: ["Clark Huss rooms Clark anatomía", "Clark Huss rooms Clark comportamiento", "Clark Huss rooms Clark análisis", "Clark Huss rooms Clark mecánicas", "Clark Huss rooms guía de entidad"],
+  image: "/images/entities/clark-entity-anatomy.webp",
+  video: "8n7B9BBiI3U",
+  category: "entities",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+Clark es la entidad principal y actualmente la única confirmada en Clark Huss rooms. A diferencia de los monstruos típicos de juegos de terror que persiguen agresivamente, Clark es un acechador-escucha paciente cuya detección depende de lo que haces en lugar de dónde estás. Comprender el patrón de comportamiento completo de Clark, sus firmas de audio y sus reglas de escalada es esencial para sobrevivir.
+
+Esta guía proporciona un análisis exhaustivo del diseño de comportamiento de Clark, los mecanismos detrás de su detección, sus estados conductuales y el marco de contraestrategia que funciona contra cada estado. También aprenderás sobre los patrones de aparición de Clark, las ventanas de enfriamiento y las sutiles diferencias entre sus niveles de alerta.
+
+## El Papel de Clark En El Juego
+
+Clark sirve como el antagonista principal y fuente de tensión en Clark Huss rooms durante encuentros de juego y sesiones extendidas con jugadores en el mundo del juego. Su filosofía de diseño difiere de los monstruos típicos de juegos de terror en formas importantes que afectan el comportamiento del jugador y la estrategia de supervivencia.
+
+### **Características del diseño de Clark:**
+
+| Característica | Descripción |
+|----------------|-------------|
+| Tipo de comportamiento | Acechador-escucha (paciente, sensible al audio) |
+| Enfoque de detección | Pasos al correr, colisiones, chat de voz |
+| Patrón de movimiento | Patrulla con escalada a persecución |
+| Comportamiento de retirada | Enfriamiento tras detección fallida |
+| Diseño visual | Visto mínimamente, principalmente señales de audio |
+| Impacto psicológico | Tensión de anticipación, no sobresalto |
+
+El diseño de Clark recompensa a los jugadores pacientes que minimizan la salida de audio y castiga a los jugadores que hacen ruido o movimientos descuidados. Esto es opuesto a muchos juegos de terror donde esconderse es la estrategia principal de supervivencia y proporciona un desafío único y una experiencia de juego diferente.
+
+## La Firma de Audio de Clark
+
+Clark produce seis señales de audio distintas que comunican su estado, posición e intención conductual durante los encuentros de juego con jugadores a lo largo de la partida. Aprender estas señales es esencial para la supervivencia en diversos escenarios y niveles de dificultad encontrados durante el juego y a través de múltiples sesiones.
+
+### **Las seis señales de audio de Clark:**
+
+| Señal | Sonido | Comunicación de Estado |
+|-----|-------|---------------------|
+| Latido del corazón | Pulso bajo, regular | Distante, patrullando |
+| Respiración | Exhalación rítmica, tono más profundo | Cerca, consciente |
+| Golpes de pasos | Pesados, lentos, distintos de los jugadores | En habitación adyacente |
+| Fragmentos de susurro | Palabras suaves y distorsionadas | Alerta elevada |
+| Ráfaga de carrera | Pasos rápidos y fuertes | Persecución activa |
+| Vocalización | Murmullo de una sola palabra | Detección cercana |
+
+Cada señal tiene una relación específica de volumen-distancia que ayuda a los jugadores a estimar la proximidad a Clark con precisión durante los encuentros de juego y persecuciones activas a lo largo de cada partida en el entorno del juego y a través de varios escenarios encontrados durante las sesiones de juego y escenarios extendidos a lo largo de múltiples partidas.
+
+## Estados Conductuales de Clark
+
+Clark transita a través de varios estados conductuales durante una partida basados en las acciones del jugador y eventos de detección a lo largo de las sesiones de juego con jugadores a lo largo del tiempo y a través de múltiples escenarios. Cada estado tiene características distintas y contraestrategias para la supervivencia en diferentes escenarios encontrados durante las partidas de juego y sesiones extendidas de manera consistente.
+
+### **Estados conductuales:**
+
+| Estado | Duración | Rango de Detección | Contraestrategia |
+|-------|----------|-----------------|-----------------|
+| Patrulla | Minutos | 5 metros | Huella de audio baja |
+| Investigación | Segundos | 8 metros | Detenerse, reducir ruido |
+| Rastreo | Decenas de segundos | 12 metros | Interrupción de audio |
+| Persecución | 30+ segundos | 18 metros | Quiebres de esquina |
+| Caza | Activo | 20+ metros | Carrera completa |
+| Enfriamiento | 30+ segundos | Reducido | Reagruparse |
+
+Los estados escalan según la salida de audio del escuadrón y la evidencia acumulada de Clark sobre la presencia del jugador a lo largo de la partida y las sesiones de juego a través de múltiples escenarios y niveles de dificultad encontrados en el mundo del juego de manera consistente a lo largo del tiempo y a través de múltiples partidas.
+
+## Disparadores de Transición de Estado
+
+Las transiciones de estado de Clark son activadas por eventos específicos durante los encuentros con jugadores en el entorno del juego a lo largo de las sesiones de juego y a través de múltiples escenarios. Comprender los disparadores te ayuda a evitar escaladas innecesarias y mantener el control sobre su comportamiento a lo largo de cada sesión de manera consistente a lo largo del tiempo.
+
+### **Disparadores de transición:**
+
+| Desde Estado | Disparador | Al Estado |
+|------------|---------|----------|
+| Patrulla | Detección de audio dentro del rango | Investigación |
+| Investigación | Audio sostenido o repetido | Rastreo |
+| Rastreo | Contacto visual o audio fuerte | Persecución |
+| Persecución | Audio continuo del objetivo | Caza |
+| Caza | Escape del objetivo o rastro de audio perdido | Enfriamiento |
+| Enfriamiento | Tiempo transcurrido | Patrulla |
+
+Cada transición tiene un retraso de 2 a 5 segundos durante el cual aún puedes cambiar el estado de Clark reduciendo tu salida de audio y moviéndote cuidadosamente a través de los corredores encontrados en la estructura del nivel y a lo largo de la partida de manera consistente a lo largo del tiempo.
+
+## Mecánicas de Detección
+
+Clark detecta a los jugadores a través de una combinación de entradas de audio y visuales durante los encuentros de juego en el entorno del juego de manera consistente a través de múltiples sesiones y partidas a lo largo del tiempo. Las mecánicas de detección a continuación explican exactamente qué nota Clark y cómo opera su detección durante los encuentros activos con los jugadores.
+
+**Entradas de detección:**
+
+| Entrada | Rango de Detección | Umbral de Activación |
+|-------|-----------------|-------------------|
+| Pasos al caminar | 5 metros | Sonido continuo |
+| Pasos al correr | 12 metros | Ráfaga de sonido |
+| Linterna (clic) | 6 metros | Señal breve |
+| Linterna (sostenida) | 18 metros | Señal sostenida |
+| Colisión | 15 metros | Evento único fuerte |
+| Chat de voz | Variable | Dependiente del volumen |
+| Respiración (jugador) | 3 metros | Salida continua |
+
+Los rangos de detección se acumulan cuando múltiples fuentes están activas simultáneamente durante los escenarios de juego a lo largo de la partida y a través de sesiones de manera consistente a lo largo del tiempo. Correr con una linterna sostenida es la combinación peor caso para activar la detección de Clark en el juego de manera consistente a través de los escenarios encontrados.
+
+## Patrones de Aparición de Clark
+
+Clark aparece en patrones específicos relacionados con el vestíbulo y el bloqueo del servidor durante las sesiones de juego y partidas extendidas a través de múltiples escenarios de manera consistente. Comprender los patrones de aparición te ayuda a prepararte para los encuentros y planificar tu estrategia de movimiento a lo largo de cada juego a través de las sesiones.
+
+**Fases del patrón de aparición:**
+
+| Fase | Ubicación de Clark | Comportamiento |
+|-------|----------------|----------|
+| Vestíbulo | Patrullando distante | Mayormente solo latido |
+| Pre-bloqueo | Patrulla de rango medio | Respiración ocasional |
+| Post-bloqueo (temprano) | Más cerca del vestíbulo | Frecuencia aumentada |
+| Post-bloqueo (medio) | Patrulla a mitad del juego | Señales continuas |
+| Post-bloqueo (tarde) | Posicionamiento agresivo | Susurros frecuentes |
+
+Clark se desplaza hacia el vestíbulo a medida que la partida progresa a través de diferentes fases de juego en cada sesión a lo largo del tiempo y escenarios extendidos de manera consistente. Este patrón es por diseño para mantener la tensión y crear un juego dinámico a lo largo de la duración de la partida de manera consistente a lo largo del tiempo.
+
+## Marco de Contraestrategia
+
+Cada estado de Clark tiene una contraestrategia específica para la supervivencia en diferentes escenarios encontrados durante las sesiones de juego a lo largo del tiempo de manera consistente a través de múltiples partidas. El marco a continuación mapea estados a acciones para un juego consistente y resultados mejorados a través de múltiples partidas y sesiones a través de escenarios de manera consistente.
+
+**Contraestrategia por estado:**
+
+| Estado | Contraestrategia |
+|-------|------------------|
+| Patrulla | Continuar el ritmo actual, disciplina normal |
+| Investigación | Pausar, detener la salida de audio, escuchar |
+| Rastreo | Moverse a la ruta de escape, reducir la huella |
+| Persecución | Activar protocolo de escape, quiebre de esquina |
+| Caza | Carrera completa, linterna apagada, perder el rastro |
+| Enfriamiento | Reagruparse, conservar stamina, reevaluar |
+
+El marco se vuelve automático después de suficiente práctica y experiencia de juego a través de múltiples sesiones y partidas de manera consistente. Los veteranos lo ejecutan sin pensamiento consciente durante los encuentros con Clark a través de varios escenarios y niveles de dificultad encontrados regularmente a lo largo del tiempo y a lo largo del juego.
+
+## Mecánicas de Retirada de Clark
+
+Cuando Clark se desconecta, entra en una ventana de enfriamiento donde su comportamiento cambia significativamente de los estados activos durante los encuentros con jugadores en el juego. Las mecánicas de retirada a continuación describen qué sucede durante esta ventana en detalle para los jugadores de manera consistente a lo largo del tiempo.
+
+**Disparadores de retirada:**
+
+| Disparador | Efecto |
+|---------|--------|
+| Escape del jugador (quiebre de esquina) | Clark pausa, la sensibilidad de audio baja |
+| Rastro de audio perdido | Clark vuelve a patrullar |
+| Tiempo transcurrido en la caza | Clark se desconecta automáticamente |
+| Linterna del jugador apagada durante la caza | La incertidumbre de detección aumenta |
+
+La retirada crea una ventana de 30 segundos donde la sensibilidad de audio de Clark se reduce en aproximadamente un cincuenta por ciento en comparación con los estados activos de manera consistente. Esta es la ventana segura para el uso de la linterna y actividades de reagrupación con miembros del escuadrón durante el juego y escenarios encontrados.
+
+## Comportamiento de Enfriamiento de Clark
+
+Durante el enfriamiento, el comportamiento de Clark es menos agresivo y más predecible en el entorno del juego durante las sesiones activas y partidas de manera consistente. Los jugadores pueden usar esta ventana estratégicamente para movimiento seguro y actividades de exploración a lo largo del nivel a lo largo del tiempo de manera consistente.
+
+**Comportamiento de enfriamiento:**
+
+| Comportamiento | Descripción |
+|----------|-------------|
+| Movimiento | Solo patrulla, sin persecución |
+| Rango de detección | Reducido en 50% |
+| Salida de audio | Mismas señales pero menos frecuentes |
+| Vulnerabilidad | No puede escalar a caza rápidamente |
+
+La ventana de enfriamiento es el mejor momento para la exploración con linterna y actividades de reagrupación del escuadrón sin riesgo significativo de detección de Clark en el entorno durante los encuentros de juego a través de múltiples sesiones de manera consistente a lo largo del tiempo y escenarios encontrados a lo largo de las partidas.
+
+## Lógica de Selección de Objetivos de Clark
+
+La lógica de selección de objetivos de Clark determina a qué jugador persigue cuando existen múltiples opciones en el mapa durante las sesiones de juego de manera consistente a través de múltiples partidas. La lógica es observable en juego coordinado a través de un monitoreo cuidadoso de sus patrones de comportamiento a lo largo de las partidas y escenarios.
+
+**Prioridad de objetivos:**
+
+| Factor | Peso |
+|--------|--------|
+| Jugador más cercano | Alto |
+| Mayor salida de audio | Alto |
+| Línea de visión | Medio |
+| Actividad reciente | Medio |
+| Factor aleatorio | Bajo |
+
+En escuadrones, el aislamiento aumenta la probabilidad de ser objetivo porque los jugadores aislados tienen firmas de audio individuales más altas durante el juego que los jugadores agrupados en escuadrones coordinados a través de sesiones de manera consistente a lo largo de las partidas y múltiples escenarios y sesiones de juego adicionales y partidas a lo largo de todo el juego.
+
+## Reglas de Línea de Visión de Clark
+
+La línea de visión de Clark afecta su capacidad para detectar jugadores durante los encuentros de juego en varios escenarios y entornos encontrados a lo largo del tiempo de manera consistente a través de partidas y juego extendido. Las reglas son específicas y observables a través de un monitoreo cuidadoso de su comportamiento en el juego.
+
+**Estados de línea de visión:**
+
+| Estado | Efecto de Detección |
+|-------|------------------|
+| Línea directa | Clark rastrea con precisión |
+| Pared entre (1 capa) | El rastreo continúa, más lento |
+| Pared entre (2+ capas) | Solo audio, menos preciso |
+| Esquina bloqueando | El rastreo se pausa hasta el próximo audio |
+| Múltiples esquinas | El rastreo falla a menos que el audio se sostenga |
+
+Los quiebres de línea de visión reinician el rastreo de Clark y lo obligan a depender solo de señales de audio en el entorno del juego de manera consistente. Esta es la base de los escapes por quiebre de esquina que los jugadores experimentados usan durante las persecuciones activas y escenarios de juego encontrados.
+
+## Comportamiento de Colisión con Paredes de Clark
+
+La interacción de Clark con paredes y corredores sigue reglas específicas durante la navegación a través de la estructura del nivel encontrada de manera consistente a lo largo de las partidas. Comprender esto ayuda con la estrategia de movimiento y evitar la detección en varios escenarios encontrados durante las sesiones de juego a través de las sesiones de juego de manera consistente a lo largo del tiempo.
+
+**Comportamiento de pared:**
+
+| Comportamiento | Descripción |
+|----------|-------------|
+| Penetración de pared | Clark puede encontrar camino a través de corredores |
+| Puertas cerradas con llave | Clark pausa, luego abre |
+| Objetos decorativos | Clark los ignora |
+| Obstáculos especiales | Clark puede desviarse |
+| Corredores cerrados | Clark da la vuelta |
+
+El comportamiento de puerta cerrada con llave es importante porque crea un retraso temporal de rastreo para Clark durante las cazas a lo largo de la sesión de juego en escenarios activos de manera consistente a través de sesiones y múltiples encuentros a lo largo del tiempo a lo largo de las partidas y sesiones de juego adicionales en el juego.
+
+## Hoja de Ruta Futura de Clark
+
+El desarrollador mothem_XD ha insinuado futuras adiciones de entidades para el juego en próximas actualizaciones a lo largo del Acceso Anticipado y más allá. Clark puede recibir una entidad compañera o ver su comportamiento expandido significativamente a través de múltiples actualizaciones a lo largo del Acceso Anticipado de manera consistente a lo largo del tiempo.
+
+**Posibles cambios futuros:**
+
+| Cambio | Probabilidad |
+|--------|------------|
+| Nuevas entidades compañeras | Media |
+| Variaciones de comportamiento de Clark | Media |
+| Fases de inactividad de Clark | Baja |
+| Señales de audio adicionales de Clark | Media |
+| Escenarios de múltiples Clark | Baja |
+
+Las futuras actualizaciones pueden cambiar el comportamiento de Clark en formas significativas a lo largo del Acceso Anticipado y más allá en próximas versiones de manera consistente a lo largo del tiempo a través de múltiples sesiones. Los veteranos rastrean las notas de parche para mantenerse informados sobre los cambios y adaptar sus estrategias de manera consistente a lo largo de múltiples partidas.
+
+
+**Referencia Rápida de Detección:**
+
+- El latido del corazón indica un Clark distante patrullando sin amenaza inmediata
+
+- La cadencia de la respiración revela la proximidad y el nivel de alerta
+
+- Los golpes de pasos sugieren que Clark está en una habitación adyacente
+
+- Los fragmentos de susurro indican alerta elevada y escalada inminente
+
+- La ráfaga de carrera señala una caza activa que requiere retirada completa
+
+- La vocalización significa que Clark está cerca y detectando tu posición
+
+**Conceptos Básicos de Contraestrategia:**
+
+- Caminar silenciosamente reduce tu huella de audio significativamente
+
+- La disciplina de clic en la linterna extiende la batería mientras preserva el rango de detección
+
+- Los quiebres de esquina interrumpen el rastreo visual cuando comienza la persecución
+
+- El silencio sostenido durante 10+ segundos pierde el rastro de audio de Clark
+
+- La sincronización del movimiento del escuadrón confunde el rastreo de objetivo único
+
+- La disciplina del umbral de batería previene situaciones de agotamiento de emergencia
+
+
+## Preguntas Frecuentes
+
+**¿Cuál es la mayor debilidad de Clark?**
+
+La mayor debilidad de Clark es el silencio de audio porque depende de detectar el audio del jugador para localizar objetivos. Los jugadores que minimizan la salida de audio a través de movimiento disciplinado pueden navegar más allá de él sin activar la caza o escalada. El ritmo de caminar combinado con el uso reducido de la linterna representa la técnica más importante para la supervivencia en sus encuentros.
+
+**¿Puede Clark ver a través de las paredes?**
+
+Parcialmente. La detección de linterna de Clark penetra una capa de pared cuando activas tu linterna cerca de las paredes. De lo contrario, la detección visual requiere estrictamente línea de visión directa con el modelo de tu personaje. El audio sigue siendo su mecanismo principal de detección en todas las configuraciones de pared y distancias encontradas durante el juego.
+
+**¿Alguna vez Clark se rinde por completo?**
+
+Sí, después de una caza sostenida sin contacto, Clark entra en una ventana de enfriamiento larga donde su sensibilidad de audio se reduce en aproximadamente un cincuenta por ciento. Luego regresa al comportamiento de patrulla en un área diferente. Esta ventana típicamente dura 30+ segundos y proporciona oportunidades para el uso seguro de la linterna, reagrupación y reposicionamiento.
+
+**¿Cuál es la mejor contramedida contra Clark?**
+
+Caminar silenciosamente combinado con el uso disciplinado de la linterna representa la mejor contramedida contra las mecánicas de detección de Clark. Correr, el uso continuo de la linterna y el chat de voz son los principales disparadores que escalan su comportamiento. Minimiza los tres de manera consistente para obtener los mejores resultados de supervivencia a lo largo de tus partidas y a través de múltiples sesiones.
+
+**¿Cambiará el comportamiento de Clark en futuros parches?**
+
+Sí, el desarrollador mothem_XD puede ajustar la sensibilidad de audio de Clark, la velocidad de movimiento o agregar nuevos comportamientos a lo largo del Acceso Anticipado. Las notas de parche proporcionan detalles sobre cualquier cambio realizado en las mecánicas de Clark. Los veteranos deben mantenerse informados sobre las actualizaciones para mantener estrategias óptimas de supervivencia a través de diferentes versiones del juego.

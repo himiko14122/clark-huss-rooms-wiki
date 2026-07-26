@@ -1,0 +1,269 @@
+export const metadata = {
+  id: "room-types-tier",
+  slug: "room-types-tier",
+  order: 2,
+  difficulty: "intermediate",
+  title: "Clark (EARLY ACCESS) – Huss Rooms Raumtypen-Tierliste: Navigation und Sicherheits-Ranking",
+  description: "Clark Huss Rooms Raumtypen-Tier-Ranking – Kategorien von Korridoren, Sicherheitsbewertungen, Navigationsschwierigkeit und taktischer Nutzen jedes Raumtyps.",
+  keywords: ["Clark Huss Rooms Raumtypen", "Clark Huss Rooms Korridortypen", "Clark Huss Rooms Kartentypen", "Clark Huss Rooms gelbe Flure", "Clark Huss Rooms Raum-Ranking"],
+  image: "/images/tier-list/room-types-tier.webp",
+  video: "DD4PGiqyaaY",
+  category: "tier-list",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+Clark Huss Rooms erzeugt Korridore aus einer festen Musterbibliothek von ungefähr zwölf unterschiedlichen Typen, wobei jeder Raumtyp einzigartige Navigationseigenschaften, Sicherheitsprofile und taktische Einsatzmöglichkeiten besitzt. Zu verstehen, welche Raumtypen sicher sind, welche gefährlich sind und welche taktisch wertvoll, ist wesentlich für räumliche Kartierung und strategische Planung. Neue Spieler behandeln alle Korridore gleich, wodurch sie unvorbereitet in gefährliche Räume eintreten.
+
+Diese Tierliste ordnet die zwölf Raumtypen von S (taktisch am wertvollsten) bis F (am wenigsten nützlich) ein, erklärt die Navigationseigenschaften jedes Typs und gibt Empfehlungen, welche Raumtypen in verschiedenen Laufphasen priorisiert werden sollten. Sie werden außerdem lernen, wie Sie Raumtypen schnell anhand von Audio- und Taschenlampen-Klickmustern identifizieren.
+
+## Raumtyp-Tier-Rahmenwerk
+
+Jeder Raumtyp wird auf einer fünfstufigen Skala basierend auf drei Faktoren eingestuft: Navigationswert, Sicherheit während Clark-Begegnungen und taktischer Nutzen. Die Tiers helfen Ihnen zu priorisieren, welche Räume zuerst betreten und welche vermieden werden sollten.
+
+### **Faktoren des Raumtyp-Tiers:**
+
+| Faktor | Gewichtung | Beschreibung |
+|--------|-----------|--------------|
+| Navigationswert | 40% | Wie gut der Raum bei der räumlichen Kartierung hilft |
+| Sicherheit während Clark-Begegnungen | 40% | Wie anfällig der Raum für Clarks Entdeckung ist |
+| Taktischer Nutzen | 20% | Strategischer Wert für Flucht oder Sammeln |
+
+Die kombinierte Gewichtung ergibt eine einzige Tier-Einstufung von S bis F. Die folgende Tierliste verwendet dieses Rahmenwerk, um alle zwölf Raumtypen einzuordnen.
+
+## Tier S: Strategische offene Räume
+
+Tier-S-Räume sind große offene Bereiche, die taktischen Wert für räumliche Kartierung, Fluchtwege und Gruppensammeln bieten. Diese Räume sind die sichersten Orte für Pausen während Verfolgungen.
+
+### **Tier-S-Raumtypen:**
+
+| Raumtyp | Eigenschaften | Beste Nutzung |
+|---------|---------------|---------------|
+| Zentralraum | Großer zentraler Bereich mit vier oder mehr Türöffnungen | Karten-Checkpunkt, Gruppensammeln |
+| Treppenhaus | Mehrstufiger Zugang mit sichtbarer Struktur | Navigations-Orientierungspunkt, Fluchtweg |
+| Echokammer | Großer Raum mit charakteristischem Hall | Audio-Orientierungspunkt, Audio-Cue-Training |
+
+### **Taktische Vorteile der Tier-S-Räume:**
+
+- Mehrere Ausgangsoptionen für Flucht
+- Audio-Orientierungspunkte für Navigation
+- Platz für Gruppenformations-Manöver
+- Visuelle Orientierungspunkte für räumliches Gedächtnis
+
+Diese Räume sind selten, da der prozedurale Generator deren Häufigkeit begrenzt. Wenn Sie einen finden, markieren Sie ihn mental als Rückkehrpunkt.
+
+## Tier A: Lange Korridorknoten
+
+Tier-A-Räume sind Knotenpunkte, die mehrere Korridore verbinden. Sie sind wertvoll für die Navigation, da sie Routenauswahl ermöglichen und Eckenumgehungs-Optionen während Verfolgungen bieten.
+
+### **Tier-A-Raumtypen:**
+
+| Raumtyp | Eigenschaften | Beste Nutzung |
+|---------|---------------|---------------|
+| Kreuzung | Vier-Wege-Knoten | Routenauswahl, Fluchtoption |
+| T-Knoten | Drei-Wege-Knoten | Routenauswahl |
+| L-Knoten | Zwei-Wege-Ecke | Eckenbruch, Fluchtroute |
+
+**Taktische Vorteile der Tier-A-Räume:**
+
+- Mehrere Richtungsoptionen
+- Eckenbruch-Geometrie für Verfolgungen
+- Vorhersehbares Audioverhalten
+- Häufige Erzeugung (gut für Kartierung)
+
+Dies sind die häufigsten Raumtypen und bilden das Rückgrat Ihrer mentalen Karte. Veteranen identifizieren diese Räume innerhalb einer Sekunde nach Betreten.
+
+## Tier B: Standard-gelbe Flure
+
+Tier-B-Räume sind die Standardkorridore, die den Großteil des prozedural erzeugten Layouts ausmachen. Sie sind sicher zu navigieren, bieten jedoch begrenzten taktischen Wert über grundlegende Konnektivität hinaus.
+
+**Tier-B-Raumtypen:**
+
+| Raumtyp | Eigenschaften | Beste Nutzung |
+|---------|---------------|---------------|
+| Langer gerader Flur | 30+ Meter, einzelne Richtung | Ausdauererholung, Taschenlampenschonung |
+| Standard-gelber Korridor | 10 — 30 Meter, einzelne Richtung | Standardnavigation |
+| Gebogener Korridor | Nicht-gerader Pfad, einzelne Richtung | Visuelle Abwechslung, Audio-Orientierungspunkt |
+
+**Taktische Überlegungen zu Tier-B-Räumen:**
+
+- Lange gerade Flure können Todesfallen sein, wenn Clark von hinten verfolgt
+- Gebogene Korridore unterbrechen die Audio-Sichtlinie, nützlich für Ausweichen
+- Standard-gelbe Korridore sind das Brot-und-Butter der Navigation
+
+Diese Räume füllen das prozedurale Layout. Sie verbringen die meiste Zeit in Tier-B-Räumen, was Navigationsdisziplin wichtig macht.
+
+## Tier C: Mehrdeutige Räume
+
+Tier-C-Räume haben unsicheren taktischen Wert, da deren Sicherheits- und Navigationseigenschaften von spezifischen Bedingungen abhängen. Sie erfordern sorgfältige Bewertung, bevor man sich auf sie einlässt.
+
+**Tier-C-Raumtypen:**
+
+| Raumtyp | Eigenschaften | Beste Nutzung |
+|---------|---------------|---------------|
+| Breiter Durchgangsraum | Einzelne Richtung, breiter als Standard | Unbekannt, beim Eintritt bewerten |
+| Knoten mit verschlossener Tür | Drei-Wege mit einem verschlossenen Ausgang | Bedingte Routenauswahl |
+| Teilweise offener Raum | Hat strukturelles Hindernis | Defensivposition |
+
+**Tier-C-Bewertungsauslöser:**
+
+- Audioverhalten unterscheidet sich vom Standard
+- Visuelles Layout enthält ungewöhnliche Merkmale
+- Indikatoren für verschlossene Türen sind sichtbar
+- Risiko der Gruppentrennung ist erhöht
+
+Diese Räume erfordern aktive Bewertung statt automatischer Reaktion. Veteranen verbringen fünf bis zehn Sekunden damit, Tier-C-Räume zu bewerten, bevor sie sich festlegen.
+
+## Tier D: Riskante Durchgänge
+
+Tier-D-Räume tragen erhöhtes Risiko, da sie spezifische Gefahrenmerkmale aufweisen. Sie ohne Vorbereitung zu betreten, kann zu Clark-Begegnungen mit schlechten Fluchtoptionen führen.
+
+**Tier-D-Raumtypen:**
+
+| Raumtyp | Eigenschaften | Beste Nutzung |
+|---------|---------------|---------------|
+| Schmaler Korridor | Enger Durchgang, begrenzte Bewegung | Letzter Ausweg, nicht bevorzugt |
+| L-förmig mit einem Ausgang | Zwei Segmente, ein Rückkehrpunkt | Nur nutzen, wenn keine andere Option |
+| T-Knoten mit Audio-Anomalie | Drei-Wege mit Echoverhalten | Zuerst mit Audio untersuchen |
+
+**Tier-D-Risiken:**
+
+- Begrenzte Fluchtoptionen während Verfolgungen
+- Audioverhalten kann vom Standard abweichen
+- Clark kann Sie leichter in die Ecke treiben
+- Aufrechterhaltung der Gruppenformation ist schwieriger
+
+Diese Räume sollten vorsichtig und nur betreten werden, wenn der Navigationspfad es erfordert. Neue Spieler betreten Tier-D-Räume oft reflexartig und bereuen es.
+
+## Tier F: Vermeidungszonen
+
+Tier-F-Räume sollten nach Möglichkeit vermieden werden, da sie minimalen taktischen Wert und erhöhte Gefahr bieten. Manchmal ist ihr Betreten notwendig, aber niemals bevorzugt.
+
+**Tier-F-Raumtypen:**
+
+| Raumtyp | Eigenschaften | Beste Nutzung |
+|---------|---------------|---------------|
+| Sackgasse | Kein Ausgang außer Rückkehr | Sofort zurückgehen |
+| Korridor mit geschlossener Tür | Tür blockiert weiteren Durchgang | Umkehren |
+| Einzelne Richtung mit Hindernis | Pfad blockiert | Alternative Route finden |
+
+**Tier-F-Raumerkennung:**
+
+- Kein zweiter Ausgang sichtbar
+- Türindikatoren zeigen verschlossen
+- Audioverhalten deutet auf geschlossenen Raum hin
+- Visuelle Hinweise zeigen Blockierung an
+
+Tier-F-Räume vor dem Betreten zu erkennen, spart Zeit. Neue Spieler laufen in Sackgassen, weil sie denken, es seien Schleifen, und müssen dann zurückgehen, während Clark näher rückt.
+
+## Audio-Identifikation von Raumtypen
+
+Jeder Raumtyp hat eine charakteristische Audio-Signatur, die Veteranen nutzen, um den Raum vor dem Betreten zu identifizieren. Die Identifikation geschieht innerhalb einer Sekunde.
+
+**Audio-Signaturen der Raumtypen:**
+
+| Raumtyp | Audio-Signatur |
+|---------|----------------|
+| Zentralraum | Mehrere Echoquellen, laute Umgebung |
+| Langer Korridor | Einzelne Richtungsecho, niedrige Umgebung |
+| Offener Raum | Echo-Umhüllung, Luftschacht-Summen |
+| Sackgasse | Gedämpft, kein Echo |
+| T-Knoten | Zwei Echo-Richtungen |
+| Gebogener Korridor | Echo mit Richtungswechsel |
+| Kreuzung | Vier Echo-Richtungen |
+
+Die Audio-Identifikation erfordert Stereo-Kopfhörer und trainiertes Zuhören. Veteranen identifizieren Raumtypen allein am Audio, was nützlich ist, wenn die Taschenlampenbatterie kritisch ist.
+
+## Raumtyp-Häufigkeit
+
+Der prozedurale Generator verwendet unterschiedliche Häufigkeiten für jeden Raumtyp. Die Häufigkeit zu kennen, hilft Ihnen vorherzusagen, was Sie als Nächstes antreffen werden.
+
+**Erzeugungshäufigkeit der Raumtypen:**
+
+| Raumtyp | Häufigkeit | Notizen |
+|---------|-----------|---------|
+| Standard-gelber Korridor | 40% | Am häufigsten |
+| Langer gerader Flur | 20% | Zweithäufigste |
+| T-Knoten | 15% | Häufig |
+| L-Knoten | 10% | Häufig |
+| Gebogener Korridor | 5% | Weniger häufig |
+| Zentralraum | 3% | Selten |
+| Kreuzung | 3% | Selten |
+| Offener Raum | 2% | Selten |
+| Schmaler Korridor | 1% | Sehr selten |
+| L-förmig mit einem Ausgang | 0,5% | Sehr selten |
+| Knoten mit verschlossener Tür | 0,3% | Sehr selten |
+| Sackgasse | 0,2% | Extrem selten |
+
+Die Häufigkeitsdaten basieren auf Community-Beobachtungen über Hunderte von Läufen. Sie sind ungefähr, aber nützlich für Vorhersagen.
+
+## Raumtyp-Präferenzen nach Laufphase
+
+Verschiedene Laufphasen profitieren von unterschiedlichen Raumtypen. Die folgende Präferenzmatrix zeigt, welche Raumtypen in jeder Phase priorisiert werden sollten.
+
+**Raumtyp-Präferenz nach Laufphase:**
+
+| Raumtyp | Lobby-Phase | Frühes Spiel | Mittleres Spiel | Spätes Spiel |
+|---------|-------------|--------------|----------------|--------------|
+| Zentralraum | Hoch | Hoch | Mittel | Niedrig (Entdeckung vermeiden) |
+| T-Knoten | Mittel | Hoch | Hoch | Mittel |
+| Standard-Korridor | Hoch | Hoch | Mittel | Niedrig |
+| Langer Korridor | Niedrig | Mittel | Hoch | Hoch (Distanz schaffen) |
+| Offener Raum | Niedrig | Mittel | Mittel | Hoch (Sichtbarkeit) |
+| Sackgasse | Vermeiden | Vermeiden | Vermeiden | Vermeiden |
+| Gebogener Korridor | Mittel | Mittel | Hoch | Hoch (Audio-Unterbrechung) |
+
+Die Matrix ändert sich, weil sich die Prioritäten von Erkundung (Lobby, früh) zu Überleben (mittel) zu Flucht (spät) verschieben.
+
+## Häufig gestellte Fragen
+
+**Was ist der seltenste Raumtyp in Clark Huss Rooms?**
+
+Sackgassen sind mit etwa 0,2% Erzeugungshäufigkeit am seltensten. Wenn Sie eine finden, ist es wirklich ungewöhnlich.
+
+**Welcher Raumtyp ist während einer Clark-Verfolgung am sichersten?**
+
+Gebogene Korridore und L-Knoten sind am besten, weil sie die Audio-Sichtlinie unterbrechen. Lange gerade Flure sind am schlimmsten, weil Clark gerade hindurch verfolgen kann.
+
+**Kann ich Raumtypen ohne Taschenlampe identifizieren?**
+
+Ja, Audio-Identifikation funktioniert ohne Taschenlampe. Veteranen verlassen sich bei niedrigem Batteriestand auf Audio.
+
+**Sollte ich Tier-S-Räume priorisieren, wenn ich sie finde?**
+
+Ja, aber nur kurz. Tier-S-Räume sind wertvoll für Sammeln und räumliche Kartierung, nicht für längeren Aufenthalt. Verbringen Sie 30 Sekunden und ziehen Sie weiter.
+
+**Wie ändert sich die Tierliste mit zukünftigen Updates?**
+
+Die Tierliste kann neue Raumtypen enthalten, wenn der Entwickler die prozedurale Erzeugung erweitert. Das Rahmenwerk ist so konzipiert, dass es Ergänzungen aufnehmen kann.
+
+Für weitere Informationen zu den Navigationstechniken, die Raumtypen verwenden, siehe unseren [Huss Rooms Layout-Guide](/de/map/huss-rooms-layout/). Um die Fluchttaktiken zu erlernen, die Tier-A-Räume nutzen, lesen Sie [Clark entkommen](/de/guides/escaping-clark/).
+
+
+**Wie oft sollte ich Tier-Einstufungen neu bewerten?**
+
+Tier-Einstufungen sollten nach größeren Patches und vierteljährlich während stabiler Perioden neu bewertet werden. Die Strategieeffektivität verschiebt sich mit Spieländerungen. Veteranen verfolgen Tier-Einstufungen über die Zeit und passen ihren Spielstil entsprechend an. Persönliche Tier-Einstufungen können vom Community-Konsens abweichen.
+
+**Sind Tier-Einstufungen universell oder plattformspezifisch?**
+
+Tier-Einstufungen haben plattformspezifische Variationen. PC-Spieler haben Vorteile bei audio-abhängigen Strategien. Mobile Spieler bevorzugen aufgrund von Steuerungs- und Audioqualitätsunterschieden möglicherweise andere Ansätze. Berücksichtigen Sie die Plattform, wenn Sie Tier-Einstufungen auf Ihr Spiel anwenden.
+
+**Wie erstelle ich meine eigenen Tier-Einstufungen?**
+
+Verfolgen Sie Ihre eigene Leistung mit verschiedenen Strategien über mehrere Läufe. Notieren Sie Erfolgsraten, Überlebenszeiten und Spielspaß. Kombinieren Sie persönliche Daten mit dem Community-Konsens, um Ihre eigenen Einstufungen zu bilden. Aktualisieren Sie die Einstufungen, während Sie mehr Erfahrung sammeln und das sich weiterentwickelt.
+
+**Sollten Tier-Einstufungen meine Strategiewahl beeinflussen?**
+
+Tier-Einstufungen informieren die Strategiewahl, sollten sie aber nicht diktieren. Persönliche Vorlieben und Spielstil sind neben der Effektivität wichtig. Eine etwas schwächere Strategie, die zu Ihren Stärken passt, kann eine stärkere Strategie übertreffen, die nicht zu Ihrem Spielstil passt. Gleichen Sie Einstufungen mit persönlichen Faktoren ab.
+
+**Was ist der Unterschied zwischen Tier-Einstufungen und Meta?**
+
+Tier-Einstufungen bewerten individuelle Strategien isoliert. Meta beschreibt die gesamte strategische Landschaft einschließlich dominanter Kombinationen, Gegen-Strategien und Balance-Verschiebungen. Beide sind nützlich, um den Spielzustand zu verstehen. Meta-Analyse verweist oft auf Tier-Einstufungen als Komponenten.
+
+**Wie beeinflussen Gruppenstrategien Tier-Einstufungen?**
+
+Gruppenstrategien werden oft höher eingestuft als Solo-Strategien, weil Koordination die Effektivität vervielfacht. Solo-Strategien werden in Solo-Spielkontexten höher eingestuft. Berücksichtigen Sie bei der Bewertung von Tier-Einstufungen, ob die Strategie für Solo- oder Gruppenspiel gedacht ist. Einige Strategien funktionieren nur in einem Kontext.
+
+**Können Tier-Einstufungen falsch sein?**
+
+Tier-Einstufungen sind Community-Konsens basierend auf Beobachtung, keine absolute Wahrheit. Individuelle Erfahrungen können vom Konsens abweichen. Einige Strategien, die niedriger eingestuft sind, können für bestimmte Spieler besser funktionieren. Verwenden Sie Tier-Einstufungen als Orientierung, nicht als absolute Regeln.

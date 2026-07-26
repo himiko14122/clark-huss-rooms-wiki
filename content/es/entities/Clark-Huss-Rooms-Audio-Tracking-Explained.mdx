@@ -1,0 +1,285 @@
+export const metadata = {
+  id: "audio-tracking-explained",
+  slug: "audio-tracking-explained",
+  order: 2,
+  difficulty: "advanced",
+  title: "Clark (ACCESO ANTICIPADO) - Seguimiento de Audio de Huss Rooms Explicado: Cómo Escucha Clark",
+  description: "Seguimiento de audio de Clark Huss rooms explicado: cómo Clark detecta a los jugadores, mecánicas de sensibilidad, enmascaramiento de audio y estrategias de contra-detección.",
+  keywords: ["seguimiento de audio Clark Huss rooms", "Clark Huss rooms cómo escucha Clark", "detección de audio Clark Huss rooms", "mecánica de seguimiento Clark Huss rooms", "enmascaramiento de audio Clark Huss rooms"],
+  image: "/images/entities/audio-tracking-explained.webp",
+  video: "8n7B9BBiI3U",
+  category: "entities",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+El seguimiento por audio de Clark es la mecánica central que define la jugabilidad de Clark Huss rooms. A diferencia del seguimiento visual en la mayoría de los juegos de terror, Clark depende en gran medida de lo que escucha. Entender exactamente cómo Clark rastrea a los jugadores mediante el audio, qué sonidos nota más y cómo enmascarar tu huella de audio es esencial para sobrevivir.
+
+Esta guía explica las mecánicas de seguimiento por audio en detalle, los modificadores de rango de detección, las estrategias de enmascaramiento de audio que funcionan contra Clark y las técnicas de contra-detección que usan los veteranos. También aprenderás sobre la asignación de atención auditiva de Clark y cómo explotar su sistema de prioridades.
+
+## Cómo Funciona el Seguimiento por Audio de Clark
+
+El seguimiento por audio de Clark es un sistema en capas que combina distancia, tipo de sonido y comportamiento del jugador para determinar la detección. El sistema se ejecuta continuamente durante una partida.
+
+### **Pipeline de seguimiento por audio:**
+
+| Etapa | Proceso | Resultado |
+|-------|---------|--------|
+| 1 | Capturar fuentes de audio | Datos de sonido en bruto |
+| 2 | Clasificar tipos de sonido | Sprint/click/voz/etc. |
+| 3 | Calcular distancia | Curva volumen-distancia |
+| 4 | Aplicar modificadores | Aumentos de sensibilidad |
+| 5 | Determinar transición de estado | Decisión de escalada |
+| 6 | Actualizar seguimiento | Camino al objetivo |
+
+El pipeline se ejecuta cada frame, lo que significa que la detección de Clark es en tiempo real. No hay retraso entre el sonido y la detección.
+
+## Rango de Detección por Tipo de Sonido
+
+Cada tipo de sonido tiene un rango de detección específico. Los rangos a continuación se han medido aproximadamente basándose en pruebas de la comunidad.
+
+### **Rango de detección por sonido:**
+
+| Tipo de Sonido | Rango de Detección | Notas |
+|------------|-----------------|-------|
+| Pasos al caminar | 5 metros | Movimiento estándar |
+| Pasos al correr | 12 metros | Ráfaga fuerte |
+| Click de linterna | 6 metros | Señal breve |
+| Linterna sostenida | 18 metros | Penetra paredes |
+| Colisión con pared | 15 metros | Evento ruidoso |
+| Chat de voz | Variable | Depende del volumen |
+| Respiración del jugador | 3 metros | Solo rango cercano |
+
+Los rangos de detección no se muestran en el juego, pero la comunidad los ha aproximado mediante observación.
+
+## Modificadores de Sensibilidad
+
+La sensibilidad auditiva de Clark cambia según el estado del juego. Los modificadores a continuación afectan a todos los rangos de detección.
+
+### **Modificadores de sensibilidad:**
+
+| Modificador | Efecto | Desencadenante |
+|----------|--------|----------|
+| Aumento por bloqueo del servidor | +15% detección | Primera puerta abierta |
+| Escalada de estado de Clark | +25% por estado | Rastrear, Perseguir, Cazar |
+| Anomalía de audio | +30% aumento breve | Sonidos inusuales |
+| Proximidad del escuadrón | +10% por jugador | Otros jugadores cerca |
+| Población del servidor | +5% por cada 10 jugadores | Servidores llenos |
+
+Los modificadores se acumulan, lo que hace que las salas completas al final de la partida sean el entorno con mayor detección.
+
+## Concepto de Huella de Audio
+
+Tu huella de audio es el sonido total que produces durante una partida. Minimizar esta huella es la estrategia principal de supervivencia.
+
+### **Componentes de la huella de audio:**
+
+| Componente | Contribución | Nivel de Control |
+|-----------|--------------|---------------|
+| Movimiento | 40 — 60% | Alto (caminar vs correr) |
+| Linterna | 20 — 40% | Alto (click vs sostener) |
+| Chat de voz | 10 — 30% | Alto (silenciar, PTT) |
+| Colisiones | 5 — 15% | Medio (elección de ruta) |
+| Respiración | 1 — 5% | Bajo (involuntario) |
+
+Los veteranos minimizan cada componente mediante práctica deliberada. El efecto acumulado reduce drásticamente los encuentros con Clark.
+
+## Estrategias de Enmascaramiento de Audio
+
+El enmascaramiento de audio es la práctica de usar un sonido para ocultar otro. En Clark Huss rooms, el enmascaramiento puede ayudar a confundir el seguimiento de Clark.
+
+**Técnicas de enmascaramiento de audio:**
+
+| Técnica | Descripción |
+|-----------|-------------|
+| Sincronización de movimiento del escuadrón | Múltiples jugadores se mueven juntos, los sonidos se superponen |
+| Uso de sonido ambiental | Moverse durante picos de audio ambiental |
+| Contra-ruido | Sonidos intencionales para engañar a Clark |
+| Cadencia de pasos | Coincidir con ritmos ambientales |
+| Sincronización del chat de voz | Hablar durante ventanas de audio |
+
+Estas técnicas son avanzadas y requieren coordinación. Funcionan mejor en escuadrones coordinados.
+
+## Técnicas de Contra-Detección
+
+La contra-detección es la práctica de romper el seguimiento de Clark después de que te haya detectado. Las técnicas a continuación ayudan.
+
+**Técnicas de contra-detección:**
+
+| Técnica | Descripción |
+|-----------|-------------|
+| Quiebre en esquina | Giro brusco para romper la línea de visión |
+| Silencio sostenido | Detener todo audio durante 10+ segundos |
+| Enmascaramiento de audio | Usar otro sonido para oscurecer el tuyo |
+| Creación de distancia | Correr para escapar del rango de detección |
+| Espera de enfriamiento | Dejar de moverse, dejar que Clark se retire |
+
+Cada técnica funciona en situaciones específicas. Los veteranos usan la técnica correcta en el momento correcto.
+
+## Asignación de Atención Auditiva de Clark
+
+Clark no puede atender a todos los sonidos simultáneamente. Su asignación de atención sigue reglas de prioridad que los veteranos explotan.
+
+**Orden de prioridad de atención:**
+
+| Prioridad | Tipo de Sonido |
+|----------|------------|
+| 1 | Pasos al correr |
+| 2 | Chat de voz |
+| 3 | Colisiones |
+| 4 | Clicks de linterna |
+| 5 | Pasos al caminar |
+| 6 | Respiración |
+
+El orden significa que si Clark está enfocado en el sonido de carrera, puede pasar por alto sonidos más silenciosos. Los veteranos explotan esto corriendo en una dirección mientras se escabullen en otra (juego en escuadrón).
+
+## Enmascaramiento de Audio en Juego en Escuadrón
+
+El enmascaramiento de audio es particularmente efectivo en juego en escuadrón porque múltiples fuentes de audio crean confusión para Clark.
+
+**Patrones de enmascaramiento en escuadrón:**
+
+| Patrón | Descripción |
+|---------|-------------|
+| Movimiento en pareja | Las parejas se mueven juntas, los sonidos se superponen |
+| Movimiento por relevos | El escuadrón se mueve en oleadas, enmascarando sonidos individuales |
+| Sprint de distracción | Un jugador corre para llamar la atención |
+| Disciplina de susurros | Chat de voz al volumen mínimo |
+| Movimiento en formación | Grupos compactos reducen las firmas individuales |
+
+Los patrones requieren coordinación pero reducen drásticamente la probabilidad de detección.
+
+## Sincronización de la Contra-Detección
+
+Las técnicas de contra-detección funcionan dentro de ventanas de tiempo específicas. Las ventanas de tiempo a continuación te ayudan a ejecutar con eficacia.
+
+**Ventanas de tiempo:**
+
+| Técnica | Ventana Óptima | Duración |
+|-----------|----------------|----------|
+| Quiebre en esquina | Dentro de 3 segundos tras la detección | Rápida |
+| Silencio sostenido | 10 — 15 segundos | Media |
+| Enmascaramiento de audio | Durante picos ambientales | Variable |
+| Creación de distancia | Dentro de 5 segundos tras la detección | Rápida |
+| Espera de enfriamiento | 30+ segundos | Larga |
+
+Los veteranos ejecutan las técnicas dentro de las ventanas de forma automática.
+
+## Desactivación Auditiva de Clark
+
+Cuando Clark se desactiva tras perder tu rastro, su sensibilidad auditiva baja temporalmente. El patrón de desactivación es consistente.
+
+**Patrón de desactivación:**
+
+| Fase | Duración | Sensibilidad |
+|-------|----------|-------------|
+| Pausa inicial | 5 segundos | 50% de reducción |
+| Modo de búsqueda | 15 segundos | 70% de reducción |
+| Vuelta a patrulla | 10 segundos | 90% de reducción |
+| Patrulla completa | En curso | Normal |
+
+La ventana de 30 segundos tras la desactivación es el momento más seguro para usar la linterna y reagruparse.
+
+## Optimización de la Huella de Audio
+
+Optimizar tu huella de audio implica decisiones deliberadas sobre movimiento, linterna y chat de voz. La matriz de optimización a continuación ayuda.
+
+**Técnicas de optimización:**
+
+| Técnica | Impacto |
+|-----------|--------|
+| Caminar en lugar de correr | 60% de reducción en audio de movimiento |
+| Click en lugar de sostener | 70% de reducción en audio de linterna |
+| Silenciar el chat de voz | 100% de reducción en audio de voz |
+| Evitar paredes | 80% de reducción en audio de colisión |
+| Respirar silenciosamente | 30% de reducción en audio de respiración |
+
+La optimización combinada reduce tu huella total entre un 70 y un 80%.
+
+## Modos de Fallo del Seguimiento por Audio
+
+El seguimiento por audio de Clark tiene modos de fallo específicos que los jugadores pueden explotar. Entender los fallos ayuda a provocarlos.
+
+**Modos de fallo del seguimiento:**
+
+| Modo de Fallo | Desencadenante | Duración |
+|--------------|---------|----------|
+| Confusión por superposición de audio | Múltiples fuentes | 5 — 10 segundos |
+| Silencio sostenido | Sin salida durante 10+ segundos | Hasta el próximo sonido |
+| Cambio rápido de dirección | Quiebres en esquina | Hasta la re-detección |
+| Enfriamiento tras caza | Caza sostenida sin contacto | 30+ segundos |
+
+Los veteranos aprenden a provocar estos fallos de forma intencionada cuando es necesario.
+
+
+**Referencia Rápida de Detección:**
+
+- El latido del corazón indica que Clark patrulla lejos sin amenaza inmediata
+- La cadencia de la respiración revela proximidad y nivel de alerta
+- Los golpes de pasos sugieren que Clark está en una habitación adyacente
+- Fragmentos de susurro indican alerta elevada y escalada inminente
+- Una ráfaga de carrera señala una caza activa que requiere retirada total
+- La vocalización significa que Clark está cerca y detectando tu posición
+
+**Conceptos Básicos de Contra-Estrategia:**
+
+- Caminar silenciosamente reduce tu huella de audio significativamente
+- La disciplina de clicks en la linterna extiende la batería mientras preserva el rango de detección
+- Los quiebres en esquina interrumpen el seguimiento visual cuando comienza la persecución
+- Un silencio sostenido de 10+ segundos pierde el rastro auditivo de Clark
+- La sincronización del movimiento del escuadrón confunde el seguimiento de un solo objetivo
+- La disciplina del umbral de batería previene situaciones de agotamiento de emergencia
+
+
+## Preguntas Frecuentes
+
+**¿Qué tan preciso es el seguimiento por audio de Clark?**
+
+El seguimiento de Clark es muy preciso para sonidos dentro del rango de detección. Fuera del rango de detección, los sonidos se ignoran. La precisión hace que la disciplina de sonido sea crítica.
+
+**¿Puede Clark escuchar a través de las paredes?**
+
+Parcialmente. El sonido puede penetrar paredes con volumen reducido. El rango de detección de Clark tiene en cuenta esta penetración.
+
+**¿Cuál es el sonido más silencioso que detecta Clark?**
+
+Los pasos al caminar son el sonido significativo más silencioso. La respiración es más silenciosa pero tiene un rango más corto.
+
+**¿Cómo sé si Clark me está rastreando?**
+
+La aceleración del latido, la cadencia de la respiración y los fragmentos de susurro indican un seguimiento creciente. Si escuchas esto, Clark es consciente de tu posición.
+
+**¿Puedo confundir a Clark con múltiples sonidos?**
+
+Sí, en juego en escuadrón. Los jugadores en solitario tienen capacidad limitada para confundir a Clark porque solo tienen una fuente de audio.
+
+Para más información sobre las señales de audio que indican el estado de seguimiento, consulta nuestra [guía detallada de señales de audio](/es/guides/audio-cues-detailed/). Para aprender tácticas de escape específicas, lee [escapar de Clark](/es/guides/escaping-clark/).
+
+
+**¿Recibirá Clark cambios significativos en futuras actualizaciones?**
+
+Clark probablemente recibirá ajustes de equilibrio a lo largo del Acceso Anticipado. El desarrollador monitorea los comentarios de la comunidad y ajusta el comportamiento de Clark para mantener una dificultad apropiada. Los cambios importantes se anuncian a través de notas de parche. Los veteranos deben estar preparados para ajustes periódicos en las mecánicas de Clark.
+
+**¿Cómo practico escenarios de encuentro con Clark?**
+
+Las herramientas de audio de la comunidad proporcionan señales de audio aisladas de Clark para practicar. La práctica en el juego en escenarios de baja presión desarrolla habilidades. Las partidas en solitario permiten una interacción enfocada con Clark sin la complejidad de la coordinación. Los jugadores veteranos practican escenarios específicos repetidamente para construir respuestas automáticas.
+
+**¿Cuál es la diferencia entre los distintos estados de Clark?**
+
+Clark transita por los estados de Patrulla, Investigación, Rastreo, Persecución, Caza y Enfriamiento. Cada estado tiene señales de audio, rangos de detección y patrones de comportamiento distintos. Entender las transiciones de estado ayuda a predecir la siguiente acción de Clark. Los veteranos rastrean los cambios de estado mediante la monitorización de audio.
+
+**¿Puedo confundir la focalización de Clark en escuadrones?**
+
+Sí, el juego en escuadrón puede confundir la focalización de Clark mediante enmascaramiento de audio coordinado. Múltiples jugadores moviéndose juntos crean firmas de audio superpuestas. Los distractores designados pueden desviar la atención de Clark de los miembros vulnerables del escuadrón. La coordinación del escuadrón proporciona más oportunidades de confusión que el juego en solitario.
+
+**¿Cómo afecta el uso de la linterna a la detección de Clark?**
+
+El uso sostenido de la linterna aumenta significativamente el rango de detección de Clark. La disciplina de clicks minimiza este efecto mientras sigue proporcionando información visual. La navegación solo por audio elimina por completo la detección relacionada con la linterna. Elige la estrategia de linterna según el estado de la batería y la proximidad de Clark.
+
+**¿Cuáles son las debilidades de Clark?**
+
+Las principales debilidades de Clark incluyen el silencio auditivo, escapes con quiebres en esquina y confusión por escuadrón. Los jugadores que minimizan la salida de audio son más difíciles de rastrear. Los quiebres bruscos en esquina interrumpen el seguimiento visual. Los escuadrones crean múltiples firmas de audio que confunden el seguimiento de un solo objetivo. Explota estas debilidades de forma consistente.
+
+**¿Cómo se compara Clark con otros monstruos de juegos de terror?**
+
+Clark se diferencia de los monstruos típicos de juegos de terror por su diseño de acosador-escuchador paciente. Es menos inmediatamente agresivo pero más persistente que muchos monstruos de juegos de terror. Su seguimiento centrado en el audio recompensa el juego disciplinado en lugar de las mecánicas de escondite. El diseño crea una tensión única.

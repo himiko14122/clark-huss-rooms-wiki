@@ -1,0 +1,309 @@
+export const metadata = {
+  id: "battery-calculator",
+  slug: "battery-calculator",
+  order: 1,
+  difficulty: "intermediate",
+  title: "Clark (FRÜHER ZUGANG) – Huss-Räume Batterierechner: Taschenlampen-Planungstool",
+  description: "Clark Huss-Räume Batterierechner – Nutzungsplanung, Klick-Schätzung, Laufzeitoptimierung und Strategien zur Taschenlampenschonung.",
+  keywords: ["Clark Huss-Räume Batterierechner", "Clark Huss-Räume Taschenlampenplanung", "Clark Huss-Räume Batterieoptimierung", "Clark Huss-Räume Taschenlampennutzung", "Clark Huss-Räume Batterie-Tool"],
+  image: "/images/tools/battery-calculator.webp",
+  video: "0HU7nDM4PvU",
+  category: "tools",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+Die Taschenlampenbatterie ist die wichtigste begrenzte Ressource in Clark Huss-Räumen, und ein effektives Management erfordert Planung. Der Batterierechner ist ein Community-Tool, das Spielern hilft, den Verbrauch basierend auf geplanten Klic kmustern und der Laufzeit zu schätzen. Die Verwendung des Rechners verbessert die Taschenlampen-Disziplin und verlängert die Überlebenszeit.
+
+Dieser Leitfaden erklärt, wie der Batterierechner funktioniert, welche Eingaben er akzeptiert, welche Ausgaben er liefert und wie du ihn in deine Spielplanung integrierst. Außerdem erfährst du mehr über Optimierungstechniken, häufige Fehler und die Grenzen des Rechners.
+
+## Was der Batterierechner tut
+
+Der Batterierechner schätzt den Verbrauch der Taschenlampenbatterie basierend auf deinen geplanten Klic kmustern. Die Schätzung hilft dir, Klicks zu planen und eine Batterieentladung zu vermeiden.
+
+### **Funktionen des Rechners:**
+
+| Funktion | Beschreibung |
+|----------|-------------|
+| Batterie zu jedem Zeitpunkt schätzen | Projektion basierend auf dem Plan |
+| Klic kmuster vergleichen | Effiziente Muster finden |
+| Laufzeit planen | Klickplan an Länge anpassen |
+| Schwellenwerte optimieren | Effiziente Moduswechsel finden |
+| Verschwendung erkennen | Unnötige Klicks reduzieren |
+
+Der Rechner ist eine Näherung, aber nützlich für die Planung.
+
+## Eingaben des Rechners
+
+Der Rechner akzeptiert mehrere Eingaben, die deine geplante Nutzung beschreiben. Die folgenden Eingaben sind am wichtigsten.
+
+### **Haupteingaben:**
+
+| Eingabe | Beschreibung |
+|-------|-------------|
+| Geplante Klickfrequenz | Klicks pro Minute |
+| Klickdauer | Durchschnittliche Länge der Klicks |
+| Geschätzte Laufzeit | Erwartete Gesamtzeit |
+| Truppengröße | Spieler, die die Rolle teilen |
+| Clark-Begegnungs-Schätzung | Anzahl der Begegnungen |
+| Schwellenwert für Moduswechsel | Wann Klicks reduziert werden |
+
+Jede Eingabe beeinflusst die Ausgabe des Rechners.
+
+## Ausgaben des Rechners
+
+Der Rechner liefert Ausgaben, die dir helfen, die Taschenlampennutzung zu planen. Die folgenden Ausgaben sind am nützlichsten.
+
+### **Hauptausgaben:**
+
+| Ausgabe | Beschreibung |
+|--------|-------------|
+| Batterie bei Minute 1 | Anfangsprojektion |
+| Batterie bei Minute 3 | Frühphase-Projektion |
+| Batterie bei Minute 6 | Mittelphase-Projektion |
+| Batterie bei Minute 10 | Spätphase-Projektion |
+| Geschätzte Entladungszeit | Wann die Batterie leer ist |
+| Empfohlener Moduswechsel | Wann das Klic kmuster geändert werden sollte |
+
+Die Ausgaben helfen dir, den Batterieverlauf zu visualisieren.
+
+## Batterieschwellen und Moduswechsel
+
+Der Rechner hilft zu erkennen, wann basierend auf dem Batteriestand der Klickmodus gewechselt werden sollte. Die folgenden Schwellenwerte sind Standard.
+
+### **Schwellenwert-Empfehlungen:**
+
+| Batteriebereich | Modus | Begründung |
+|---------------|------|-----------|
+| 100 – 70 % | Standard-Klicks | Genügend Batterie |
+| 70 – 50 % | Konservative Klicks | Für Notfälle sparen |
+| 50 – 25 % | Einzelne Klicks | Für Entscheidungen reservieren |
+| 25 – 10 % | Nur bei kritischen Momenten klicken | Letzte Reserven |
+| 10 – 0 % | Nur Audio | Notfallmodus |
+
+Diese Schwellenwerte sind Standard, können aber basierend auf den Rechnerergebnissen angepasst werden.
+
+## Klic kmuster-Optimierung
+
+Der Rechner hilft, Klic kmuster zu optimieren, indem er verschiedene Ansätze vergleicht. Die folgenden Muster sind üblich.
+
+**Mustervergleich:**
+
+| Muster | Batterie nach 6 Min | Hinweise |
+|---------|-------------------|-------|
+| Aggressive Klicks (10/Min) | 15 % | Viele Informationen, wenig Batterie |
+| Standard-Klicks (5/Min) | 45 % | Ausgewogen |
+| Konservative Klicks (3/Min) | 70 % | Informationen vs. Batterie |
+| Minimale Klicks (1/Min) | 90 % | Audio hat Priorität |
+| Nur Audio (0 Klicks) | 100 % | Maximale Tarnung |
+
+Der Rechner zeigt die Abwägungen zwischen Informationen und Batterie.
+
+## Truppenbatterie-Berechnungen
+
+Für Truppen kann der Rechner die Batteriestände einzelner Spieler aggregieren. Die Aggregation hilft bei der Planung von Rotationen.
+
+**Truppenberechnung:**
+
+| Spieler | Batteriezustand | Empfehlung |
+|--------|---------------|----------------|
+| Spieler 1 | 80 % | Standardrolle |
+| Spieler 2 | 50 % | Konservative Rolle |
+| Spieler 3 | 20 % | Nur-Audio-Rolle |
+
+Der Truppenzustand beeinflusst die Rotationsentscheidungen.
+
+## Laufzeitplanung
+
+Der Rechner hilft, die Laufzeit basierend auf erwarteten Begegnungen und Klic kmustern zu planen. Die Planung stellt sicher, dass du genügend Batterie hast.
+
+**Laufzeit-Richtlinien:**
+
+| Dauer | Empfohlenes Muster | Hinweise |
+|----------|---------------------|-------|
+| Kurz (5 Min) | Aggressive Klicks | Informationen haben Priorität |
+| Mittel (10 Min) | Standard-Klicks | Ausgewogen |
+| Lang (15 Min) | Konservative Klicks | Batterie hat Priorität |
+| Verlängert (20+ Min) | Minimale Klicks | Schonmodus |
+
+Der Rechner hilft dir, das passende Muster zu wählen.
+
+## Clark-Begegnungs-Schätzung
+
+Der Rechner akzeptiert eine Schätzung der Clark-Begegnungen. Die Schätzung beeinflusst die Batterieprojektion erheblich.
+
+**Begegnungs-Schätzung:**
+
+| Begegnungshäufigkeit | Batterieauswirkung |
+|---------------------|----------------|
+| Niedrig (1 – 2 pro Lauf) | Minimale Auswirkung |
+| Mittel (3 – 5 pro Lauf) | Moderate Auswirkung |
+| Hoch (6+ pro Lauf) | Erhebliche Auswirkung |
+
+Begegnungen erfordern normalerweise zusätzliche Klicks zur visuellen Bestätigung, was den Batterieverbrauch erhöht.
+
+## Grenzen des Rechners
+
+Der Rechner hat Grenzen, die die Genauigkeit beeinflussen. Das Verständnis dieser Grenzen hilft dir, ihn effektiv zu nutzen.
+
+**Grenzen:**
+
+| Grenze | Auswirkung |
+|------------|--------|
+| Nimmt lineare Nutzung an | Tatsächliche Nutzung variiert |
+| Kann keine zufälligen Ereignisse vorhersagen | Clark-Begegnungen variabel |
+| Berücksichtigt keine Panik | Stress verändert die Nutzung |
+| Approximiert die Klickdauer | Tatsächliche kann abweichen |
+| Statische Annahmen | Spiel kann sich aktualisieren |
+
+Der Rechner liefert Schätzungen, keine exakten Vorhersagen.
+
+## Häufige Rechnerfehler
+
+Diese Fehler treten bei der Verwendung des Rechners auf. Sie zu vermeiden verbessert die Genauigkeit.
+
+**Häufige Fehler:**
+
+| Fehler | Auswirkung |
+|---------|--------|
+| Optimistische Begegnungs-Schätzungen | Batterie entlädt sich schneller |
+| Klickfrequenz unterschätzt | Batterie entlädt sich schneller |
+| Paniksituationen ignoriert | Tatsächlicher Verbrauch höher |
+| Plan nicht aktualisiert | Änderungen während des Laufs ignoriert |
+| Rechner blind befolgt | Feinheiten übersehen |
+
+Diese Fehler zu vermeiden verbessert die Planungseffektivität.
+
+## Rechner ins Gameplay integrieren
+
+Der Rechner ist am effektivsten, wenn er in die Planung vor dem Spiel und während des Laufs integriert wird. Die folgenden Integrationsschritte helfen.
+
+**Integrationsschritte:**
+
+| Schritt | Wann | Aktion |
+|------|------|--------|
+| 1 | Vor dem Spiel | Klic kmuster planen |
+| 2 | Laufbeginn | Anfangszustand bestätigen |
+| 3 | Jede Minute | Tatsächliches vs. geplantes prüfen |
+| 4 | Laufinte | Bei Bedarf anpassen |
+| 5 | Nach dem Lauf | Schätzung validieren |
+
+Die Integration verbessert die Genauigkeit im Laufe der Zeit.
+
+## Batterieschonung durch den Rechner
+
+Der Rechner hilft, die effizientesten Schonungstechniken zu identifizieren. Die folgenden Techniken maximieren die Batterielebensdauer.
+
+**Schonungstechniken:**
+
+| Technik | Batterieauswirkung |
+|-----------|----------------|
+| Klick vs. Halten | 70 % Reduktion |
+| Nur Entscheidungs-Klicks | 50 % Reduktion |
+| Nur-Audio-Navigation | 100 % Reduktion |
+| Truppenrotation | Verteilte Kosten |
+| Schwellenwert-Disziplin | Moduswechsel |
+
+Der Rechner zeigt die Auswirkung jeder Technik.
+
+## Entscheidungsfindung basierend auf dem Rechner
+
+Der Rechner hilft, bestimmte Entscheidungen während des Gameplays zu treffen. Die folgenden Entscheidungsbeispiele veranschaulichen dies.
+
+**Entscheidungsbeispiele:**
+
+| Entscheidung | Rechnereingabe | Empfehlung |
+|----------|------------------|----------------|
+| Langen Weg nehmen? | Zeit +30 Sek | Lohnt sich, wenn die Batterie es erlaubt |
+| Offenen Raum betreten? | Klicks +3 % | Nur klicken, wenn nötig |
+| Versteckten Bereich erkunden? | Klicks +5 % | Lohnt sich, wenn du dir sicher bist |
+| Truppmitglied helfen? | Klicks +2 % | Normalerweise ja |
+| Fluchtweg nehmen? | Klicks +10 % | Nur wenn Verfolgung aktiv ist |
+
+Der Rechner unterstützt diese Entscheidungen.
+
+## Fortgeschrittene Rechnertechniken
+
+Fortgeschrittene Rechnertechniken beinhalten mehrere Variablen und Abwägungsanalysen. Die folgenden Techniken sind für erfahrene Nutzer.
+
+**Fortgeschrittene Techniken:**
+
+| Technik | Beschreibung |
+|-----------|-------------|
+| Variable Klickfrequenz | Unterschiedliche Raten zu unterschiedlichen Zeiten |
+| Notfallplanung | Vorgeplante Reaktionen |
+| Truppenoptimierung | Truppenbatterie aggregieren |
+| Trendanalyse | Muster über mehrere Läufe |
+| Schwellenwert-Experimente | Optimale Modi finden |
+
+Diese Techniken erfordern Übung.
+
+
+**Schnellreferenz-Checkliste:**
+
+- Überprüfe den Zugriff auf das Community-Wiki, bevor du ein Tool verwendest
+- Lesezeichen für die Patch-Tracker-URL für sofortigen Zugriff
+- Tritt dem Community-Discord für Tool-Ankündigungen bei
+- Teste den Audio-Analysator mit Stereo-Kopfhörern, bevor du dich auf die Ergebnisse verlässt
+- Berechne den Batteriebedarf vor jedem Lauf mit dem Rechner
+- Dokumentiere deine Flur-Entdeckungen in der Mapper-Datenbank
+- Teile nützliche Erkenntnisse mit der Community, um anderen zu helfen
+- Halte Tool-URLs in einem persönlichen Referenzdokument organisiert
+
+**Häufige Fallstricke:**
+
+- Die Verwendung von Tools, die Kontodaten erfordern, stellt Sicherheitsrisiken dar
+- Sich auf Tools ohne Stereo-Kopfhörer-Test zu verlassen, reduziert die Genauigkeit
+- Unverifizierte Tools zu teilen, kann die Community in die Irre führen
+- Veralteten Patch-Tracker-Daten zu vertrauen, kann zu falscher Strategie führen
+- Tool-Grenzen zu ignorieren führt zu schlechten Planungsentscheidungen
+
+
+## Häufig gestellte Fragen
+
+**Wie genau ist der Batterierechner?**
+
+Ungefähr 80 % genau. Er kann keine zufälligen Ereignisse vorhersagen, ist aber nützlich für die Planung.
+
+**Kann ich den Rechner für Solo-Spiel verwenden?**
+
+Ja. Solo-Spiel verwendet einfachere Eingaben und liefert klarere Ergebnisse.
+
+**Berücksichtigt der Rechner die Truppenrotation?**
+
+Ja, mit korrekter Truppengrößen-Eingabe. Er aggregiert einzelne Batterien.
+
+**Sollte ich basierend auf dem tatsächlichen Verbrauch anpassen?**
+
+Ja. Anpassungen während des Laufs basierend auf dem tatsächlichen Batteriezustand verbessern die Genauigkeit.
+
+**Wo finde ich den Rechner?**
+
+Das Community-Wiki und Discord teilen Rechner-Tools und Tabellenkalkulationen.
+
+Für mehr zum Taschenlampen-Management siehe unseren [Taschenlampen-Mechanik-Leitfaden](/de/guides/flashlight-mechanics/). Um mehr über Tools und Ressourcen zu erfahren, lies [Community-Tools](/de/guides/community-tools/).
+
+
+**Wie teile ich meine Tools und Entdeckungen mit der Community?**
+
+Das Community-Wiki und Discord sind die Hauptkanäle zum Teilen von Tools. Wiki-Beiträge folgen redaktionellen Standards, während Discord informelles Teilen mit weniger Struktur erlaubt. Die meisten erfolgreichen Tools stammen von einzelnen Mitwirkenden, die Lücken in den verfügbaren Ressourcen erkennen und dann mit der Community zusammenarbeiten, um ihren Ansatz zu verfeinern. Wenn du ein nützliches Tool erstellst, dokumentiere es klar mit Eingabe-/Ausgabe-Spezifikationen und Anwendungsbeispielen, damit andere es ohne Verwirrung übernehmen können.
+
+**Was soll ich tun, wenn ein Tool, auf das ich angewiesen bin, nicht mehr funktioniert?**
+
+Melde das Problem sofort über den dokumentierten Feedback-Kanal des Tools. Für Wiki-basierte Tools verwende die Diskussionsseite. Für Discord-geteilte Tools kontaktiere den Ersteller direkt. Die meisten Community-Tool-Betreuer reagieren schnell auf Fehlerberichte und schätzen den Hinweis. Während du auf eine Lösung wartest, wechsle zu alternativen Tools oder manuellen Methoden. Dokumentiere deinen Workaround, damit andere betroffene Nutzer von deiner temporären Lösung profitieren können.
+
+**Kann ich Drittanbieter-Tools mit meinen Kontoinformationen vertrauen?**
+
+Gib niemals Kontodaten an irgendein Tool weiter. Legitime Tools arbeiten über die öffentliche Schnittstelle des Spiels und benötigen keine Anmeldung. Wenn ein Tool nach deinem Roblox-Passwort fragt, ist es nicht legitim, unabhängig vom angegebenen Zweck. Für personalisierte Funktionen wie Statistikverfolgung sollte das Tool nur deinen In-Game-Benutzernamen (der öffentlich ist) abfragen, nicht dein Passwort.
+
+**Wie lange dauert es, ein neues Tool zu lernen?**
+
+Die meisten Community-Tools haben intuitive Oberflächen, die grundlegende Nutzung innerhalb weniger Minuten ermöglichen. Meisterschaft dauert typischerweise 1 – 2 Wochen regelmäßiger Nutzung, abhängig von der Komplexität des Tools. Audio-Analysatoren benötigen mehr Zeit, da die Trainingsmethodik mehrere Stufen hat. Batterierechner und Patch-Tracker sind einfacher zu erlernen. Community-Discord-Kanäle haben oft erfahrene Nutzer, die bereit sind, Neulinge durch die Lernphase zu begleiten.
+
+**Sollte ich mehrere Tools gleichzeitig verwenden?**
+
+Ja, ergänzende Tools verstärken sich gegenseitig. Beispielsweise bietet die Verwendung eines Audio-Analysators zusammen mit einem Batterierechner sowohl Audio-Fähigkeitsentwicklung als auch Ressourcenmanagement-Planung. Der Schlüssel ist sicherzustellen, dass die Tools sich nicht gegenseitig behindern oder dich mit Informationen überfordern. Beginne mit ein oder zwei wesentlichen Tools und füge weitere hinzu, wenn du dich wohlfühlst.
+
+**Wie erkenne ich, ob ein Tool hochwertig ist?**
+
+Qualitätsindikatoren sind aktive Wartung, Community-Diskussion, klare Dokumentation, regelmäßige Updates und positive Empfehlungen von Veteranen. Tools, die monatelang nicht aktualisiert wurden, sind möglicherweise aufgegeben worden. Tools mit aktiven Discord-Kanälen und reaktionsschnellen Betreuern sind tendenziell zuverlässiger. Der Community-Ruf ist ein starker Qualitätsindikator.

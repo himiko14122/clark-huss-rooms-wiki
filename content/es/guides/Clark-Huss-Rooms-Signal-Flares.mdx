@@ -1,0 +1,250 @@
+export const metadata = {
+  id: "signal-flares",
+  slug: "signal-flares",
+  order: 8,
+  difficulty: "intermediate",
+  title: "Clark (ACCESO ANTICIPADO) - Señales de Bengalas de Huss Rooms: Sistema de Marcadores de Comunicación",
+  description: "Aprende el sistema de bengalas de señalización de Clark Huss rooms — marcadores visuales, señales de audio, marcadores de coordinación de escuadrón y protocolos de comunicación de emergencia.",
+  keywords: ["Clark Huss rooms bengalas de señal", "Clark Huss rooms marcadores de comunicación", "Clark Huss rooms señales de escuadrón", "Clark Huss rooms llamadas de emergencia", "Clark Huss rooms disciplina de chat de voz"],
+  image: "/images/guides/signal-flares.webp",
+  video: "pvwx3x5iYbM",
+  category: "guides",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+Las bengalas de señal en Clark Huss rooms son los marcadores de comunicación estandarizados que permiten a los escuadrones coordinarse sin intercambios largos por chat de voz. Aunque el juego no incluye elementos literales de bengalas, el término se refiere al sistema de patrones de linterna, señales de audio y vocabulario de llamadas que los escuadrones veteranos usan para comunicarse a distancia. Los jugadores nuevos dependen completamente del chat de voz, lo cual es lento y propenso al pánico. Los veteranos usan bengalas de señal para transmitir información compleja en menos de dos segundos.
+
+Esta guía cubre los patrones de clics de linterna que sirven como señales visuales, las llamadas estandarizadas que sirven como señales de audio, y los protocolos de emergencia que activan respuestas a nivel de escuadrón. También aprenderás cómo construir un sistema de bengalas de señal específico para tu escuadrón y los errores más comunes cuando las señales se usan incorrectamente.
+
+## Qué Son las Bengalas de Señal
+
+Las bengalas de señal son atajos de comunicación preacordados que reemplazan frases más largas de chat de voz. Funcionan porque tanto el emisor como el receptor conocen el significado de antemano, lo que elimina el tiempo de interpretación.
+
+### **Categorías de bengalas de señal:**
+
+| Categoría | Medio | Alcance | Densidad de Información |
+|----------|--------|--------|---------------------|
+| Patrones de linterna | Visual | 1 — 2 pasillos | Baja a media |
+| Llamadas de audio | Voz | Todo el servidor | Alta |
+| Señales de acción | Movimiento | Pasillos adyacentes | Media |
+| Estados de batería | Visual implícito | Todo el servidor | Baja |
+
+Las cuatro categorías se combinan para formar un sistema de comunicación completo. La mayoría de los escuadrones usan una mezcla de las cuatro.
+
+## Señales de Patrones de Linterna
+
+Los patrones de linterna son secuencias de clics que llevan significados preacordados. Los patrones son cortos porque las secuencias largas desperdician batería y tiempo.
+
+### **Patrones de linterna estándar:**
+
+| Patrón | Significado |
+|---------|---------|
+| Un solo clic | Reconocimiento, "Te veo" |
+| Doble clic | Precaución, "Detente y evalúa" |
+| Triple clic | Clark avistado, "Dirección hacia mí" |
+| Clics rápidos (5+) | Emergencia, "Necesito ayuda ahora" |
+| Una pulsación larga | Pasillo seguro marcado, "Ven por aquí" |
+| Apagada y encendida | Verificación, "¿Sigues vivo?" |
+
+Estos patrones funcionan porque el escuadrón receptor los reconoce sin necesidad de chat de voz. Un solo clic se entiende universalmente como reconocimiento. Un triple clic significa universalmente Clark.
+
+## Señales de Llamadas de Audio
+
+Las llamadas de audio son las bengalas de señal con mayor densidad de información porque la voz transporta lenguaje. El reto es mantener las llamadas lo suficientemente breves para ser rápidas durante las persecuciones.
+
+### **Vocabulario de llamadas estándar:**
+
+| Llamada | Significado |
+|---------|---------|
+| "Clark izquierda" | Clark está a la izquierda del hablante |
+| "Clark derecha" | Clark está a la derecha del hablante |
+| "Clark atrás" | Clark está detrás del escuadrón |
+| "Clark frente" | Clark está delante del escuadrón |
+| "Respiración cerca" | Señal de audio de Clark dentro de un pasillo |
+| "Latido distante" | Señal de audio de Clark a dos o más pasillos de distancia |
+| "Persecución" | Clark está en persecución activa, sprint completo |
+| "Despejado" | No hay señales de audio de Clark en el área monitoreada |
+| "Callejón sin salida" | El pasillo no tiene salida |
+| "Puerta" | Puerta cerrada cerca |
+| "Cruce" | Acercándose a un punto de decisión |
+| "Batería" | Se necesita actualización del estado de batería |
+| "Batería agotada" | Linterna descargada |
+| "Pasillo seguro" | Pasillo marcado adelante, seguro para entrar |
+
+El vocabulario es corto, factual y sin ambigüedades. Desviarse del vocabulario crea confusión.
+
+## Señales de Acción
+
+Las señales de acción son movimientos que comunican sin chat de voz. Son útiles cuando el chat de voz no está disponible o cuando el escuadrón necesita comunicarse en silencio.
+
+### **Señales de acción estándar:**
+
+| Señal | Movimiento |
+|--------|----------|
+| Escuadrón detener | El líder levanta la mano o deja de moverse |
+| Escuadrón avanzar | El líder reanuda la caminata |
+| Escuadrón esconderse | Todos los jugadores se agachan o se quedan quietos |
+| Escuadrón retroceder | Todos los jugadores invierten la dirección |
+| Formar cuña | Los jugadores se mueven en formación de cuña |
+| Emparejarse | Los jugadores se emparejan con el compañero más cercano |
+| Luz apagada | El gestor de luz apaga la linterna |
+| Luz encendida | El gestor de luz enciende la linterna |
+| Sígueme | El líder se mueve y el escuadrón sigue |
+| Mantener posición | El líder se detiene y el escuadrón se detiene |
+
+Las señales de acción funcionan mejor cuando el escuadrón las ha practicado en condiciones de calma. Bajo pánico, el escuadrón puede olvidar las señales y volver al chat de voz.
+
+## Protocolos de Emergencia
+
+Los protocolos de emergencia son bengalas de señal que activan respuestas específicas del escuadrón. Anulan las reglas normales de coordinación porque la situación es crítica.
+
+**Disparadores de protocolos de emergencia:**
+
+| Disparador | Señal | Respuesta del Escuadrón |
+|---------|--------|----------------|
+| Compañero caído | "Hombre caído, [dirección]" | El compañero más cercano se mueve a recuperar, los demás cubren |
+| Persecución de Clark | "Persecución, sprint completo" | Todos los jugadores corren, sin linterna, el líder navega la huida |
+| Compañero perdido | "Separación, [dirección]" | El escuadrón se pausa, llama al jugador separado |
+| Batería agotada | "Batería agotada, [jugador]" | El escuadrón cambia a modo solo audio |
+| Emboscada | "Emboscada, [dirección]" | El escuadrón retrocede inmediatamente, sin preguntas |
+| Salida encontrada | "Salida, [dirección]" | El escuadrón converge en la salida, el líder confirma el camino |
+
+Los protocolos de emergencia se memorizan porque pueden necesitarse en cualquier momento. El escuadrón los practica durante las sesiones informativas previas al juego.
+
+## Señales de Estado de Batería
+
+El estado de la batería se comunica implícitamente a través de la visibilidad de la barra de la linterna. Los gestores de luz usan señales específicas para transmitir el estado de su batería sin chat de voz.
+
+**Señales de estado de batería:**
+
+| Estado de Batería | Señal |
+|---------------|--------|
+| Por encima del 70% | Patrón de clics normal, no se necesita indicación |
+| 50 — 70% | El Gestor de Luz llama "batería media" cada minuto |
+| 25 — 50% | El Gestor de Luz cambia solo a clics individuales |
+| Por debajo del 25% | El Gestor de Luz llama "batería crítica" |
+| Por debajo del 10% | El Gestor de Luz llama "batería muriendo" |
+| 0% | Los clics de linterna ya no se registran, solo audio |
+
+La responsabilidad del gestor de luz es mantener al escuadrón informado sobre el estado de la batería. El escuadrón usa esta información para planificar el uso de la linterna.
+
+## Construyendo un Sistema de Señales para el Escuadrón
+
+Cada escuadrón debe construir un sistema de señales que se ajuste a su estilo de juego. Las señales estándar anteriores son un punto de partida, pero los escuadrones a menudo las personalizan.
+
+**Opciones de personalización del sistema de señales:**
+
+1. Añadir llamadas específicas del escuadrón para situaciones comunes en tu servidor
+2. Usar patrones de linterna que sean más fáciles de ejecutar para tu escuadrón
+3. Asignar roles de color si tu versión del juego soporta colores de jugador
+4. Crear firmas de audio (frases específicas) para eventos específicos
+5. Desarrollar señales preventivas para decisiones próximas
+
+La personalización debe documentarse y ensayarse antes de la primera partida. Los escuadrones que personalizan sin ensayo olvidan las señales bajo presión.
+
+## Disciplina de Señales Bajo Presión
+
+La disciplina de señales se rompe bajo presión, que es cuando el escuadrón más necesita las señales. Las reglas de disciplina a continuación previenen el colapso.
+
+**Reglas de disciplina:**
+
+1. Solo señales — sin chat de voz improvisado durante las persecuciones
+2. Una señal a la vez — múltiples señales simultáneas crean confusión
+3. Ejecución breve — las señales deben completarse en menos de dos segundos
+4. Vocabulario universal — no se permiten desviaciones de las señales estándar
+5. Ejecución calmada — las señales deben entregarse con voz calmada
+
+Si un compañero del escuadrón se desvía de la disciplina de señales, el Gestor de Luz debe redirigirlo con una llamada factual: "Usa solo señales."
+
+## Fallos Comunes de Señales
+
+Estos fallos aparecen consistentemente cuando los escuadrones usan mal las señales. Identificarlos ayuda a prevenirlos.
+
+**Fallo 1: Chat de Voz Improvisado.** Un compañero del escuadrón usa frases completas en lugar de llamadas estándar durante una persecución. La frase toma cinco segundos, y el escuadrón pierde cinco segundos de tiempo de respuesta.
+
+**Fallo 2: Múltiples Señales Simultáneas.** Dos compañeros del escuadrón señalan al mismo tiempo. El escuadrón no puede determinar qué señal tiene prioridad, y la respuesta se retrasa.
+
+**Fallo 3: Vocabulario Inconsistente.** Los compañeros del escuadrón usan palabras diferentes para el mismo concepto ("persecución" vs "corriendo" vs "vamos vamos vamos"). El escuadrón pierde tiempo interpretando cuál palabra es correcta.
+
+**Fallo 4: Señales Olvidadas Bajo Presión.** Los compañeros del escuadrón olvidan el vocabulario de señales durante una persecución y vuelven a reacciones emocionales. Las señales fallan porque requieren memorización.
+
+**Fallo 5: Spam de Señales.** Un compañero del escuadrón hace clic en la linterna rápidamente o repite llamadas, creando ruido que oculta las señales de audio de Clark. La disciplina de señales es estricta sobre la frecuencia.
+
+## Entrenando la Ejecución de Señales
+
+La ejecución de señales requiere práctica porque los patrones deben entregarse rápida y precisamente. Los ejercicios a continuación construyen la memoria muscular.
+
+**Ejercicio 1: Entrenamiento de Patrones de Linterna.** En un lobby vacío, practica cada patrón de linterna diez veces. Construye memoria muscular para que los patrones se ejecuten sin pensamiento consciente.
+
+**Ejercicio 2: Entrenamiento de Velocidad de Llamadas.** Cronométrate entregando cada llamada estándar. El tiempo objetivo de entrega es menos de un segundo por llamada.
+
+**Ejercicio 3: Entrenamiento de Reconocimiento de Señales.** Pide a un compañero del escuadrón que señale aleatoriamente. Identificas la señal dentro de un segundo. Repite con todas las señales estándar.
+
+**Ejercicio 4: Simulación de Persecución.** Ejecuta una sesión normal, pero cada vez que aparezcan señales de audio de Clark, el escuadrón cambia a comunicación solo por señales. Esto construye el uso de señales bajo presión.
+
+**Ejercicio 5: Entrenamiento de Protocolos de Emergencia.** Haz que el escuadrón practique cada protocolo de emergencia al menos una vez por sesión. La memorización requiere repetición.
+
+## Bengalas de Señal en Juego en Solitario
+
+El juego en solitario no se beneficia de las señales de escuadrón, pero los jugadores solitarios pueden usar auto-señales para mantener la disciplina. Las auto-señales son patrones que el jugador ejecuta solo para la autorregulación.
+
+**Auto-señales en solitario:**
+
+| Señal | Uso de Autorregulación |
+|--------|---------------------|
+| Un solo clic en cada cruce | Mantiene la disciplina de linterna |
+| Conteo de pasos | Mantiene un ritmo controlado |
+| Verificación de resistencia en cada giro | Mantiene la conciencia de los recursos |
+| Verificación de batería cada minuto | Mantiene la gestión de batería |
+
+Los jugadores solitarios se benefician de estas señales porque imponen disciplina incluso sin responsabilidad del escuadrón.
+
+## Preguntas Frecuentes
+
+**¿Las bengalas de señal funcionan con jugadores públicos aleatorios?**
+
+Rara vez. Los jugadores aleatorios no conocen el sistema de señales de tu escuadrón. Las bengalas de señal funcionan mejor con compañeros de escuadrón consistentes que han ensayado el vocabulario.
+
+**¿Debería personalizar el vocabulario de señales estándar?**
+
+Sí, pero solo después de que tu escuadrón haya dominado el vocabulario estándar. La personalización añade complejidad, y el vocabulario estándar es suficiente para la mayoría de situaciones.
+
+**¿Cuántas señales debería memorizar un escuadrón?**
+
+El vocabulario estándar tiene aproximadamente quince señales. Añade de cinco a diez señales específicas del escuadrón, y tu total es de veinte a veinticinco señales. Más allá de eso, el sistema se vuelve demasiado complejo para recordar bajo presión.
+
+**¿Cuál es la señal más importante?**
+
+La señal "Persecución" es la más importante porque activa la respuesta más crítica del escuadrón. Cada miembro del escuadrón debe ejecutarla instantáneamente cuando la Guardia Trasera la llama.
+
+**¿Pueden las bengalas de señal reemplazar el chat de voz por completo?**
+
+En escuadrones bien ensayados, sí. El sistema de señales cubre todos los escenarios comunes. El chat de voz se reserva para situaciones inusuales que las señales no pueden abordar.
+
+Para más información sobre los roles de escuadrón que ejecutan señales, consulta nuestra [guía de supervivencia cooperativa](/en/multiplayer/co-op-survival-guide/). Para aprender las tácticas de escape que las bengalas de señal permiten, lee [escapar de Clark](/en/guides/escaping-clark/).
+
+
+**¿Cómo comparto mis herramientas y descubrimientos con la comunidad?**
+
+La Wiki de la comunidad y Discord son los canales principales para compartir herramientas. Las contribuciones a la Wiki siguen estándares editoriales, mientras que Discord permite compartir informalmente con menos estructura. La mayoría de las herramientas exitosas se originan en contribuidores individuales que identifican vacíos en los recursos disponibles, luego colaboran con la comunidad para refinar su enfoque. Si creas una herramienta útil, documéntala claramente con especificaciones de entrada/salida y ejemplos de uso para que otros puedan adoptarla sin confusión.
+
+**¿Qué debo hacer si una herramienta de la que dependo deja de funcionar?**
+
+Reporta el problema inmediatamente a través del canal de retroalimentación documentado de la herramienta. Para herramientas basadas en Wiki, usa la página de discusión. Para herramientas compartidas en Discord, contacta directamente al creador. La mayoría de los mantenedores de herramientas de la comunidad responden a los reportes de errores y agradecen el aviso. Mientras esperas una solución, cambia a herramientas alternativas o métodos manuales. Documenta tu solución temporal para que otros usuarios afectados puedan beneficiarse de tu arreglo temporal.
+
+**¿Puedo confiar en herramientas de terceros con la información de mi cuenta?**
+
+Nunca compartas credenciales de cuenta con ninguna herramienta. Las herramientas legítimas operan a través de la interfaz pública del juego y no requieren inicio de sesión. Si una herramienta te pide tu contraseña de Roblox, no es legítima independientemente de su propósito declarado. Para funciones personalizadas como el seguimiento de estadísticas, la herramienta solo debe pedir tu nombre de usuario en el juego (que es público), no tu contraseña.
+
+**¿Cuánto tiempo se tarda en aprender una herramienta nueva?**
+
+La mayoría de las herramientas de la comunidad tienen interfaces intuitivas que permiten un uso básico en minutos. El dominio típicamente toma de 1 a 2 semanas de uso regular, dependiendo de la complejidad de la herramienta. Los analizadores de audio requieren más tiempo porque la metodología de entrenamiento tiene múltiples etapas. Las calculadoras de batería y los rastreadores de parches son más simples y fáciles de aprender. Los canales de Discord de la comunidad a menudo tienen usuarios veteranos dispuestos a ayudar a los recién llegados a superar la curva de aprendizaje.
+
+**¿Debería usar múltiples herramientas simultáneamente?**
+
+Sí, las herramientas complementarias se mejoran entre sí. Por ejemplo, usar un analizador de audio junto con una calculadora de batería proporciona tanto desarrollo de habilidades de audio como planificación de gestión de recursos. La clave es asegurarse de que las herramientas no entren en conflicto entre sí o te abruman con información. Comienza con una o dos herramientas esenciales, luego añade más a medida que te sientas cómodo.
+
+**¿Cómo sé si una herramienta es de alta calidad?**
+
+Los indicadores de calidad incluyen mantenimiento activo, discusión de la comunidad, documentación clara, actualizaciones regulares y respaldos positivos de veteranos. Las herramientas que no se han actualizado en meses pueden estar abandonadas. Las herramientas con canales de Discord activos y mantenedores receptivos tienden a ser más confiables. La reputación de la comunidad es un fuerte indicador de calidad.

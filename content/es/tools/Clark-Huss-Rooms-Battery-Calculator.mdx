@@ -1,0 +1,309 @@
+export const metadata = {
+  id: "battery-calculator",
+  slug: "battery-calculator",
+  order: 1,
+  difficulty: "intermediate",
+  title: "Clark (EARLY ACCESS) - Calculadora de Batería de Huss Rooms: Herramienta de Planificación de Linterna",
+  description: "Calculadora de batería de Clark Huss rooms — planificación de uso, estimación de clics, optimización de duración de carrera y estrategias de conservación de linterna.",
+  keywords: ["Clark Huss rooms calculadora de batería", "Clark Huss rooms planificación de linterna", "Clark Huss rooms optimización de batería", "Clark Huss rooms uso de linterna", "Clark Huss rooms herramienta de batería"],
+  image: "/images/tools/battery-calculator.webp",
+  video: "0HU7nDM4PvU",
+  category: "tools",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+La batería de la linterna es el recurso limitado más crítico en Clark Huss rooms, y gestionarla de forma efectiva requiere planificación. La calculadora de batería es una herramienta de la comunidad que ayuda a los jugadores a estimar el consumo basándose en patrones de clics planificados y la duración de la carrera. Usar la calculadora mejora la disciplina con la linterna y extiende el tiempo de supervivencia.
+
+Esta guía cubre cómo funciona la calculadora de batería, las entradas que acepta, las salidas que proporciona y cómo integrarla en la planificación de tu partida. También aprenderás sobre técnicas de optimización, errores comunes y las limitaciones de la calculadora.
+
+## Qué Hace La Calculadora de Batería
+
+La calculadora de batería estima el consumo de batería de la linterna basándose en tus patrones de clics planificados. La estimación te ayuda a planificar los clics y evitar el agotamiento de la batería.
+
+### **Función de la calculadora:**
+
+| Función | Descripción |
+|----------|-------------|
+| Estimar batería en cualquier momento | Proyección basada en el plan |
+| Comparar patrones de clics | Encontrar patrones eficientes |
+| Planificar duración de la carrera | Ajustar el plan de clics a la duración |
+| Optimizar umbrales | Encontrar cambios de modo eficientes |
+| Identificar desperdicio | Reducir clics innecesarios |
+
+La calculadora es aproximada pero útil para planificar.
+
+## Entradas de la Calculadora
+
+La calculadora acepta varias entradas que describen tu uso planificado. Las entradas a continuación son las más importantes.
+
+### **Entradas principales:**
+
+| Entrada | Descripción |
+|-------|-------------|
+| Frecuencia de clics planificada | Clics por minuto |
+| Duración del clic | Duración promedio de los clics |
+| Estimación de duración de la carrera | Tiempo total esperado |
+| Tamaño del escuadrón | Jugadores que comparten el rol |
+| Estimación de encuentros con Clark | Número de encuentros |
+| Umbral para cambio de modo | Cuándo reducir los clics |
+
+Cada entrada afecta el resultado de la calculadora.
+
+## Salidas de la Calculadora
+
+La calculadora proporciona salidas que te ayudan a planificar el uso de la linterna. Las salidas a continuación son las más útiles.
+
+### **Salidas principales:**
+
+| Salida | Descripción |
+|--------|-------------|
+| Batería en el minuto 1 | Proyección inicial |
+| Batería en el minuto 3 | Proyección temprana en la partida |
+| Batería en el minuto 6 | Proyección a mitad de partida |
+| Batería en el minuto 10 | Proyección tardía en la partida |
+| Tiempo estimado de agotamiento | Cuándo se quedará sin batería |
+| Cambio de modo recomendado | Cuándo cambiar los patrones de clics |
+
+Las salidas te ayudan a visualizar la trayectoria de la batería.
+
+## Umbrales de Batería y Cambio de Modo
+
+La calculadora ayuda a identificar cuándo cambiar los modos de clics basándose en el nivel de batería. Los umbrales a continuación son estándar.
+
+### **Recomendaciones de umbrales:**
+
+| Rango de batería | Modo | Razonamiento |
+|---------------|------|-----------|
+| 100 — 70% | Clics estándar | Batería suficiente |
+| 70 — 50% | Clics conservadores | Guardar para emergencias |
+| 50 — 25% | Clics únicos | Reservar para decisiones |
+| 25 — 10% | Clic solo en momentos críticos | Reservas finales |
+| 10 — 0% | Solo audio | Modo emergencia |
+
+Estos umbrales son estándar pero pueden ajustarse según los resultados de la calculadora.
+
+## Optimización de Patrones de Clics
+
+La calculadora ayuda a optimizar los patrones de clics comparando diferentes enfoques. Los patrones a continuación son comunes.
+
+**Comparación de patrones:**
+
+| Patrón | Batería a los 6 min | Notas |
+|---------|-------------------|-------|
+| Clics agresivos (10/min) | 15% | Alta información, baja batería |
+| Clics estándar (5/min) | 45% | Equilibrado |
+| Clics conservadores (3/min) | 70% | Información vs batería |
+| Clics mínimos (1/min) | 90% | Prioridad de audio |
+| Solo audio (0 clics) | 100% | Sigilo máximo |
+
+La calculadora muestra los compromisos entre información y batería.
+
+## Cálculos de Batería del Escuadrón
+
+Para escuadrones, la calculadora puede agregar los estados individuales de batería de los jugadores. La agregación ayuda a planificar rotaciones.
+
+**Cálculo del escuadrón:**
+
+| Jugador | Estado de batería | Recomendación |
+|--------|---------------|----------------|
+| Jugador 1 | 80% | Rol estándar |
+| Jugador 2 | 50% | Rol conservador |
+| Jugador 3 | 20% | Rol solo audio |
+
+El estado del escuadrón informa las decisiones de rotación.
+
+## Planificación de Duración de la Carrera
+
+La calculadora ayuda a planificar la duración de la carrera basándose en los encuentros esperados y los patrones de clics. La planificación asegura que tengas suficiente batería.
+
+**Pautas de duración de la carrera:**
+
+| Duración | Patrón recomendado | Notas |
+|----------|---------------------|-------|
+| Corta (5 min) | Clics agresivos | Prioridad de información |
+| Media (10 min) | Clics estándar | Equilibrado |
+| Larga (15 min) | Clics conservadores | Prioridad de batería |
+| Extendida (20+ min) | Clics mínimos | Modo conservación |
+
+La calculadora te ayuda a elegir el patrón apropiado.
+
+## Estimación de Encuentros con Clark
+
+La calculadora acepta una estimación de los encuentros con Clark. La estimación afecta significativamente la proyección de batería.
+
+**Estimación de encuentros:**
+
+| Frecuencia de encuentros | Impacto en la batería |
+|---------------------|----------------|
+| Baja (1 — 2 por carrera) | Impacto mínimo |
+| Media (3 — 5 por carrera) | Impacto moderado |
+| Alta (6+ por carrera) | Impacto significativo |
+
+Los encuentros generalmente requieren clics adicionales para confirmación visual, lo que aumenta el consumo de batería.
+
+## Limitaciones de la Calculadora
+
+La calculadora tiene limitaciones que afectan la precisión. Entender las limitaciones te ayuda a usarla de manera efectiva.
+
+**Limitaciones:**
+
+| Limitación | Impacto |
+|------------|--------|
+| Asume uso lineal | El uso real varía |
+| No puede predecir eventos aleatorios | Encuentros con Clark variables |
+| No tiene en cuenta el pánico | El estrés cambia el uso |
+| Aproxima la duración del clic | La real puede variar |
+| Suposiciones estáticas | El juego puede actualizarse |
+
+La calculadora proporciona estimaciones, no predicciones exactas.
+
+## Errores Comunes de la Calculadora
+
+Estos errores ocurren al usar la calculadora. Evitarlos mejora la precisión.
+
+**Errores comunes:**
+
+| Error | Impacto |
+|---------|--------|
+| Estimaciones optimistas de encuentros | La batería se agota más rápido |
+| Subestimar la frecuencia de clics | La batería se agota más rápido |
+| Ignorar situaciones de pánico | Uso real mayor |
+| No actualizar el plan | Cambios a mitad de carrera ignorados |
+| Seguir la calculadora a ciegas | Matices perdidos |
+
+Evitar estos errores mejora la efectividad de la planificación.
+
+## Integración de la Calculadora en la Partida
+
+La calculadora es más efectiva cuando se integra en la planificación previa y durante la carrera. Los pasos de integración a continuación ayudan.
+
+**Pasos de integración:**
+
+| Paso | Cuándo | Acción |
+|------|------|--------|
+| 1 | Antes de la partida | Planificar patrón de clics |
+| 2 | Inicio de la carrera | Confirmar estado inicial |
+| 3 | Cada minuto | Verificar real vs planificado |
+| 4 | A mitad de carrera | Ajustar si es necesario |
+| 5 | Después de la carrera | Validar estimación |
+
+La integración mejora la precisión con el tiempo.
+
+## Conservación de Batería a Través de la Calculadora
+
+La calculadora ayuda a identificar las técnicas de conservación más eficientes. Las técnicas a continuación maximizan la duración de la batería.
+
+**Técnicas de conservación:**
+
+| Técnica | Impacto en la batería |
+|-----------|----------------|
+| Clic vs mantener | 70% de reducción |
+| Clics solo para decisiones | 50% de reducción |
+| Navegación solo con audio | 100% de reducción |
+| Rotación del escuadrón | Costo distribuido |
+| Disciplina de umbrales | Cambio de modo |
+
+La calculadora muestra el impacto de cada técnica.
+
+## Toma de Decisiones Basada en la Calculadora
+
+La calculadora ayuda a tomar decisiones específicas durante la partida. Los ejemplos de decisiones a continuación lo ilustran.
+
+**Ejemplos de decisiones:**
+
+| Decisión | Entrada de la calculadora | Recomendación |
+|----------|------------------|----------------|
+| ¿Tomar ruta larga? | Tiempo +30 seg | Vale la pena si la batería lo permite |
+| ¿Entrar a habitación abierta? | Clics +3% | Clic solo si es necesario |
+| ¿Explorar área oculta? | Clics +5% | Vale la pena si tienes confianza |
+| ¿Ayudar a compañero? | Clics +2% | Generalmente sí |
+| ¿Tomar ruta de escape? | Clics +10% | Solo si hay persecución activa |
+
+La calculadora informa estas decisiones.
+
+## Técnicas Avanzadas de la Calculadora
+
+Las técnicas avanzadas de la calculadora involucran múltiples variables y análisis de compromisos. Las técnicas a continuación son para usuarios experimentados.
+
+**Técnicas avanzadas:**
+
+| Técnica | Descripción |
+|-----------|-------------|
+| Frecuencia de clics variable | Diferentes tasas en diferentes momentos |
+| Planificación de contingencias | Respuestas preplanificadas |
+| Optimización del escuadrón | Agregar batería del escuadrón |
+| Análisis de tendencias | Patrones a lo largo de múltiples carreras |
+| Experimentación de umbrales | Encontrar modos óptimos |
+
+Estas técnicas requieren práctica.
+
+
+**Lista de Referencia Rápida:**
+
+- Verifica el acceso a la Wiki de la comunidad antes de usar cualquier herramienta
+- Guarda la URL del rastreador de parches para acceso instantáneo
+- Únete al Discord de la comunidad para anuncios de herramientas
+- Prueba el analizador de audio con auriculares estéreo antes de confiar en los resultados
+- Calcula las necesidades de batería antes de cada carrera usando la calculadora
+- Documenta tus descubrimientos de pasillos en la base de datos del mapeador
+- Comparte hallazgos útiles con la comunidad para ayudar a otros
+- Mantén las URLs de las herramientas organizadas en un documento de referencia personal
+
+**Trampas Comunes:**
+
+- Usar herramientas que requieren credenciales de cuenta representa riesgos de seguridad
+- Confiar en herramientas sin pruebas con auriculares estéreo reduce la precisión
+- Compartir herramientas no verificadas puede engañar a la comunidad
+- Confiar en datos desactualizados del rastreador de parches puede llevar a una estrategia incorrecta
+- Ignorar las limitaciones de las herramientas resulta en malas decisiones de planificación
+
+
+## Preguntas Frecuentes
+
+**¿Qué tan precisa es la calculadora de batería?**
+
+Aproximadamente 80% precisa. No puede predecir eventos aleatorios pero es útil para planificar.
+
+**¿Puedo usar la calculadora para partidas en solitario?**
+
+Sí. Las partidas en solitario usan entradas más simples y producen resultados más claros.
+
+**¿La calculadora tiene en cuenta la rotación del escuadrón?**
+
+Sí, con la entrada adecuada del tamaño del escuadrón. Agrega las baterías individuales.
+
+**¿Debo ajustar basándome en el uso real?**
+
+Sí. Los ajustes a mitad de carrera basándose en el estado real de la batería mejoran la precisión.
+
+**¿Dónde puedo encontrar la calculadora?**
+
+La Wiki y el Discord de la comunidad comparten herramientas de calculadora y hojas de cálculo.
+
+Para más sobre la gestión de la linterna, consulta nuestra [guía de mecánicas de la linterna](/en/guides/flashlight-mechanics/). Para conocer herramientas y recursos más amplios, lee [herramientas de la comunidad](/en/guides/community-tools/).
+
+
+**¿Cómo comparto mis herramientas y descubrimientos con la comunidad?**
+
+La Wiki y el Discord de la comunidad son los canales principales para compartir herramientas. Las contribuciones a la Wiki siguen estándares editoriales, mientras que Discord permite compartir de forma informal con menos estructura. La mayoría de las herramientas exitosas provienen de contribuyentes individuales que identifican brechas en los recursos disponibles, luego colaboran con la comunidad para refinar su enfoque. Si creas una herramienta útil, documéntala claramente con especificaciones de entrada/salida y ejemplos de uso para que otros puedan adoptarla sin confusión.
+
+**¿Qué debo hacer si una herramienta de la que dependo deja de funcionar?**
+
+Reporta el problema inmediatamente a través del canal de retroalimentación documentado de la herramienta. Para herramientas basadas en Wiki, usa la página de discusión. Para herramientas compartidas en Discord, contacta directamente al creador. La mayoría de los mantenedores de herramientas de la comunidad responden a los reportes de errores y agradecen el aviso. Mientras esperas una solución, cambia a herramientas alternativas o métodos manuales. Documenta tu solución temporal para que otros usuarios afectados puedan beneficiarse de tu solución temporal.
+
+**¿Puedo confiar en herramientas de terceros con la información de mi cuenta?**
+
+Nunca compartas credenciales de cuenta con ninguna herramienta. Las herramientas legítimas operan a través de la interfaz pública del juego y no requieren inicio de sesión. Si una herramienta pide tu contraseña de Roblox, no es legítima sin importar su propósito declarado. Para funciones personalizadas como el seguimiento de estadísticas, la herramienta solo debe pedir tu nombre de usuario en el juego (que es público), no tu contraseña.
+
+**¿Cuánto tiempo lleva aprender una nueva herramienta?**
+
+La mayoría de las herramientas de la comunidad tienen interfaces intuitivas que permiten un uso básico en minutos. El dominio generalmente toma de 1 a 2 semanas de uso regular, dependiendo de la complejidad de la herramienta. Los analizadores de audio requieren más tiempo porque la metodología de entrenamiento tiene múltiples etapas. Las calculadoras de batería y los rastreadores de parches son más simples y fáciles de aprender. Los canales de Discord de la comunidad a menudo tienen usuarios veteranos dispuestos a ayudar a los recién llegados durante la curva de aprendizaje.
+
+**¿Debo usar múltiples herramientas simultáneamente?**
+
+Sí, las herramientas complementarias se mejoran entre sí. Por ejemplo, usar un analizador de audio junto con una calculadora de batería proporciona tanto desarrollo de habilidades auditivas como planificación de gestión de recursos. La clave es asegurar que las herramientas no entren en conflicto entre sí o te abrume con información. Comienza con una o dos herramientas esenciales, luego agrega más a medida que te sientas cómodo.
+
+**¿Cómo sé si una herramienta es de alta calidad?**
+
+Los indicadores de calidad incluyen mantenimiento activo, discusión de la comunidad, documentación clara, actualizaciones regulares y respaldos positivos de veteranos. Las herramientas que no se han actualizado en meses pueden estar abandonadas. Las herramientas con canales activos de Discord y mantenedores receptivos tienden a ser más confiables. La reputación de la comunidad es un fuerte indicador de calidad.

@@ -1,0 +1,295 @@
+export const metadata = {
+  id: "line-of-sight-rules",
+  slug: "line-of-sight-rules",
+  order: 3,
+  difficulty: "advanced",
+  title: "Clark (ACCESO ANTICIPADO) - Reglas de Línea de Visión de las Salas Huss: Geometría de la Supervivencia",
+  description: "Reglas de línea de visión de las salas Clark Huss — geometría de detección, mecánica de grosor de paredes, seguimiento visual y uso táctico de esquinas para escapes.",
+  keywords: ["línea de visión salas Clark Huss", "mecánica de paredes salas Clark Huss", "estrategia de esquinas salas Clark Huss", "seguimiento visual salas Clark Huss", "geometría salas Clark Huss"],
+  image: "/images/entities/line-of-sight-rules.webp",
+  video: "8n7B9BBiI3U",
+  category: "entities",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+La línea de visión es el componente visual del sistema de seguimiento de Clark. Mientras que el audio es el método principal de detección, la línea de visión le proporciona a Clark una orientación precisa una vez establecida. Comprender la geometría de la línea de visión, las reglas sobre el grosor de las paredes y las estrategias de esquinas que rompen el seguimiento visual es esencial para la supervivencia.
+
+Esta guía cubre las mecánicas de línea de visión en detalle, las reglas de grosor de paredes que afectan la detección, la geometría de las rutas de escape y las estrategias de esquinas que interrumpen el seguimiento de Clark. También aprenderás sobre la precisión del seguimiento visual y los efectos de la linterna en la línea de visión.
+
+## Qué Significa la Línea de Visión en las Salas Clark Huss
+
+La línea de visión (LOS por sus siglas en inglés) se refiere a la capacidad de Clark para ver el modelo de tu personaje a través de la geometría de los pasillos generados proceduralmente. Cuando se establece la línea de visión, la precisión de seguimiento de Clark aumenta drásticamente.
+
+### **Estados de línea de visión:**
+
+| Estado | Seguimiento de Clark | Contra-Medida |
+|--------|----------------------|---------------|
+| LOS directa | Alta precisión | Romper la LOS inmediatamente |
+| LOS a través de pared delgada | Precisión reducida | Moverse para romper |
+| LOS a través de pared gruesa | Solo audio | Enmascaramiento de audio |
+| LOS rota | Solo audio | Enmascaramiento de audio |
+| Sin LOS posible | Solo audio | Navegación estándar |
+
+El estado cambia dinámicamente a medida que tú y Clark se mueven por los pasillos.
+
+## Mecánica de Grosor de Paredes
+
+El grosor de las paredes afecta cómo la luz y posiblemente los sonidos penetran. La detección visual de Clark respeta las reglas de grosor de las paredes.
+
+### **Efectos del grosor de las paredes:**
+
+| Grosor | Penetración de Luz | LOS Visual |
+|--------|--------------------|------------|
+| 0 (pasillo) | Total | Sí |
+| 1 capa | Reducida | Sí (tenue) |
+| 2 capas | Ninguna | No |
+| 3+ capas | Ninguna | No |
+
+Las reglas de iluminación son la razón por la que el uso de la linterna puede revelar tu posición a través de paredes delgadas pero no a través de paredes gruesas.
+
+## Fundamentos de la Estrategia de Esquinas
+
+La estrategia de esquinas es la forma más confiable de romper la línea de visión en las salas Clark Huss. La estrategia explota la geometría de los giros de los pasillos.
+
+### **Principios de la estrategia de esquinas:**
+
+| Principio | Descripción |
+|-----------|-------------|
+| Cada esquina rompe la LOS | El giro brusco interrumpe el seguimiento |
+| Las esquinas consecutivas se acumulan | Múltiples esquinas añaden confiabilidad |
+| Los ángulos rectos funcionan mejor | Los giros de 90 grados son más efectivos |
+| Esquinas amplias menos efectivas | Las curvas suaves son más débiles |
+| Los callejones sin salida son malos | No se puede continuar rompiendo |
+
+Los veteranos usan múltiples esquinas consecutivas en las rutas de escape porque cada esquina añade tiempo de interrupción del seguimiento.
+
+## Rango de Detección Visual
+
+El rango de detección visual de Clark es más corto que el rango de audio. La detección visual es más útil a distancias cortas.
+
+### **Rango de detección visual:**
+
+| Obstáculo | Rango |
+|-----------|-------|
+| Línea directa | 10 — 15 metros |
+| Alrededor de una esquina | 0 — 3 metros |
+| A través de pared delgada | 2 — 5 metros |
+| A través de pared gruesa | 0 metros |
+
+El rango visual es mucho más corto que el rango de audio, por eso el audio es el método principal de detección.
+
+## Efectos de la Linterna en la Línea de Visión
+
+El uso de la linterna afecta la línea de visión de maneras específicas. Comprender los efectos te ayuda a usar la linterna estratégicamente.
+
+**Efectos de la linterna:**
+
+| Estado de la Linterna | Efecto en la Línea de Visión |
+|----------------------|------------------------------|
+| Apagada | Detección normal de Clark |
+| Un solo clic | Iluminación breve, efecto mínimo |
+| Sostenida | Clark puede verte a través de paredes delgadas |
+| Parpadeada | Efecto de confusión, posible ruptura de detección |
+
+El uso sostenido de la linterna es el peor caso para la línea de visión porque le da a Clark confirmación visual a través de barreras.
+
+## Geometría de Escape
+
+La geometría de los pasillos determina si los escapes son posibles. La geometría óptima de escape incluye múltiples esquinas y callejones sin salida limitados.
+
+**Componentes de la geometría de escape:**
+
+| Componente | Importancia |
+|------------|-------------|
+| Densidad de esquinas | Alta (más esquinas = mejor) |
+| Intersecciones en T | Alta (múltiples opciones) |
+| Salas abiertas | Baja (expuesto) |
+| Pasillos rectos largos | Baja (predecible) |
+| Callejones sin salida | Muy baja (evitar) |
+
+Los veteranos eligen rutas de escape que maximizan la densidad de esquinas y minimizan la exposición.
+
+## Técnica de Ruptura de Esquina
+
+La técnica de ruptura de esquina es la forma más confiable de escapar de la línea de visión de Clark. La técnica explota la geometría y el tiempo.
+
+**Ejecución de la ruptura de esquina:**
+
+| Paso | Acción |
+|------|--------|
+| 1 | Identificar la esquina de escape adelante |
+| 2 | Correr hacia la esquina |
+| 3 | En la esquina, girar bruscamente |
+| 4 | Continuar durante 3 — 5 segundos |
+| 5 | Evaluar si la LOS se ha roto |
+| 6 | Continuar hacia la siguiente esquina |
+
+Cada ruptura de esquina toma de 5 — 10 segundos en ejecutarse. Múltiples rupturas consecutivas añaden confiabilidad.
+
+## Estrategia de Esquinas Apiladas
+
+Las esquinas apiladas son múltiples giros consecutivos de 90 grados que acumulan rupturas de línea de visión. La estrategia es altamente confiable.
+
+**Beneficios de las esquinas apiladas:**
+
+| Beneficio | Descripción |
+|-----------|-------------|
+| Rupturas de LOS acumulativas | Cada esquina añade 3 segundos de interrupción |
+| Confusión del rastro de audio | Los cambios de dirección desordenan el seguimiento de audio |
+| Múltiples opciones de escape | Cada esquina ofrece una nueva dirección |
+| Mayor probabilidad de supervivencia | 80%+ de tasa de éxito con dos esquinas |
+
+Los veteranos usan esquinas apiladas para escapes confiables cuando Clark está en persecución activa.
+
+## Fenómenos de Paredes en los Pasillos
+
+Los fenómenos de paredes incluyen efectos visuales y de audio específicos de las geometrías de los pasillos. Los fenómenos afectan la detección y la navegación.
+
+**Fenómenos de paredes:**
+
+| Fenómeno | Efecto |
+|----------|--------|
+| Linterna a través de pared delgada | Clark te ve a través de la pared |
+| Reflexión de eco | El audio rebota, cambiando la percepción |
+| Vista previa de puerta | Indicadores de puerta visibles a través del marco |
+| Paredes decorativas | Visualmente distintas, sin efecto funcional |
+| Paredes reforzadas | Sin penetración, efecto de jugabilidad |
+
+Los fenómenos son la razón por la que algunos pasillos se sienten más peligrosos que otros.
+
+## Precisión del Seguimiento Visual
+
+La precisión del seguimiento visual varía según la distancia, la iluminación y el movimiento del jugador. La precisión afecta la fiabilidad con la que Clark puede seguirte.
+
+**Precisión del seguimiento visual:**
+
+| Condición | Precisión |
+|-----------|-----------|
+| LOS directa, cerca | Muy alta |
+| LOS directa, media | Alta |
+| LOS directa, lejos | Media |
+| A través de pared delgada | Baja |
+| A través de pared gruesa | Ninguna |
+
+La precisión determina con qué confianza Clark puede perseguir una vez que te ve.
+
+## Técnicas de Ruptura de LOS
+
+Más allá de las rupturas de esquinas, hay otras técnicas que pueden romper la línea de visión. Las técnicas a continuación funcionan en situaciones específicas.
+
+**Técnicas de ruptura de LOS:**
+
+| Técnica | Descripción |
+|---------|-------------|
+| Entrar por una puerta | Entrar en una sala rompe la LOS del pasillo |
+| Agacharse detrás de un obstáculo | Un perfil más bajo puede ocultarte |
+| Pegarse a las paredes | Reduce la sección transversal visible para Clark |
+| Coincidencia de luminancia | Permanecer en áreas tenues |
+| Pegarse a las paredes | Mantenerse cerca de la geometría de la pared |
+
+Estas técnicas son situacionales y menos confiables que las rupturas de esquinas.
+
+## LOS y Bloqueo del Servidor
+
+El bloqueo del servidor afecta la línea de visión al aumentar la detección de Clark. La relación entre el estado de bloqueo y la LOS es sutil.
+
+**Efectos de LOS por bloqueo del servidor:**
+
+| Estado | Efecto en la LOS |
+|--------|-----------------|
+| Pre-bloqueo | Reglas estándar de LOS |
+| Post-bloqueo inmediato | Rango de LOS ligeramente aumentado |
+| Mitad del juego | Detección sostenida aumentada |
+| Final del juego | Clark más agresivo en la persecución por LOS |
+
+Los efectos se acumulan con los aumentos de sensibilidad de audio, creando un entorno más peligroso al final del juego.
+
+## Errores Comunes de LOS
+
+Los jugadores cometen errores específicos relacionados con la línea de visión. Identificar los errores ayuda a prevenirlos.
+
+**Errores comunes:**
+
+| Error | Impacto |
+|-------|---------|
+| Ruta de escape recta y larga | Predecible, fácil de seguir |
+| Escape con una sola esquina | Insuficiente para una persecución activa |
+| Escape por sala abierta | Exposición máxima |
+| Mantener la linterna encendida durante la persecución | Visibilidad máxima para Clark |
+| Detenerse en una esquina | Permite la re-adquisición |
+
+Evitar estos errores mejora significativamente la tasa de éxito del escape.
+
+
+**Referencia Rápida de Detección:**
+
+- Los latidos del corazón indican que Clark patrulla lejos sin amenaza inmediata
+- La cadencia de la respiración revela proximidad y nivel de alerta
+- Los golpes de pisadas sugieren que Clark está en una sala adyacente
+- Los fragmentos de susurro indican alerta elevada y escalada inminente
+- El estallido de carrera señala una persecución activa que requiere retirada total
+- La vocalización significa que Clark está cerca y detectando tu posición
+
+**Conceptos Básicos de Contra-Estrategia:**
+
+- Caminar en silencio reduce significativamente tu huella de audio
+- La disciplina de clic en la linterna extiende la batería mientras preserva el rango de detección
+- Las rupturas de esquinas interrumpen el seguimiento visual cuando comienza la persecución
+- El silencio sostenido durante 10+ segundos pierde el rastro de audio de Clark
+- La sincronización del movimiento del escuadrón confunde el seguimiento de objetivo único
+- La disciplina del umbral de batería previene situaciones de agotamiento de emergencia
+
+
+## Preguntas Frecuentes
+
+**¿Qué tan efectiva es la ruptura de esquina contra una persecución activa?**
+
+Una sola ruptura de esquina tiene aproximadamente un 50% de tasa de éxito. Dos rupturas consecutivas tienen un 80%+ de tasa de éxito. Tres rupturas son casi seguras.
+
+**¿Puede Clark ver a través de múltiples paredes?**
+
+No. La detección visual de Clark se detiene en dos capas de pared. El audio continúa pero lo visual está bloqueado.
+
+**¿Mi propia linterna afecta mi visibilidad de LOS?**
+
+Sí. Tu linterna ilumina las paredes y puede revelar tu silueta a través de paredes delgadas. La disciplina de clic reduce este efecto.
+
+**¿Cuál es la mejor geometría de sala para escapar?**
+
+Los pasillos en forma de L con múltiples giros son los mejores. Las salas abiertas son las peores porque proporcionan visibilidad completa de 360 grados.
+
+**¿Ocultarse detrás de una decoración rompe la LOS?**
+
+Sí, los objetos decorativos bloquean la LOS. Sin embargo, Clark puede rodearlos para restablecer el contacto visual.
+
+Para más información sobre el seguimiento de audio que a menudo determina la detección, consulta nuestra [guía explicada de seguimiento de audio](/en/entities/audio-tracking-explained/). Para aprender tácticas de escape en detalle, lee [escapar de Clark](/en/guides/escaping-clark/).
+
+
+**¿Recibirá Clark cambios significativos en futuras actualizaciones?**
+
+Es probable que Clark reciba ajustes de equilibrio durante el Acceso Anticipado. El desarrollador monitorea los comentarios de la comunidad y ajusta el comportamiento de Clark para mantener una dificultad apropiada. Los cambios importantes se anuncian a través de las notas de parche. Los veteranos deben estar preparados para ajustes periódicos en las mecánicas de Clark.
+
+**¿Cómo practico escenarios de encuentro con Clark?**
+
+Las herramientas de audio de la comunidad proporcionan señales de audio aisladas de Clark para practicar. La práctica en el juego en escenarios de baja presión desarrolla habilidades. Las partidas en solitario permiten una interacción enfocada con Clark sin la complejidad de coordinación. Los jugadores veteranos practican escenarios específicos repetidamente para construir respuestas automáticas.
+
+**¿Cuál es la diferencia entre los diversos estados de Clark?**
+
+Clark transita a través de los estados de Patrulla, Investigación, Seguimiento, Persecución, Caza y Enfriamiento. Cada estado tiene señales de audio, rangos de detección y patrones de comportamiento distintos. Comprender las transiciones de estado ayuda a predecir la siguiente acción de Clark. Los veteranos rastrean los cambios de estado mediante el monitoreo de audio.
+
+**¿Puedo confundir la orientación de Clark en escuadrones?**
+
+Sí, el juego en escuadrón puede confundir la orientación de Clark mediante enmascaramiento de audio coordinado. Múltiples jugadores moviéndose juntos crean firmas de audio superpuestas. Los distractores designados pueden desviar la atención de Clark de los miembros vulnerables del escuadrón. La coordinación del escuadrón proporciona más oportunidades de confusión que el juego en solitario.
+
+**¿Cómo afecta el uso de la linterna a la detección de Clark?**
+
+El uso sostenido de la linterna aumenta significativamente el rango de detección de Clark. La disciplina de clic minimiza este efecto mientras sigue proporcionando información visual. La navegación solo por audio elimina por completo la detección relacionada con la linterna. Elige la estrategia de linterna según el estado de la batería y la proximidad de Clark.
+
+**¿Cuáles son las debilidades de Clark?**
+
+Las principales debilidades de Clark incluyen el silencio de audio, escapes por ruptura de esquinas y confusión de escuadrón. Los jugadores que minimizan la salida de audio son más difíciles de rastrear. Las rupturas bruscas de esquinas interrumpen el seguimiento visual. Los escuadrones crean múltiples firmas de audio que confunden el seguimiento de objetivo único. Aprovecha estas debilidades de manera consistente.
+
+**¿Cómo se compara Clark con otros monstruos de juegos de terror?**
+
+Clark difiere de los monstruos típicos de juegos de terror a través de su diseño de acechador-paciente que escucha. Es menos inmediatamente agresivo pero más persistente que muchos monstruos de juegos de terror. Su seguimiento centrado en audio recompensa el juego disciplinado en lugar de las mecánicas de escondite. El diseño crea una tensión única.

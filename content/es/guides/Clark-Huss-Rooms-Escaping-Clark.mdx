@@ -1,0 +1,220 @@
+export const metadata = {
+  id: "escaping-clark",
+  slug: "escaping-clark",
+  order: 5,
+  difficulty: "advanced",
+  title: "Clark (ACCESO ANTICIPADO) - Huss Rooms Escapando de Clark: Tácticas y Rutas de Retirada",
+  description: "Aprende las tácticas de escape de Clark en Huss rooms — árbol de decisiones de retirada, ruptura de línea de visión, planificación de rutas de escape y técnicas de evasión de último segundo.",
+  keywords: ["Huss rooms escapando de Clark", "Huss rooms retirada de Clark", "Huss rooms ruta de escape de Clark", "Huss rooms cómo sobrevivir a Clark", "Huss rooms evadir a Clark"],
+  image: "/images/guides/escaping-clark.webp",
+  video: "V25QtaPsTGg",
+  category: "guides",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+Escapar de Clark en Huss rooms no se trata de correr más rápido que él, porque él es más rápido que tu velocidad de sprint en la mayoría de los escenarios. El escape consiste en romper su rastreo auditivo, usar la línea de visión a tu favor y elegir rutas de retirada que exploten las ventanas de comportamiento de enfriamiento. Los jugadores nuevos entran en pánico y hacen sprint en la dirección equivocada, lo cual garantiza que la carrera termine. Los veteranos ejecutan una retirada calculada que compra suficiente tiempo para que Clark se retire.
+
+Esta guía cubre el árbol de decisiones de retirada, la geometría de las rutas de escape y la mecánica de línea de visión que determina si Clark puede seguirte. También aprenderás las ventanas de tiempo cuando Clark se retira, los errores que garantizan un escape fallido y los patrones de escape de escuadrón que funcionan en multijugador.
+
+## El Árbol de Decisiones de Escape
+
+Cuando confirmas que Clark conoce tu posición (mediante la cadencia de respiración o la proximidad de latidos), tienes aproximadamente cinco segundos para elegir tu respuesta. El árbol de decisiones a continuación mapea cada escenario a la acción correcta.
+
+### **Árbol de decisiones por proximidad de Clark:**
+
+| Señal Auditiva de Clark | Estimación de Distancia | Acción Recomendada |
+|--------------------------|--------------------------|---------------------|
+| Solo latidos | 2+ pasillos | Continúa tu camino actual, no cambies comportamiento |
+| Cadencia de respiración | 1 pasillo | Detente, enciende la linterna una vez, confirma dirección |
+| Golpes de pasos | Habitación adyacente | Muévete a la ruta de escape inmediatamente |
+| Fragmentos de susurros | Mismo pasillo | Sprint hasta romper la línea de visión |
+| Ráfaga de sprint | Persecución activa | Sprint completo, sin linterna, prioriza distancia |
+
+La clave es que cada señal auditiva corresponde a una respuesta de escape diferente. Los jugadores nuevos tratan todas las señales de Clark como la misma amenaza, lo cual les causa reaccionar de más a latidos lejanos y reaccionar de menos a susurros cercanos.
+
+## Mecánica de Línea de Visión
+
+Clark rastrea a los jugadores mediante una combinación de señales auditivas y visuales. La línea de visión es el componente visual: si Clark puede ver el modelo de tu personaje, puede encontrar un camino directamente hacia ti. Si la línea de visión se rompe, debe depender del rastreo auditivo, que es mucho más fácil de confundir.
+
+### **Estados de línea de visión:**
+
+| Estado | Calidad de Rastreo de Clark | Contra-Estrategia |
+|--------|------------------------------|---------------------|
+| Línea de visión directa | Alta precisión, persecución rápida | Rompe la línea de visión inmediatamente |
+| Pared entre medio (una capa) | Precisión reducida, persecución más lenta | Continúa moviéndote, crea distancia |
+| Pared entre medio (dos capas) | Solo rastreo auditivo | Usa el audio para engañarlo |
+| Múltiples giros entre medio | Pierde el objetivo a menos que el audio se sostenga | Confúndelo con pasos deliberados |
+
+La línea de visión se rompe cuando giras una esquina y la detección visual de Clark falla en volver a adquirirte. Esto te da una ventana de tres segundos donde depende del audio, que es la ventana donde puedes romper su rastreo.
+
+## Geometría de las Rutas de Escape
+
+La geometría de las rutas de escape determina si Clark puede predecir tu camino. Las rutas de escape predecibles fallan porque Clark aprende de los patrones de audio. Las rutas variables tienen éxito.
+
+### **Los cuatro tipos de rutas de escape:**
+
+1. **El Sprint Recto:** corre directamente lejos de la última posición conocida de Clark. Funciona solo si tienes suficiente resistencia y él está en latidos lejanos. Falla si está en persecución activa.
+
+2. **La Ruptura de Esquina:** haz sprint hasta la esquina más cercana, gira bruscamente, luego gira otra vez. Cada esquina rompe la línea de visión y reinicia su rastreo visual. El escape más confiable.
+
+3. **El Salto de Puerta:** haz sprint a través de una puerta, ciérrala detrás de ti si es posible. Las puertas bloquean el rastreo auditivo de Clark temporalmente porque él pausa para interactuar con ellas.
+
+4. **La Finta del Callejón Sin Salida:** haz sprint hacia un callejón sin salida, luego date la vuelta y vuelve sobre tus pasos. Clark se compromete a seguir el rastro de audio, lo cual significa que sobrepasa tu posición. Arriesgado pero efectivo.
+
+La ruptura de esquina es la ruta de escape más confiable porque compone rupturas de línea de visión. Cada esquina añade tres segundos de rastreo solo auditivo para Clark, y a menudo pierde el rastro después de dos esquinas consecutivas.
+
+## Ventanas de Retirada de Clark
+
+Clark no persigue indefinidamente. Después de una persecución sostenida, entra en una ventana de enfriamiento donde su sensibilidad auditiva disminuye y patrulla en lugar de perseguir. Entender esta ventana es crítico para el tiempo de escape.
+
+### **Tiempos de la ventana de retirada:**
+
+| Evento | Ventana de Retirada | Comportamiento Seguro |
+|--------|----------------------|------------------------|
+| Clark entra en persecución | 0 seg | Sprint, sin linterna |
+| Clark pierde el rastro de audio | 15 — 30 seg | Muévete con cautela, clics permitidos |
+| Clark entra en nueva zona de pasillo | 20 — 45 seg | Reanuda la navegación basada en audio |
+| Clark patrulla lejos de tu zona | 30 — 60 seg | Recompón la resistencia, enciende la linterna una vez |
+
+La ventana de quince segundos después de que Clark pierde el rastro de audio es el período peligroso porque puede volver a adquirir mediante sonido residual. La marca de treinta segundos es el período seguro donde su atención se ha desplazado.
+
+## Técnicas de Evasión de Último Segundo
+
+Cuando Clark te está persiguiendo activamente y tienes menos de tres segundos antes del contacto, técnicas de evasión específicas pueden salvar la carrera. Son movimientos de emergencia que cuestan resistencia pero compran distancia.
+
+**Técnica 1: El Sprint-Cancel Sprint.** Haz sprint durante dos segundos, suelta el sprint, luego inmediatamente haz sprint otra vez. La suelta crea un breve vacío de audio que confunde el rastreo de Clark. Eficaz si tienes resistencia completa.
+
+**Técnica 2: El Sprint de Colisión.** Haz sprint directamente hacia una pared. El sonido de colisión es fuerte pero breve, y Clark buscará un camino hacia el punto de colisión en lugar de tu posición actual. Usa esto cuando estés a punto de ser acorralado.
+
+**Técnica 3: El Señuelo de Linterna.** Enciende la linterna rápidamente en una dirección, luego haz sprint en la dirección opuesta. La detección auditiva de Clark se enfoca temporalmente en los clics de la linterna. Funciona solo si Clark está usando rastreo visual.
+
+**Técnica 4: El Deslizamiento Agachado.** Si los controles permiten agacharse, agáchate y deslízate bajo el cono de detección auditiva de Clark. La velocidad de movimiento reducida te convierte en un objetivo más silencioso. Último recurso porque sacrifica la velocidad de sprint.
+
+**Técnica 5: El Sacrificio de Escuadrón.** En multijugador, un jugador hace sprint ruidosamente en una dirección mientras el escuadrón hace sprint silenciosamente en otra. Clark sigue el rastro de audio fuerte. Táctica de alto costo porque el jugador sacrificado usualmente muere.
+
+## Patrones de Escape de Escuadrón
+
+El escape en multijugador requiere movimiento coordinado porque Clark apunta a jugadores aislados. Los patrones de escuadrón a continuación están probados para funcionar en situaciones de alta presión.
+
+**La Formación en Cuña:** el escuadrón se mueve en forma de cuña con el líder al frente, la guardia trasera al fondo y el gestor de luz en el centro. Cuando Clark se acerca, la cuña pivota para que la guardia trasera se convierta temporalmente en el líder. Mantiene la integridad de la formación durante la retirada.
+
+**El Sistema de Compañeros:** cada jugador es emparejado con un compañero de escuadrón. Cuando Clark se acerca, cada pareja de compañeros se mueve junta, manteniendo contacto visual. Clark no puede aislar a jugadores que siempre están en parejas.
+
+**El Relé de Luz:** el escuadrón pasa el rol de gestor de luz durante la retirada. El Jugador A enciende la linterna, el escuadrón se mueve durante la ventana del clic. El Jugador B enciende la siguiente, el escuadrón continúa moviéndose. Esto mantiene la cobertura de linterna sin que un solo jugador agote la batería.
+
+**La Retirada en Línea:** el escuadrón se mueve en una fila de una sola vía con el líder navegando y la guardia trasera monitoreando las señales auditivas de Clark. Cuando Clark se acerca, la línea acelera junta, y la guardia trasera anuncia las direcciones de retirada.
+
+## Errores Comunes de Escape
+
+Estos errores garantizan un escape fallido. Los jugadores nuevos caen en ellos porque el pánico anula la toma de decisiones racional.
+
+**Error 1: Hacer Sprint en Línea Recta.** Clark es más rápido que tu sprint. Hacer sprint en línea recta termina con él atrapándote en diez segundos.
+
+**Error 2: Hacer Sprint Hacia Clark.** El instinto de "lucha o huida" está equivocado aquí. No hay opción de lucha. Haz sprint lejos de su última dirección conocida.
+
+**Error 3: Mantener la Linterna Durante la Persecución.** La linterna revela tu posición a través de las paredes. Durante una persecución activa, la linterna debe estar apagada.
+
+**Error 4: Separar al Escuadrón.** El aislamiento es el mecanismo principal de selección de objetivos de Clark. Separar al escuadrón le da múltiples objetivos fáciles.
+
+**Error 5: Detenerse a Reorientarse.** Una vez que te comprometes con una ruta de escape, no te detengas. Detenerse permite que Clark vuelva a adquirir mediante rastreo auditivo.
+
+**Error 6: Abrir Puertas Durante la Persecución.** Abrir puertas te hace más lento y crea un ancla de rastreo para Clark. Solo abre puertas si la ruta lo requiere.
+
+## Análisis de Retirada Versus Mantenerse Firme
+
+Algunos escenarios favorecen la retirada, otros favorecen mantenerse firme y dejar que Clark pase. La decisión depende de la resistencia, la batería de la linterna y la posición del escuadrón.
+
+**Favorece la retirada cuando:**
+
+- La resistencia está por encima del 50%
+- Tienes una ruta de escape clara con dos rupturas de esquina disponibles
+- Tu escuadrón está agrupado y puede moverse junto
+- Clark está en estado de persecución activa
+
+**Favorece mantenerse firme cuando:**
+
+- La resistencia está por debajo del 30% y no puedes hacer sprint de forma efectiva
+- Estás en una habitación con solo una entrada que Clark debe usar
+- La batería de tu linterna es crítica y no puedes permitirte gastarla en movimiento
+- Clark ha perdido tu rastro de audio y puede pasar de largo
+
+La estrategia de mantenerse firme funciona en tipos específicos de pasillos (pasillo recto largo con un solo punto de entrada) pero falla en habitaciones abiertas con múltiples puntos de acceso.
+
+## La Posición de Recuperación
+
+Después de un escape exitoso, entras en una ventana de recuperación donde debes recomponer la resistencia y reestablecer tu mapa de audio. Saltarte esta ventana lleva a persecuciones repetidas.
+
+**Secuencia de recuperación:**
+
+1. **Primeros Diez Segundos:** deja de moverte por completo, deja que la resistencia se regenere, enciende la linterna una vez para confirmar que no hay Clark cerca.
+2. **Siguientes Veinte Segundos:** reanuda la navegación basada en audio, escucha cualquier latido o señal de respiración.
+3. **Siguientes Treinta Segundos:** reconstruye tu mapa mental del área, anota hacia dónde se retiró Clark.
+4. **Más Allá de Un Minuto:** operación normal, pero sé consciente de que la próxima patrulla de Clark puede traerlo de vuelta.
+
+La posición de recuperación no es opcional. Saltártela y continuar a toda velocidad garantiza que la próxima persecución comience antes de que hayas reconstruido las reservas de resistencia.
+
+## Construcción de Rutas de Escape de Forma Preventiva
+
+La mejor estrategia de escape es identificar las rutas de escape antes de necesitarlas. Mientras exploras una nueva sección de pasillo, siempre anota la ruptura de esquina más cercana y la opción de salto de puerta.
+
+**Mapeo preventivo de rutas de escape:**
+
+| Característica del Pasillo | Uso de Ruta de Escape |
+|-----------------------------|------------------------|
+| Cruce en T | Ruptura de esquina disponible en dos direcciones |
+| Pasillo recto largo | Técnica de sprint-cancel sprint |
+| Habitación abierta | Salto de puerta si la habitación tiene puerta de entrada/salida |
+| Pasillo curvo | Ruptura de esquina continua |
+| Callejón sin salida | Dirección inversa, nunca hagas sprint hacia un callejón sin salida |
+
+Los veteranos construyen un mapa mental de escape de cada pasillo que entran, y lo actualizan cada vez que las señales auditivas de Clark indican la dirección de su patrulla. La inversión de energía mental vale la pena cuando comienza una persecución y ya sabes adónde ir.
+
+## Preguntas Frecuentes
+
+**¿Puedo superar a Clark si tengo resistencia completa?**
+
+No. La velocidad de sprint de Clark es aproximadamente 1.3 veces tu velocidad de sprint. Hacer sprint en línea recta siempre es una estrategia perdedora. Debes romper la línea de visión y confundir su rastreo auditivo.
+
+**¿Clark se rinde si me escondo en una habitación?**
+
+A veces. Clark pierde interés si te mantienes en silencio durante treinta segundos. Sin embargo, si tiene confirmación visual de tu entrada a la habitación, esperará afuera por más tiempo. La habitación debe tener una segunda salida o eventualmente entrará.
+
+**¿Cuál es la mejor dirección de escape?**
+
+Lejos de su última dirección confirmada, idealmente con dos esquinas entre tú. Las esquinas rompen la línea de visión y reinician su rastreo auditivo.
+
+**¿Debo escapar solo o con mi escuadrón?**
+
+Con tu escuadrón, siempre. Clark apunta a jugadores aislados porque son más fáciles de rastrear. Un escuadrón agrupado tiene señales de audio superpuestas que lo confunden.
+
+**¿Qué pasa si Clark me atrapa a mitad del escape?**
+
+Mueres. No hay segunda oportunidad dentro de la misma carrera. Concéntrate en las decisiones de escape que previenen el contacto, no en qué pasa si te atrapa.
+
+Para más información sobre el comportamiento específico de rastreo de Clark, consulta nuestra [guía de anatomía de la entidad Clark](/en/entities/clark-entity-anatomy/). Para aprender las formaciones de escuadrón que previenen el aislamiento, lee [coordinación multijugador](/en/multiplayer/co-op-survival-guide/).
+
+
+**¿Cómo comparto mis herramientas y descubrimientos con la comunidad?**
+
+La Wiki de la comunidad y Discord son los canales principales para compartir herramientas. Las contribuciones a la Wiki siguen estándares editoriales, mientras que Discord permite compartir de manera informal con menos estructura. La mayoría de las herramientas exitosas provienen de contribuidores individuales que identifican vacíos en los recursos disponibles, luego colaboran con la comunidad para refinar su enfoque. Si creas una herramienta útil, documéntala claramente con especificaciones de entrada/salida y ejemplos de uso para que otros puedan adoptarla sin confusión.
+
+**¿Qué debo hacer si una herramienta de la que dependo deja de funcionar?**
+
+Reporta el problema inmediatamente a través del canal de retroalimentación documentado de la herramienta. Para herramientas basadas en la Wiki, usa la página de discusión. Para herramientas compartidas en Discord, contacta al creador directamente. La mayoría de los mantenedores de herramientas de la comunidad responden a los reportes de errores y agradecen el aviso. Mientras esperas una solución, cambia a herramientas alternativas o métodos manuales. Documenta tu solución temporal para que otros usuarios afectados puedan beneficiarse de tu solución provisional.
+
+**¿Puedo confiar en herramientas de terceros con la información de mi cuenta?**
+
+Nunca compartas credenciales de cuenta con ninguna herramienta. Las herramientas legítimas operan a través de la interfaz pública del juego y no requieren inicio de sesión. Si una herramienta te pide tu contraseña de Roblox, no es legítima independientemente de su propósito declarado. Para funciones personalizadas como el seguimiento de estadísticas, la herramienta solo debe pedirte tu nombre de usuario en el juego (que es público), no tu contraseña.
+
+**¿Cuánto tiempo se tarda en aprender una nueva herramienta?**
+
+La mayoría de las herramientas de la comunidad tienen interfaces intuitivas que permiten un uso básico en minutos. El dominio típicamente toma de 1 a 2 semanas de uso regular, dependiendo de la complejidad de la herramienta. Los analizadores de audio requieren más tiempo porque la metodología de entrenamiento tiene múltiples etapas. Las calculadoras de batería y rastreadores de parches son más simples y fáciles de aprender. Los canales de Discord de la comunidad a menudo tienen usuarios veteranos dispuestos a ayudar a los recién llegados durante la curva de aprendizaje.
+
+**¿Debería usar múltiples herramientas simultáneamente?**
+
+Sí, las herramientas complementarias se potencian entre sí. Por ejemplo, usar un analizador de audio junto con una calculadora de batería proporciona tanto desarrollo de habilidades de audio como planificación de gestión de recursos. La clave es asegurarse de que las herramientas no entren en conflicto entre sí o te abrummen con información. Comienza con una o dos herramientas esenciales, luego añade más a medida que te sientas cómodo.
+
+**¿Cómo sé si una herramienta es de alta calidad?**
+
+Los indicadores de calidad incluyen mantenimiento activo, discusión de la comunidad, documentación clara, actualizaciones regulares y respaldos positivos de veteranos. Las herramientas que no se han actualizado en meses pueden estar abandonadas. Las herramientas con canales activos de Discord y mantenedores responsivos tienden a ser más confiables. La reputación de la comunidad es un fuerte indicador de calidad.

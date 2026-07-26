@@ -1,0 +1,260 @@
+export const metadata = {
+  id: "audio-cues-detailed",
+  slug: "audio-cues-detailed",
+  order: 10,
+  difficulty: "advanced",
+  title: "Clark (ACCESO ANTICIPADO) - Señales de Audio Detalladas de las Salas de Huss: Referencia Completa de Sonido",
+  description: "Referencia completa de las señales de audio de las salas de Clark Huss: cadencia de respiración, patrones de latido, variaciones de pasos, fragmentos de susurros y mapeo de sonido ambiental.",
+  keywords: ["Señales de audio salas Clark Huss", "Indicios de audio salas Clark Huss", "Diseño de sonido salas Clark Huss", "Cadencia de respiración salas Clark Huss", "Latido salas Clark Huss"],
+  image: "/images/guides/audio-cues-detailed.webp",
+  video: "LnqTBjulm00",
+  category: "guides",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+Las señales de audio en las salas de Clark Huss no son solo efectos de sonido. Son el canal principal de información que el juego utiliza para comunicar la posición de Clark, su estado de alerta y su patrón de comportamiento. Cada jugador veterano que ves completando partidas está interpretando estas señales en tiempo real sin esfuerzo consciente. Los jugadores nuevos escuchan los mismos sonidos pero no pueden traducirlos en información accionable, que es la brecha que los mantiene muriendo temprano.
+
+Esta guía proporciona una referencia completa para cada señal de audio en el juego, las condiciones exactas que activan cada una y la respuesta accionable para cada señal. También aprenderás cómo distinguir el audio de Clark del audio ambiental y cómo cambian las señales de audio a medida que avanza la partida.
+
+## La Taxonomía de Señales de Audio
+
+Las salas de Clark Huss usan aproximadamente veinte señales de audio distintas que se dividen en cuatro categorías. Entender las categorías te ayuda a priorizar la atención auditiva.
+
+### **Categorías de señales de audio:**
+
+| Categoría | Cantidad de señales | Prioridad |
+|----------|-----------|----------|
+| Audio de la entidad Clark | 6 | Más alta |
+| Audio ambiental | 7 | Media |
+| Audio generado por el jugador | 5 | Más baja |
+| Audio del estado del servidor | 2 | Especial |
+
+El audio generado por el jugador son tus propios pasos, clics de linterna y colisiones. Deberías escuchar tu propio audio a volumen bajo porque te ayuda a mantener la disciplina. El audio del estado del servidor incluye el ambiente del vestíbulo y el temporizador de la partida.
+
+## Señales de Audio de la Entidad Clark
+
+Clark produce seis señales de audio distintas que comunican su posición, nivel de alerta y estado de comportamiento. Cada señal tiene una condición de activación específica y una respuesta accionable.
+
+### **Las seis señales de audio de Clark:**
+
+| Señal | Condición de activación | Características del sonido | Indicador de distancia | Respuesta |
+|-----|-------------------|----------------------|---------------------|----------|
+| Latido | Clark está a 2+ pasillos de distancia, sin警觉 | Pulso bajo, ritmo regular | El volumen escala con la proximidad | Continuar al ritmo actual |
+| Respiración | Clark está a 1 pasillo de distancia, alerta | Exhalación rítmica, tono más grave que la respiración del jugador | Volumen medio | Pausa, evalúa la dirección |
+| Pisadas fuertes | Clark está en la habitación adyacente | Pesadas, lentas, distintas de los pasos del jugador | Fuerte | Muévete a la ruta de escape |
+| Fragmentos de susurro | Clark tiene alta alerta | Palabras suaves y distorsionadas, intermitentes | Variable | Prepárate para la persecución |
+| Ráfaga de sprint | Clark está en persecución activa | Pasos rápidos y fuertes, aparición repentina | Muy fuerte | Sprint completo, linterna apagada |
+| Vocalización | Clark está en rango de detección | Murmullo de una sola palabra, raro | Cerca | Evasión inmediata |
+
+Las seis señales forman una progresión de distante (latido) a inmediata (vocalización). Los veteranos aprenden a identificar la señal dentro de un segundo de escucharla.
+
+## Análisis de la Señal de Latido
+
+El latido es la señal más común de Clark porque se reproduce continuamente cuando él está en el servidor. El ritmo y volumen del latido comunican su estado de alerta.
+
+### **Variaciones del latido:**
+
+| Variación | Rango de BPM | Significado |
+|-----------|-----------|---------|
+| Latido lento | 50 — 60 BPM | Clark patrullando, sin警觉 |
+| Latido normal | 60 — 80 BPM | Clark investigando, levemente alerta |
+| Latido rápido | 80 — 100 BPM | Clark rastreando, alerta |
+| Latido acelerado | 100+ BPM | Clark en persecución, altamente alerta |
+
+El BPM es audible para el oído entrenado, pero también puedes estimarlo contando los latidos durante una ventana de diez segundos y multiplicando por seis. Los veteranos cuentan automáticamente sin pensarlo.
+
+## Análisis de la Cadencia de Respiración
+
+La respiración de Clark es la segunda señal más común y la más informativa. La cadencia de respiración (patrón de ritmo) te indica su estado de alerta, y el volumen te indica la distancia.
+
+### **Patrones de cadencia de respiración:**
+
+| Patrón | Cadencia | Estado de alerta |
+|---------|---------|-----------------|
+| Exhalación lenta | Una respiración cada 4 segundos | Patrulla tranquila |
+| Exhalación normal | Una respiración cada 2 segundos | Levemente alerta |
+| Exhalación rápida | Una respiración por segundo | Rastreo activo |
+| Exhalación irregular | Variable | Alta alerta, posible persecución |
+
+La cadencia de respiración también tiene un componente direccional. Como la respiración de Clark viene de su posición, puedes determinar su dirección escuchando la separación estéreo en tus auriculares. Dominante en el canal izquierdo significa que Clark está a la izquierda. Dominante en el canal derecho significa que Clark está a la derecha.
+
+## Análisis de los Pasos Fuertes
+
+Los pasos de Clark son distintos de los pasos del jugador en tres formas: son más fuertes, más lentos y tienen un sonido de impacto más pesado. Los pasos fuertes son la señal principal cuando Clark está en una habitación adyacente.
+
+**Variaciones de pasos:**
+
+| Variación | Sonido | Distancia |
+|-----------|-------|----------|
+| Pasos lentos | Dos por segundo | Habitación adyacente |
+| Pasos normales | Tres por segundo | Mismo pasillo, distante |
+| Pasos rápidos | Cuatro por segundo | Persecución activa |
+| Pasos de sprint | Seis por segundo | Persecución directa |
+
+El patrón de pasos cambia cuando el estado de comportamiento de Clark cambia. Un cambio repentino de pasos lentos a pasos rápidos indica que te ha detectado y se está moviendo para atacar.
+
+## Análisis de Fragmentos de Susurro
+
+Los fragmentos de susurro son la señal de Clark más distintiva porque incluyen palabras vocalizadas reales, aunque distorsionadas. Los fragmentos indican alerta elevada y son una advertencia antes de la persecución.
+
+**Variaciones de fragmentos de susurro:**
+
+| Tipo de fragmento | Sonido | Activador |
+|---------------|-------|---------|
+| Palabra única | "Aquí..." | Clark tiene confirmación de audio de tu posición |
+| Fragmento repetido | "Aquí... aquí..." | Clark está rastreando tu movimiento |
+| Frase susurrada | "Dónde estás" | Clark está buscando basándose en audio residual |
+| Múltiples fragmentos | Sucesión rápida | Clark tiene línea de visión, persecución inminente |
+
+Los fragmentos de susurro son raros porque solo se activan cuando Clark está altamente alerta. Los jugadores nuevos a menudo los pasan por alto porque son suaves, pero los veteranos escuchan específicamente los susurros como preludio de la persecución.
+
+## Señales de Audio Ambiental
+
+El audio ambiental no es Clark pero proporciona información sobre el diseño del pasillo, puertas cerradas y zonas seguras. Las señales ambientales son de menor prioridad que las señales de Clark pero siguen siendo importantes.
+
+**Señales de audio ambiental:**
+
+| Señal | Sonido | Significado |
+|-----|-------|---------|
+| Zumbido fluorescente | Zumbido constante | Ambiente estándar del pasillo |
+| Clic de cerradura | Clic agudo | Puerta cerrada cerca |
+| Zumbido de ventilación | Retumbo bajo | Habitación abierta adelante |
+| Cámara de eco | Reverberación larga | Habitación grande cerca |
+| Goteo de agua | Gotas intermitentes | Solo decoración |
+| Crujido de papel | Crujido suave | Ubicación de objeto oculto |
+| Zumbido mecánico | Sonido mecánico sostenido | Zona de evento especial |
+
+El audio ambiental proporciona información de navegación. Los jugadores nuevos lo ignoran, pero los veteranos lo usan para construir su mapa de pasillos.
+
+## Señales de Audio Generadas por el Jugador
+
+Tu propio jugador produce audio que Clark puede detectar. Entender tu propia huella de audio te ayuda a minimizar la posibilidad de detección de Clark.
+
+**Señales de audio del jugador:**
+
+| Señal | Sonido | Detección de Clark |
+|-----|-------|-----------------|
+| Pasos al caminar | Suaves, regulares | Detección baja (5 metros) |
+| Pasos al correr | Fuertes, rápidos | Detección alta (12 metros) |
+| Clic de linterna | Clic breve | Detección media (6 metros) |
+| Colisión | Golpe fuerte repentino | Detección muy alta (15 metros) |
+| Chat de voz | Volumen variable | La detección escala con el volumen |
+
+Los rangos de detección de audio no se muestran en el juego, pero pruebas comunitarias los han medido aproximadamente. Correr es la acción más fuerte del jugador y debe reservarse solo para persecuciones.
+
+## Señales de Audio del Estado del Servidor
+
+El audio del estado del servidor incluye los sonidos ambientales del vestíbulo y el temporizador de la partida. Estas señales proporcionan información sobre la duración de la partida y el estado del vestíbulo.
+
+**Señales del estado del servidor:**
+
+| Señal | Sonido | Significado |
+|-----|-------|---------|
+| Ambiente del vestíbulo | Zumbido amarillo suave | Estado previo al bloqueo del servidor |
+| Tictac del temporizador | Clic regular | Bloqueo del servidor activo, seguimiento del tiempo |
+| Advertencia de apagado del servidor | Tono ascendente | La partida está terminando pronto |
+| Campanada de inicio de partida | Una campanada | Nueva partida comenzando |
+| Campanada de fin de partida | Tres campanadas | Partida completa |
+
+Las señales del estado del servidor son las de menor prioridad pero útiles para rastrear la duración de la partida y planificar el momento de escape.
+
+## Localización de Audio Direccional
+
+La localización de audio direccional es la habilidad de identificar de qué dirección viene un sonido. La habilidad requiere auriculares estéreo y entrenamiento.
+
+**Secuencia de entrenamiento de localización:**
+
+1. **Etapa Uno — Identificación Estéreo:** reproduce un sonido e identifica si es dominante izquierdo o derecho
+2. **Etapa Dos — Identificación Frontal-Trasera:** reproduce un sonido e identifica si está delante o detrás
+3. **Etapa Tres — Estimación de Distancia:** reproduce un sonido y estima la distancia en cuentas de pasillos
+4. **Etapa Cuatro — Seguimiento de Movimiento:** reproduce un sonido en movimiento y rastrea su trayectoria
+5. **Etapa Cinco — Entorno Mixto:** reproduce múltiples sonidos simultáneamente y localiza cada uno
+
+Cada etapa toma aproximadamente quince minutos de práctica enfocada. La secuencia completa construye habilidades de localización que se transfieren al juego automáticamente.
+
+## Árbol de Decisión de Respuesta a Señales de Audio
+
+Cuando escuchas una señal de audio, tienes aproximadamente dos segundos para responder antes de que la situación cambie. El árbol de decisión a continuación mapea cada señal común a la respuesta correcta.
+
+**Árbol de decisión:**
+
+| Señal | Respuesta |
+|-----|----------|
+| Latido (lento) | Continúa caminando, uso normal de linterna |
+| Latido (normal) | Reduce la linterna a solo clic |
+| Latido (rápido) | Cambia a navegación solo por audio |
+| Respiración (lenta) | Pausa un segundo, identifica la dirección |
+| Respiración (rápida) | Muévete a la ruta de escape, sin linterna |
+| Pasos fuertes | Identifica la habitación adyacente, prepara el escape |
+| Ráfaga de sprint | Sprint completo, linterna apagada, giro en esquina |
+| Fragmentos de susurro | Evasión inmediata, pierde el rastro de audio |
+| Chat de voz (escuadra) | Solo llamada informativa |
+| Colisión | Pausa, reevalúa, puede indicar proximidad de Clark |
+
+El árbol de decisión se vuelve automático después de diez horas de práctica. Los veteranos lo ejecutan sin pensamiento consciente.
+
+## Evolución de las Señales de Audio a Través de las Partidas
+
+Las señales de audio evolucionan a medida que avanza la partida porque los patrones de comportamiento de Clark cambian. Entender la evolución te ayuda a prepararte para cada fase.
+
+**Evolución del audio por fase de partida:**
+
+| Fase | Duración | Comportamiento de audio de Clark |
+|-------|----------|----------------------|
+| Vestíbulo | 0 — 90 seg | Solo latido, distante |
+| Inicio de partida | 90 seg — 3 min | Latido con respiración ocasional |
+| Mitad de partida | 3 — 6 min | Señales mixtas, mayor frecuencia |
+| Final de partida | 6+ min | Señales continuas, susurros frecuentes |
+| Fase final | 9+ min | Dominada por persecuciones, ráfagas de sprint comunes |
+
+La evolución no es estricta porque el comportamiento de Clark tiene variación procedural, pero el patrón general se mantiene. Los veteranos ajustan su uso de linterna y ritmo de movimiento según la fase.
+
+## Preguntas Frecuentes
+
+**¿Cuál es la señal de audio más importante para aprender primero?**
+
+La cadencia de respiración. Lleva distancia, dirección y estado de alerta en una sola señal. Domina la detección de respiración antes que cualquier otra señal.
+
+**¿Puedo aprender las señales de audio sin jugar el juego?**
+
+Sí. Las herramientas de entrenamiento de audio de la comunidad aíslan señales para practicar. Puedes aprender el reconocimiento básico en veinte minutos de entrenamiento basado en herramientas.
+
+**¿Cambian las señales de audio entre parches?**
+
+A veces. Durante el Acceso Anticipado, el desarrollador puede ajustar los volúmenes de las señales o añadir nuevas variantes. Revisa el rastreador de parches regularmente para cambios relacionados con el audio.
+
+**¿Qué pasa si mis auriculares tienen mala separación estéreo?**
+
+Incluso los auriculares estéreo económicos proporcionan audio direccional utilizable. Si tu configuración actual es mono (un solo altavoz), no puedes jugar de manera efectiva.
+
+**¿Cómo distingo mi propia respiración de la de Clark?**
+
+Tu respiración es una inhalación-exhalación suave desde tu propia posición, escuchada por igual en ambos oídos. La respiración de Clark tiene un tono más grave y viene de una fuente direccional. La prueba de volumen es confiable: si lo escuchas por igual en ambos oídos, es tu propia respiración.
+
+Para más sobre la configuración de audio direccional que maximiza la claridad de las señales, consulta nuestra [guía de navegación por audio](/en/guides/audio-navigation/). Para aprender la disciplina de linterna que se combina con el monitoreo de audio, lee [mecánicas de linterna](/en/guides/flashlight-mechanics/).
+
+
+**¿Cómo comparto mis herramientas y descubrimientos con la comunidad?**
+
+La Wiki de la comunidad y Discord son los canales principales para compartir herramientas. Las contribuciones a la Wiki siguen estándares editoriales, mientras que Discord permite compartir informalmente con menos estructura. La mayoría de las herramientas exitosas se originan en contribuidores individuales que identifican vacíos en los recursos disponibles y luego colaboran con la comunidad para refinar su enfoque. Si creas una herramienta útil, documéntala claramente con especificaciones de entrada/salida y ejemplos de uso para que otros puedan adoptarla sin confusión.
+
+**¿Qué debo hacer si una herramienta de la que dependo deja de funcionar?**
+
+Reporta el problema inmediatamente a través del canal de retroalimentación documentado de la herramienta. Para herramientas basadas en Wiki, usa la página de discusión. Para herramientas compartidas en Discord, contacta directamente al creador. La mayoría de los mantenedores de herramientas de la comunidad son receptivos a los reportes de errores y agradecen el aviso. Mientras esperas una solución, cambia a herramientas alternativas o métodos manuales. Documenta tu solución temporal para que otros usuarios afectados puedan beneficiarse de tu solución.
+
+**¿Puedo confiar en herramientas de terceros con la información de mi cuenta?**
+
+Nunca compartas credenciales de cuenta con ninguna herramienta. Las herramientas legítimas operan a través de la interfaz pública del juego y no requieren inicio de sesión. Si una herramienta te pide tu contraseña de Roblox, no es legítima independientemente de su propósito declarado. Para funciones personalizadas como el seguimiento de estadísticas, la herramienta solo debe pedirte tu nombre de usuario en el juego (que es público), no tu contraseña.
+
+**¿Cuánto tiempo se tarda en aprender una nueva herramienta?**
+
+La mayoría de las herramientas de la comunidad tienen interfaces intuitivas que permiten el uso básico en minutos. El dominio generalmente toma de 1 a 2 semanas de uso regular, dependiendo de la complejidad de la herramienta. Los analizadores de audio requieren más tiempo porque la metodología de entrenamiento tiene múltiples etapas. Las calculadoras de batería y los rastreadores de parches son más simples y fáciles de aprender. Los canales de Discord de la comunidad a menudo tienen usuarios veteranos dispuestos a ayudar a los recién llegados a superar la curva de aprendizaje.
+
+**¿Debería usar múltiples herramientas simultáneamente?**
+
+Sí, las herramientas complementarias se potencian entre sí. Por ejemplo, usar un analizador de audio junto con una calculadora de batería proporciona tanto desarrollo de habilidades de audio como planificación de gestión de recursos. La clave es asegurarse de que las herramientas no entren en conflicto entre sí o te abrumen con información. Comienza con una o dos herramientas esenciales y luego añade más a medida que te sientas cómodo.
+
+**¿Cómo sé si una herramienta es de alta calidad?**
+
+Los indicadores de calidad incluyen mantenimiento activo, discusión comunitaria, documentación clara, actualizaciones regulares y endorsements positivos de veteranos. Las herramientas que no se han actualizado en meses pueden estar abandonadas. Las herramientas con canales de Discord activos y mantenedores receptivos tienden a ser más confiables. La reputación de la comunidad es un fuerte indicador de calidad.

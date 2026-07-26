@@ -1,0 +1,295 @@
+export const metadata = {
+  id: "line-of-sight-rules",
+  slug: "line-of-sight-rules",
+  order: 3,
+  difficulty: "advanced",
+  title: "Clark (FRÜHER ZUGANG) – Huss-Räume Sichtlinienregeln: Geometrie des Überlebens",
+  description: "Clark Huss-Räume Sichtlinienregeln — Geometrie der Erkennung, Wanddicken-Mechaniken, visuelle Verfolgung und taktische Eckennutzung für Fluchten.",
+  keywords: ["Clark Huss-Räume Sichtlinie", "Clark Huss-Räume Wand-Mechaniken", "Clark Huss-Räume Ecken-Strategie", "Clark Huss-Räume visuelle Verfolgung", "Clark Huss-Räume Geometrie"],
+  image: "/images/entities/line-of-sight-rules.webp",
+  video: "8n7B9BBiI3U",
+  category: "entities",
+  date: "2026-07-26",
+  lastModified: "2026-07-26"
+}
+
+Die Sichtlinie ist die visuelle Komponente von Clarks Verfolgungssystem. Während Audio die primäre Erkennungsmethode ist, liefert die Sichtlinie Clark eine präzise Zielverfolgung, sobald sie hergestellt ist. Das Verständnis der Geometrie der Sichtlinie, der Regeln zur Wanddicke und der Eckenstrategien, die die visuelle Verfolgung unterbrechen, ist für das Überleben unerlässlich.
+
+Dieser Leitfaden behandelt die Sichtlinien-Mechaniken im Detail, die Wanddicken-Regeln, die die Erkennung beeinflussen, die Geometrie von Fluchtwegen und die Eckenstrategien, die Clarks Verfolgung stören. Sie lernen auch die Genauigkeit der visuellen Verfolgung und die Taschenlampen-Effekte auf die Sichtlinie kennen.
+
+## Was Sichtlinie In Clark Huss-Räumen Bedeutet
+
+Sichtlinie (LOS – Line of Sight) bezieht sich auf Clarks Fähigkeit, dein Charaktermodell durch die prozedural generierte Korridor-Geometrie zu sehen. Wenn eine Sichtlinie hergestellt ist, steigt Clarks Verfolgungsgenauigkeit drastisch.
+
+### **Sichtlinien-Zustände:**
+
+| Zustand | Clark-Verfolgung | Gegenmaßnahme |
+|---------|------------------|----------------|
+| Direkte Sichtlinie | Hohe Genauigkeit | Sofort Sichtlinie unterbrechen |
+| Sichtlinie durch dünne Wand | Reduzierte Genauigkeit | Bewegen, um zu unterbrechen |
+| Sichtlinie durch dicke Wand | Nur Audio | Audio-Maskierung |
+| Sichtlinie unterbrochen | Nur Audio | Audio-Maskierung |
+| Keine Sichtlinie möglich | Nur Audio | Standardnavigation |
+
+Der Zustand ändert sich dynamisch, während du und Clark euch durch die Korridore bewegt.
+
+## Wanddicken-Mechaniken
+
+Die Wanddicke beeinflusst, wie Licht und möglicherweise Geräusche durchdringen. Clarks visuelle Erkennung respektiert die Regeln zur Wanddicke.
+
+### **Auswirkungen der Wanddicke:**
+
+| Dicke | Lichtdurchdringung | Visuelle Sichtlinie |
+|-------|---------------------|----------------------|
+| 0 (Korridor) | Vollständig | Ja |
+| 1 Schicht | Reduziert | Ja (gedämpft) |
+| 2 Schichten | Keine | Nein |
+| 3+ Schichten | Keine | Nein |
+
+Die Lichtregeln sind der Grund, warum Taschenlampen-Nutzung deine Position durch dünne Wände, aber nicht durch dicke Wände enthüllen kann.
+
+## Grundlagen Der Ecken-Strategie
+
+Die Ecken-Strategie ist die zuverlässigste Methode, die Sichtlinie in Clark Huss-Räumen zu unterbrechen. Die Strategie nutzt die Geometrie von Korridorkurven aus.
+
+### **Prinzipien der Ecken-Strategie:**
+
+| Prinzip | Beschreibung |
+|---------|---------------|
+| Jede Ecke unterbricht die Sichtlinie | Scharfe Kurve unterbricht die Verfolgung |
+| Aufeinanderfolgende Ecken verstärken sich | Mehrere Ecken erhöhen die Zuverlässigkeit |
+| Rechte Winkel funktionieren am besten | 90-Grad-Kurven sind am effektivsten |
+| Weite Ecken weniger effektiv | Sanfte Kurven sind schwächer |
+| Sackgassen sind schlecht | Unterbrechen kann nicht fortgesetzt werden |
+
+Veteranen nutzen mehrere aufeinanderfolgende Ecken in Fluchtwegen, weil jede Ecke zusätzliche Verfolgungsunterbrechungszeit bietet.
+
+## Visuelle Erkennungsreichweite
+
+Clarks visuelle Erkennungsreichweite ist kürzer als die Audio-Reichweite. Visuelle Erkennung ist auf kurze Distanzen am nützlichsten.
+
+### **Visuelle Erkennungsreichweite:**
+
+| Hindernis | Reichweite |
+|-----------|------------|
+| Direkte Linie | 10 — 15 Meter |
+| Um die Ecke | 0 — 3 Meter |
+| Durch dünne Wand | 2 — 5 Meter |
+| Durch dicke Wand | 0 Meter |
+
+Die visuelle Reichweite ist viel kürzer als die Audio-Reichweite, weshalb Audio die primäre Erkennungsmethode ist.
+
+## Taschenlampen-Effekte Auf Die Sichtlinie
+
+Die Nutzung der Taschenlampe beeinflusst die Sichtlinie auf bestimmte Weise. Das Verständnis der Effekte hilft dir, die Taschenlampe strategisch einzusetzen.
+
+**Taschenlampen-Effekte:**
+
+| Taschenlampen-Zustand | Sichtlinien-Effekt |
+|----------------------|---------------------|
+| Aus | Normale Clark-Erkennung |
+| Einzelner Klick | Kurze Beleuchtung, minimaler Effekt |
+| Anhaltend | Clark kann dich durch dünne Wände sehen |
+| Flackernd | Verwirrungseffekt, mögliche Erkennungsunterbrechung |
+
+Anhaltende Taschenlampen-Nutzung ist der schlimmste Fall für die Sichtlinie, weil sie Clark visuelle Bestätigung durch Barrieren hindurch liefert.
+
+## Flucht-Geometrie
+
+Die Geometrie der Korridore bestimmt, ob Fluchten möglich sind. Optimale Flucht-Geometrie umfasst mehrere Ecken und begrenzte Sackgassen.
+
+**Flucht-Geometrie-Komponenten:**
+
+| Komponente | Bedeutung |
+|------------|-----------|
+| Ecken-Dichte | Hoch (mehr Ecken = besser) |
+| T-Kreuzungen | Hoch (mehrere Optionen) |
+| Offene Räume | Niedrig (exponiert) |
+| Lange gerade Flure | Niedrig (vorhersehbar) |
+| Sackgassen | Sehr niedrig (vermeiden) |
+
+Veteranen wählen Fluchtrouten, die die Ecken-Dichte maximieren und die Exponierung minimieren.
+
+## Ecken-Unterbrechungstechnik
+
+Die Ecken-Unterbrechungstechnik ist die zuverlässigste Methode, Clarks Sichtlinie zu entkommen. Die Technik nutzt Geometrie und Timing aus.
+
+**Ausführung der Ecken-Unterbrechung:**
+
+| Schritt | Aktion |
+|---------|--------|
+| 1 | Fluchtecke voraus identifizieren |
+| 2 | Zur Ecke sprinten |
+| 3 | An der Ecke scharf abbiegen |
+| 4 | 3 — 5 Sekunden weiterlaufen |
+| 5 | Prüfen, ob Sichtlinie unterbrochen ist |
+| 6 | Zur nächsten Ecke weiterlaufen |
+
+Jede Ecken-Unterbrechung dauert 5 — 10 Sekunden. Mehrere aufeinanderfolgende Unterbrechungen erhöhen die Zuverlässigkeit.
+
+## Gestapelte Ecken-Strategie
+
+Gestapelte Ecken sind mehrere aufeinanderfolgende 90-Grad-Kurven, die Sichtlinien-Unterbrechungen verstärken. Die Strategie ist äußerst zuverlässig.
+
+**Vorteile gestapelter Ecken:**
+
+| Vorteil | Beschreibung |
+|---------|---------------|
+| Sich verstärkende Sichtlinien-Unterbrechungen | Jede Ecke fügt 3 Sekunden Störung hinzu |
+| Audio-Spur-Verwirrung | Richtungswechsel verwirren Audio-Verfolgung |
+| Mehrere Fluchtoptionen | Jede Ecke bietet eine neue Richtung |
+| Höhere Überlebenswahrscheinlichkeit | Über 80% Erfolgsrate mit zwei Ecken |
+
+Veteranen nutzen gestapelte Ecken für zuverlässige Fluchten, wenn Clark aktiv verfolgt.
+
+## Wand-Phänomene In Korridoren
+
+Wand-Phänomene umfassen visuelle und Audio-Effekte, die spezifisch für Korridor-Geometrien sind. Die Phänomene beeinflussen Erkennung und Navigation.
+
+**Wand-Phänomene:**
+
+| Phänomen | Effekt |
+|----------|--------|
+| Dünne-Wand-Taschenlampe | Clark sieht dich durch die Wand |
+| Echo-Reflexion | Audio prallt ab und verändert Wahrnehmung |
+| Tür-Vorschau | Tür-Indikatoren durch Rahmen sichtbar |
+| Dekorationswände | Visuell markant, keine funktionale Wirkung |
+| Verstärkte Wände | Keine Durchdringung, Gameplay-Effekt |
+
+Die Phänomene sind der Grund, warum sich einige Korridore gefährlicher anfühlen als andere.
+
+## Genauigkeit Der Visuellen Verfolgung
+
+Die Genauigkeit der visuellen Verfolgung variiert je nach Distanz, Beleuchtung und Spielerbewegung. Die Genauigkeit beeinflusst, wie zuverlässig Clark dir folgen kann.
+
+**Genauigkeit der visuellen Verfolgung:**
+
+| Bedingung | Genauigkeit |
+|-----------|-------------|
+| Direkte Sichtlinie, nah | Sehr hoch |
+| Direkte Sichtlinie, mittel | Hoch |
+| Direkte Sichtlinie, fern | Mittel |
+| Durch dünne Wand | Niedrig |
+| Durch dicke Wand | Keine |
+
+Die Genauigkeit bestimmt, wie zuversichtlich Clark verfolgen kann, sobald er dich sieht.
+
+## Sichtlinien-Unterbrechungstechniken
+
+Neben Ecken-Unterbrechungen können andere Techniken die Sichtlinie unterbrechen. Die folgenden Techniken funktionieren in bestimmten Situationen.
+
+**Sichtlinien-Unterbrechungstechniken:**
+
+| Technik | Beschreibung |
+|---------|---------------|
+| Betreten einer Tür | Das Betreten eines Raums unterbricht die Korridor-Sichtlinie |
+| Hinter Hindernis ducken | Niedrigeres Profil kann dich verbergen |
+| An Wänden entlangschleichen | Reduziert sichtbaren Querschnitt für Clark |
+| Helligkeitsanpassung | In gedämpften Bereichen bleiben |
+| Wand-Anschmiegen | Eng an der Wand-Geometrie bleiben |
+
+Diese Techniken sind situationsabhängig und weniger zuverlässig als Ecken-Unterbrechungen.
+
+## Sichtlinie Und Server-Lock
+
+Der Server-Lock beeinflusst die Sichtlinie, indem er Clarks Erkennung erhöht. Die Beziehung zwischen Lock-Zustand und Sichtlinie ist subtil.
+
+**Sichtlinien-Effekte des Server-Locks:**
+
+| Zustand | Sichtlinien-Effekt |
+|---------|---------------------|
+| Vor dem Lock | Standard-Sichtlinien-Regeln |
+| Unmittelbar nach dem Lock | Leicht erhöhte Sichtlinien-Reichweite |
+| Mittelteil des Spiels | Erhöhte anhaltende Erkennung |
+| Spätphase | Clark aggressiver bei Sichtlinien-Verfolgung |
+
+Die Effekte stapeln sich mit Audio-Empfindlichkeits-Boosts und erzeugen eine gefährlichere Spätphase-Umgebung.
+
+## Häufige Sichtlinien-Fehler
+
+Spieler machen bestimmte Fehler im Zusammenhang mit der Sichtlinie. Die Fehler zu identifizieren hilft, sie zu vermeiden.
+
+**Häufige Fehler:**
+
+| Fehler | Auswirkung |
+|--------|------------|
+| Langer gerader Fluchtweg | Vorhersehbar, leicht zu verfolgen |
+| Einzelne Ecken-Flucht | Unzureichend für aktive Verfolgung |
+| Flucht durch offenen Raum | Maximale Exponierung |
+| Taschenlampe während Verfolgung halten | Maximale Sichtbarkeit für Clark |
+| An der Ecke anhalten | Ermöglicht Wiedererfassung |
+
+Diese Fehler zu vermeiden verbessert die Flucht-Erfolgsquote erheblich.
+
+
+**Schnelle Erkennungsreferenz:**
+
+- Herzschlag zeigt entfernten Clark an, der patrouilliert ohne unmittelbare Bedrohung
+- Atemrhythmus verrät Nähe und Aufmerksamkeitsstufe
+- Fußschritte deuten darauf hin, dass Clark im Nebenraum ist
+- Flüsterfragmente zeigen erhöhte Aufmerksamkeit und unmittelbare Eskalation an
+- Sprint-Burst signalisiert aktive Verfolgung, die vollen Rückzug erfordert
+- Vokalisierung bedeutet, dass Clark nah ist und deine Position erkennt
+
+**Grundlagen der Gegenstrategie:**
+
+- Leises Gehen reduziert deinen Audio-Fußabdruck erheblich
+- Klick-Disziplin bei der Taschenlampe verlängert die Batterie und erhält die Erkennungsreichweite
+- Ecken-Unterbrechungen stören die visuelle Verfolgung bei beginnender Verfolgung
+- Anhaltende Stille für 10+ Sekunden verliert Clarks Audio-Spur
+- Synchronisierte Squad-Bewegung verwirrt Einzelziel-Verfolgung
+- Batterie-Schwellenwert-Disziplin verhindert Notfall-Erschöpfung
+
+
+## Häufig Gestellte Fragen
+
+**Wie effektiv ist die Ecken-Unterbrechung gegen aktive Verfolgung?**
+
+Einzelne Ecken-Unterbrechung hat ungefähr 50% Erfolgsrate. Zwei aufeinanderfolgende Unterbrechungen haben über 80% Erfolgsrate. Drei Unterbrechungen sind nahezu sicher.
+
+**Kann Clark durch mehrere Wände sehen?**
+
+Nein. Clarks visuelle Erkennung stoppt bei zwei Wandschichten. Audio bleibt bestehen, aber Visuelles ist blockiert.
+
+**Beeinflusst meine eigene Taschenlampe meine Sichtlinien-Sichtbarkeit?**
+
+Ja. Deine Taschenlampe beleuchtet Wände und kann deine Silhouette durch dünne Wände enthüllen. Klick-Disziplin reduziert diesen Effekt.
+
+**Was ist die beste Raum-Geometrie für Fluchten?**
+
+L-förmige Korridore mit mehreren Kurven sind am besten. Offene Räume sind am schlimmsten, weil sie volle 360-Grad-Sichtbarkeit bieten.
+
+**Unterbricht das Verstecken hinter Dekoration die Sichtlinie?**
+
+Ja, Dekorations-Objekte blockieren die Sichtlinie. Allerdings kann Clark um sie herum pathen, um visuellen Kontakt wiederherzustellen.
+
+Für weitere Informationen zur Audio-Verfolgung, die oft die Erkennung bestimmt, siehe unseren [Leitfaden zur Audio-Verfolgung erklärt](/de/entities/audio-tracking-explained/). Um Fluchttaktiken im Detail zu lernen, liese [Clark entkommen](/de/guides/escaping-clark/).
+
+
+**Wird Clark in zukünftigen Updates signifikante Änderungen erhalten?**
+
+Clark wird während des Frühen Zugangs wahrscheinlich Balance-Anpassungen erhalten. Der Entwickler überwacht Community-Feedback und passt Clarks Verhalten an, um angemessene Schwierigkeit beizubehalten. Größere Änderungen werden durch Patch-Notes angekündigt. Veteranen sollten auf periodische Anpassungen von Clarks Mechaniken vorbereitet sein.
+
+**Wie übe ich Clark-Begegnungsszenarien?**
+
+Community-Audio-Tools bieten isolierte Clark-Audio-Hinweise zum Üben. In-Game-Übung in stressarmen Szenarien baut Fähigkeiten auf. Solo-Runs ermöglichen fokussierte Clark-Interaktion ohne Koordinationskomplexität. Veteranen-Spieler üben bestimmte Szenarien wiederholt, um automatische Reaktionen aufzubauen.
+
+**Was ist der Unterschied zwischen Clarks verschiedenen Zuständen?**
+
+Clark durchläuft Patrol-, Investigate-, Track-, Pursue-, Chase- und Cooldown-Zustände. Jeder Zustand hat unterschiedliche Audio-Hinweise, Erkennungsreichweiten und Verhaltensmuster. Das Verständnis der Zustandsübergänge hilft, Clarks nächste Aktion vorherzusagen. Veteranen verfolgen Zustandsänderungen durch Audio-Überwachung.
+
+**Kann ich Clarks Zielverfolgung in Squads verwirren?**
+
+Ja, Squad-Spiel kann Clarks Zielverfolgung durch koordinierte Audio-Maskierung verwirren. Mehrere Spieler, die sich zusammen bewegen, erzeugen überlappende Audio-Signaturen. Bestimmte Ablenkungen können Clarks Aufmerksamkeit von verwundbaren Squadmitgliedern ablenken. Squad-Koordination bietet mehr Verwirrungsmöglichkeiten als Solo-Spiel.
+
+**Wie beeinflusst Taschenlampen-Nutzung Clarks Erkennung?**
+
+Anhaltende Taschenlampen-Nutzung erhöht Clarks Erkennungsreichweite erheblich. Klick-Disziplin minimiert diesen Effekt und liefert dennoch visuelle Informationen. Reine Audio-Navigation beseitigt Taschenlampen-bezogene Erkennung vollständig. Wähle die Taschenlampen-Strategie basierend auf Batteriezustand und Clark-Nähe.
+
+**Was sind Clarks Schwächen?**
+
+Clarks Hauptschwächen sind Audio-Stille, Ecken-Unterbrechungs-Fluchten und Squad-Verwirrung. Spieler, die Audio-Ausgabe minimieren, sind schwerer zu verfolgen. Scharfe Ecken-Unterbrechungen stören die visuelle Verfolgung. Squads erzeugen mehrere Audio-Signaturen, die Einzelziel-Verfolgung verwirren. Nutze diese Schwächen konsequent aus.
+
+**Wie vergleicht sich Clark mit anderen Horrorspiel-Monstern?**
+
+Clark unterscheidet sich von typischen Horrorspiel-Monstern durch sein geduldiges Stalker-Listener-Design. Er ist weniger unmittelbar aggressiv, aber beständiger als viele Horrorspiel-Monster. Seine audiofokussierte Verfolgung belohnt diszipliniertes Spiel statt Versteck-Mechaniken. Das Design erzeugt einzigartige Spannung.
