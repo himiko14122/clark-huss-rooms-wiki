@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { NAVIGATION_CONFIG } from '@/config/navigation';
 import { localeNames, routing, type Locale } from '@/i18n/routing';
 import { Link, usePathname } from '@/i18n/navigation';
-import { SITE_NAME } from '@/config/site';
+import { LOGO_IMAGE, SITE_NAME } from '@/config/site';
 import ThemeToggle from './ThemeToggle';
 
 type NavDropdownItem = { label: string; path: string };
@@ -51,7 +51,7 @@ export default function Header({ navDropdownItems = {} }: { navDropdownItems?: N
       <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto xl:max-w-none xl:ml-40 xl:mr-0">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2 text-lg font-bold font-[var(--font-heading)] whitespace-nowrap">
-            <Image src="/logo.svg" alt="Clark (EARLY ACCESS) - Huss rooms" width={32} height={32} className="rounded-lg" />
+            <Image src={LOGO_IMAGE} alt="Clark (EARLY ACCESS) - Huss rooms" width={32} height={32} className="rounded-lg" />
             <span className="gradient-text">{SITE_NAME.replace(/ Wiki$/, '')}</span>
           </Link>
 
